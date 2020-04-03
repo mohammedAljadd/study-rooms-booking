@@ -1,5 +1,4 @@
-# Dev_Web_INPT_2020_G0
-# Projet reservation des salles à distance.
+# Dev_Web_INPT_2020_G0 Projet reservation des salles à distance.
 
 Membres collaboratifs:
 

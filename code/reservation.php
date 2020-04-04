@@ -162,6 +162,30 @@
             
             
             
+            
+                                <div class="forma">
+        <form action="reservation_check.php"  method="POST">
+            
+            <label for="bata">Batiment A </label>
+            <input type="radio"  name="bat" value="bata">
+            
+            <label for="batb">Batiment B</label>
+            <input type="radio" name="bat"  value="batb">
+            
+            <label for="batc">Batiment C</label>
+            <input type="radio"   name="bat" value="batc">
+            
+            <label for="batd">Batiment D</label>
+            <input type="radio"   name="bat" value="batd">
+            
+            <label for="bate">Batiment E</label>
+            <input type="radio"   name="bat" value="bate">
+            
+            <br>
+            <input type="submit" name="submit" value="choisir une salle">
+
+        </form>
+</div>
             <?php
             }
                 else //batiment choisie

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/book.css">
     <link rel="stylesheet" href="css/welcom.css">
     <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Reservation</title>
 </head>
 <body>
@@ -19,7 +20,6 @@
 <div class="headache">
 <?php
     if($_SESSION['email']!="aljadd.mohammed@ine.inpt.ma"){
-
 ?>
         <ul  >
             <a href="home.php">Home</a>
@@ -61,6 +61,18 @@
             }
             
         ?>
+        <?php
+            if(isset($_SESSION['email']))
+            {
+            ?>
+                <div class="logout">
+                    <form action="logOut.php" method="post" >
+                    <button name="logout" type="submit">Log Out!</button>
+                    </form>
+                </div>
+    <?php
+        }
+    ?>
         
 </div>
     </div>

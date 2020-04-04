@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/image3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.headache{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.582);
+    margin-top: 0px;
+    padding: 20px 4px;
+    height: 90px;
+    border: 0px solid;
+    border-bottom-left-radius: 13px 13px;
+    border-bottom-right-radius: 13px 13px;
+}
+
+
+
+.headache ul{
+    position: absolute;
+    top: 32px;
+    left: 40px;
+}
+
+.headache a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Montserrat,sans-serif;
+    font-weight: lighter;
+    margin-right: 20px;
+    padding: 2px 10px;
+    border-radius: 48px;
+    background-color: rgb(0,0,0,0.6);
+    transition: 750ms;
+    position: relative;
+    left: 840px;
+}
+
+
+.headache  a:hover{
+    background-color: rgb(0,0,0,0.94);  
+    border-color: rgba(255, 0, 0, 0.59);
+  
+
+}
+
+#go{
+    position: absolute;
+    top: 10px;
+    left: -8px;
+}
+
+.box{
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 70px 160px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+    font-family: Montserrat;
+    border-color: rgb(0,0,0,0.7);
+    font-size: 24px;
+    transition: 650ms;
+    background-color:rgba(0, 0, 0, 0.575);
+}
+
+
+h1{
+    color: rgba(72, 152, 226, 0.74);
+    font-family: Montserrat, sans-serif;
+  }
+.icon-bar {
+    position: fixed;
+    top: 34%;
+  }
+  .icon-bar a {
+    display: block;  /*Display links in one column*/
+    padding: 6px 8px;
+    transition: 500ms;
+    border: 2px solid;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    top: 48%;
+    left: 22px;
+  }
+  .icon-bar a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .facebook {
+    background: rgba(59, 88, 152, 0.651);
+    color: white;
+  }
+  
+  .twitter {
+    background: rgba(85, 172, 238, 0.651);
+    color: white;
+  }
+  
+  .instagram {
+    background:#fd111180;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007cb579;
+    color: white;
+  }
+  
+  .youtube {
+    background: #ff070777;
+    color: white;
+  }
+
+
+
+footer{
+  background-color: rgba(238, 238, 238, 0.507);
+  position: relative;
+  bottom: -42px;
+  padding: 5px 10px;
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
+  border-top-right-radius: 13px 13px;
+  border-top-left-radius: 13px 13px;
+  
+}
+.logo{
+  position: relative;
+  top: -83px;
+  left: 8px;
+}
+
+
+.last{
+  position: relative;
+  top: 9px;
+  margin-top: 0px;
+  margin-bottom: 0px ;  
+}
+li{
+  list-style-type: none; /*remove cercles from list items*/
+}
+
+
+.rights{
+  position: absolute;
+  right: 20px;
+  bottom: 12px;
+  font-family: 'Times New Roman', Times, serif;
+}

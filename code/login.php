@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
+    
     <title>Login</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="box">
         <h1>Login</h1>
     
-    <form action="login_check.php" method="POST" >
+    <form action="traiterInfos/login_check.php" method="POST" >
         <input type="text" placeholder="Email"  name="email" > 
         <input type="password" placeholder="Password" name="password" > 
         <span class="subset" > <input type="submit" name="submit" >   </span>      <span class="subset" > <input type="reset" value="reset"></span> 

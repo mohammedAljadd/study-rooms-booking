@@ -76,7 +76,7 @@
 
 <div class="box" >
         <h1>Changer votre mot de pass</h1>
-        <form action="password.php" method="post">
+        <form action="password_check.php" method="post">
             <input type="password"  placeholder="Mot de pass" name="pass">
             <input type="password" placeholder="le nouveau Mot de pass" name="newPass">
             <input type="password"  placeholder="retaper le nouveau Mot de pass" name="newPassR">            

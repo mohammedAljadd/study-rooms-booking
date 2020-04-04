@@ -13,7 +13,7 @@
     <div class="box">
         <h1>Login</h1>
     
-    <form action="traiterInfos/login_check.php" method="POST" >
+    <form action="login_check.php" method="POST" >
         <input type="text" placeholder="Email"  name="email" > 
         <input type="password" placeholder="Password" name="password" > 
         <span class="subset" > <input type="submit" name="submit" >   </span>      <span class="subset" > <input type="reset" value="reset"></span> 

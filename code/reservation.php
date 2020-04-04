@@ -61,6 +61,7 @@
                     </form>
                 </div>
                 </div>
+                <br><br>
     <?php
         }
     ?>
@@ -72,7 +73,95 @@
             if(!isset($_SESSION['batiment']))
             {
             ?>
-                <p>les batimets</p>
+            <div class="all">
+    
+                <div class="bat">
+                    <h1>Batiment A</h1>
+                            <h2> 
+                                <?php
+                                    $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=1;";
+                                    $result = mysqli_query($conn,$sql);
+                                    $out = mysqli_num_rows($result);
+                                    if($out > 0){
+                                        while($row = mysqli_fetch_assoc($result)){
+                                            echo $row['num']." salles sont disponibles";
+                                        }
+                                    }
+                                ?>
+                            </h2>
+                </div> 
+
+
+                <div class="bat">
+                    <h1>Batiment B</h1>
+                            <h2>   
+                            <?php
+                                    $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=2;";
+                                    $result = mysqli_query($conn,$sql);
+                                    $out = mysqli_num_rows($result);
+                                    if($out > 0){
+                                        while($row = mysqli_fetch_assoc($result)){
+                                            echo $row['num']." salles sont disponibles";
+                                        }
+                                    }
+                                ?>
+                            </h2>
+                </div>
+
+
+                <div class="bat">
+                    <h1>Batiment C</h1>
+                    <h2> 
+                    <?php
+                                    $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=3;";
+                                    $result = mysqli_query($conn,$sql);
+                                    $out = mysqli_num_rows($result);
+                                    if($out > 0){
+                                        while($row = mysqli_fetch_assoc($result)){
+                                            echo $row['num']." salles sont disponibles";
+                                        }
+                                    }
+                                ?>
+                    </h2>
+                </div>
+
+                <div class="bat" >
+                    <h1>Batiment D</h1>
+                    <h2> 
+                    <?php
+                                    $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=4;";
+                                    $result = mysqli_query($conn,$sql);
+                                    $out = mysqli_num_rows($result);
+                                    if($out > 0){
+                                        while($row = mysqli_fetch_assoc($result)){
+                                            echo $row['num']." salles sont disponibles";
+                                        }
+                                    }
+                                ?>
+                    </h2>
+                </div>
+
+                <div class="bat">
+                    <h1>Batiment E</h1>
+                    <h2> 
+                    <?php
+                                    $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=5;";
+                                    $result = mysqli_query($conn,$sql);
+                                    $out = mysqli_num_rows($result);
+                                    if($out > 0){
+                                        while($row = mysqli_fetch_assoc($result)){
+                                            echo $row['num']." salles sont disponibles";
+                                        }
+                                    }
+                                ?>
+                    </h2>
+                </div>
+
+                                </div>
+
+            
+            
+            
             <?php
             }
                 else //batiment choisie

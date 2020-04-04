@@ -2,7 +2,9 @@
 <?php
     session_start();
     include 'includes/dbconn.php';
+    //$idSal=$_SESSION['chosenIDSalle'];
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +14,6 @@
     <link rel="stylesheet" href="css/book.css">
     <link rel="stylesheet" href="css/welcom.css">
     <link rel="stylesheet" href="css/reservation.css">
-    <link rel="stylesheet" href="css/home.css">
     <title>Reservation</title>
 </head>
 <body>
@@ -20,6 +21,7 @@
 <div class="headache">
 <?php
     if($_SESSION['email']!="aljadd.mohammed@ine.inpt.ma"){
+
 ?>
         <ul  >
             <a href="home.php">Home</a>
@@ -54,117 +56,126 @@
                         echo "Welcome ".$row['nom']." ".$row['prenom'];
                     }
                 }
+            }
+
+            else{
+                echo "Welcom,Please Sign Up";
+            }
+            
         ?>
-                <div class="logout">
-                    <form action="logOut.php" method="post" >
-                    <button name="logout" type="submit">Log Out!</button>
-                    </form>
-                </div>
-                </div>
-                <br><br>
-    <?php
-        }
-    ?>
+        
+</div>
+    </div>
 <?php
-    if(!isset($_SESSION['reserved']))
-    {
+    $email = $_SESSION['email'];
+    $sql = "select idProf from prof where email='".$email."';";
+    $result= mysqli_query($conn,$sql);
+    while($row=mysqli_fetch_assoc($result))
+        {
+            $Id = $row['idProf'];
+        }
+        
+        $sql2 = "select idProf from affectation where idProf='".$Id."';";
+        $result2= mysqli_query($conn,$sql2);
+        $out2 = mysqli_num_rows($result2);
+
 ?>
-            <?php
-            if(!isset($_SESSION['batiment']))
-            {
-            ?>
-            <div class="all">
+<?php
+    if($out2==0){
+
+?>
+
+
+
+<div class="all">
     
-                <div class="bat">
-                    <h1>Batiment A</h1>
-                            <h2> 
-                                <?php
-                                    $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=1;";
-                                    $result = mysqli_query($conn,$sql);
-                                    $out = mysqli_num_rows($result);
-                                    if($out > 0){
-                                        while($row = mysqli_fetch_assoc($result)){
-                                            echo $row['num']." salles sont disponibles";
-                                        }
-                                    }
-                                ?>
-                            </h2>
-                </div> 
-
-
-                <div class="bat">
-                    <h1>Batiment B</h1>
-                            <h2>   
-                            <?php
-                                    $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=2;";
-                                    $result = mysqli_query($conn,$sql);
-                                    $out = mysqli_num_rows($result);
-                                    if($out > 0){
-                                        while($row = mysqli_fetch_assoc($result)){
-                                            echo $row['num']." salles sont disponibles";
-                                        }
-                                    }
-                                ?>
-                            </h2>
-                </div>
-
-
-                <div class="bat">
-                    <h1>Batiment C</h1>
-                    <h2> 
+    <div class="bat">
+        <h1>Batiment A</h1>
+                <h2> 
                     <?php
-                                    $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=3;";
-                                    $result = mysqli_query($conn,$sql);
-                                    $out = mysqli_num_rows($result);
-                                    if($out > 0){
-                                        while($row = mysqli_fetch_assoc($result)){
-                                            echo $row['num']." salles sont disponibles";
-                                        }
-                                    }
-                                ?>
-                    </h2>
-                </div>
+                        $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=1;";
+                        $result = mysqli_query($conn,$sql);
+                        $out = mysqli_num_rows($result);
+                        if($out > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['num']." salles sont disponibles";
+                            }
+                        }
+                    ?>
+                </h2>
+    </div> 
 
-                <div class="bat" >
-                    <h1>Batiment D</h1>
-                    <h2> 
-                    <?php
-                                    $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=4;";
-                                    $result = mysqli_query($conn,$sql);
-                                    $out = mysqli_num_rows($result);
-                                    if($out > 0){
-                                        while($row = mysqli_fetch_assoc($result)){
-                                            echo $row['num']." salles sont disponibles";
-                                        }
-                                    }
-                                ?>
-                    </h2>
-                </div>
 
-                <div class="bat">
-                    <h1>Batiment E</h1>
-                    <h2> 
-                    <?php
-                                    $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=5;";
-                                    $result = mysqli_query($conn,$sql);
-                                    $out = mysqli_num_rows($result);
-                                    if($out > 0){
-                                        while($row = mysqli_fetch_assoc($result)){
-                                            echo $row['num']." salles sont disponibles";
-                                        }
-                                    }
-                                ?>
-                    </h2>
-                </div>
+    <div class="bat">
+        <h1>Batiment B</h1>
+                <h2>   
+                <?php
+                        $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=2;";
+                        $result = mysqli_query($conn,$sql);
+                        $out = mysqli_num_rows($result);
+                        if($out > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['num']." salles sont disponibles";
+                            }
+                        }
+                    ?>
+                </h2>
+    </div>
 
-                                </div>
 
-            
-            
-            
-            
-                                <div class="forma">
-        <form action="reservation_check.php"  method="POST">
+    <div class="bat">
+        <h1>Batiment C</h1>
+        <h2> 
+        <?php
+                        $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=3;";
+                        $result = mysqli_query($conn,$sql);
+                        $out = mysqli_num_rows($result);
+                        if($out > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['num']." salles sont disponibles";
+                            }
+                        }
+                    ?>
+        </h2>
+    </div>
+
+    <div class="bat" >
+        <h1>Batiment D</h1>
+        <h2> 
+        <?php
+                        $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=4;";
+                        $result = mysqli_query($conn,$sql);
+                        $out = mysqli_num_rows($result);
+                        if($out > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['num']." salles sont disponibles";
+                            }
+                        }
+                    ?>
+        </h2>
+    </div>
+
+    <div class="bat">
+        <h1>Batiment E</h1>
+        <h2> 
+        <?php
+                        $sql = "SELECT count(nom) as num from salle where (id not in(select idSalle from affectation) or id in (select idSalle from affectation group by idSalle HAVING sum(Marge) <86400 )) and idBatiment=5;";
+                        $result = mysqli_query($conn,$sql);
+                        $out = mysqli_num_rows($result);
+                        if($out > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['num']." salles sont disponibles";
+                            }
+                        }
+                    ?>
+        </h2>
+    </div>
+
+</div>
+
+
+<div class="forma">
+        <form action="reservation.php"  method="POST">
             
             <label for="bata">Batiment A </label>
             <input type="radio"  name="bat" value="bata">
@@ -187,33 +198,91 @@
         </form>
 </div>
             <?php
+                if(isset($_POST['submit'])){
+                    if(isset($_POST['bat']) ){
+                    $_SESSION['bat'] = $_POST['bat'];
+                    header('location:form.php');
+                }
+                else{
+                    header('location:reservation.php?PleaseChoose');
+                }
             }
-                else //batiment choisie
-                {
             ?>
-                <h2>salle</h2>
+<?php
+    }
+    else{
+        $sql4 = "select nom from salle where id='".$idSal."';";
+        $result4 = mysqli_query($conn,$sql4);
+        while($row=mysqli_fetch_assoc($result4)){ 
+            $sAl = $row['nom'];
+        
+    } 
+    $sql3 = "select date,date_fin,idSalle from affectation where idProf='".$Id."'";
+    $result3 = mysqli_query($conn,$sql3);
+    while($row=mysqli_fetch_assoc($result3)){ 
+        $debut = $row['date'];
+        $fin = $row['date_fin'];
+        $sal = $_SESSION['chosenIDSalle'];
+    
+?>
+<?php
+            if(isset($_SESSION['email']))
+            {
+            ?>
+                <div class="lOogout">
+                    <form action="logOut.php" method="post" >
+                    <button name="logout" type="submit">Log Out!</button>
+                    </form>
+                </div>
+    <?php
+        }
+    ?>
 
-            <?php
-                }
-            ?>
-            <?php
-                if(isset($_SESSION['batiment']) && isset($_SESSION['salle']))
-                {
-            ?>
-                <p>choisir les dates</p>
-            <?php
-                }
-            ?>
+<div class="lastTabl">
+    <table border="1" class="lastTable" align="center"  style="width:600px;line-height:39px;color:#fff;">
+        <tr>
+            <th colspan="3">Vous avez reservé   
+            <?php 
+           
+            
+            echo strtoupper($sAl ) ; 
+            ?> </th>
+
+        </tr>
+    <tr>
+        <th>Debut</th>
+        <th>Fin</th>
+        <th>Voulez vous annuler?</th>
+    </tr>
+    <tr>
+        <th> <?php echo $debut;  ?> </th>
+        <th> <?php  echo $fin;  ?></th>
+        <th>
+        <form action="reservation.php" method="POST" >
+        <button type="submit" name="suppr">annuler</button>
+        </form>
+        </th>
+    </tr>
+    </table>
+</div>
 
 <?php
     }
-    else //already reserved
-    {
 ?>
-    <h2>Table qui montre ton reservation</h2>
-
+</body>
+</html>
 <?php
     }
 ?>
 
 
+
+
+<?php
+    if(isset($_POST['suppr'])){
+        $sql = "DELETE FROM `affectation`  where idProf='".$Id."';";
+        $result = mysqli_query($conn,$sql);
+        header('location:reservation.php?removed'); 
+        $_SESSION['error']="annuler";
+    }
+?>

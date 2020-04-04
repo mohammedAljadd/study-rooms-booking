@@ -54,27 +54,53 @@
                         echo "Welcome ".$row['nom']." ".$row['prenom'];
                     }
                 }
-            }
-
-            else{
-                echo "Welcom,Please Sign Up";
-            }
-            
         ?>
-        <?php
-            if(isset($_SESSION['email']))
-            {
-            ?>
                 <div class="logout">
                     <form action="logOut.php" method="post" >
                     <button name="logout" type="submit">Log Out!</button>
                     </form>
                 </div>
+                </div>
     <?php
         }
     ?>
-        
-</div>
-    </div>
+<?php
+    if(!isset($_SESSION['reserved']))
+    {
+?>
+            <?php
+            if(!isset($_SESSION['batiment']))
+            {
+            ?>
+                <p>les batimets</p>
+            <?php
+            }
+                else //batiment choisie
+                {
+            ?>
+                <h2>salle</h2>
+
+            <?php
+                }
+            ?>
+            <?php
+                if(isset($_SESSION['batiment']) && isset($_SESSION['salle']))
+                {
+            ?>
+                <p>choisir les dates</p>
+            <?php
+                }
+            ?>
+
+<?php
+    }
+    else //already reserved
+    {
+?>
+    <h2>Table qui montre ton reservation</h2>
+
+<?php
+    }
+?>
 
 

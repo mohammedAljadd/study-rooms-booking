@@ -1,6 +1,12 @@
 
 <?php
     session_start();
+        if(isset($_SESSION['email']))
+        {
+?>
+
+
+<?php
     include 'includes/dbconn.php';
 ?>
 
@@ -285,4 +291,11 @@
         header('location:reservation.php?removed'); 
         $_SESSION['error']="annuler";
     }
+?>
+
+<?php
+        }
+        else{
+            include 'login.php';
+        }
 ?>

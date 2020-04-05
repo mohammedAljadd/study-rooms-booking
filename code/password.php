@@ -1,5 +1,10 @@
 <?php
-session_start();
+    session_start();
+        if(isset($_SESSION['email']))
+        {
+?>
+<?php
+
     include 'includes/dbconn.php'
     
 ?>
@@ -88,5 +93,9 @@ session_start();
 
 
 
-
-
+    <?php
+        }
+        else{
+            include 'login.php';
+        }
+?>

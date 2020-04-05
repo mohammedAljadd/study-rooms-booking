@@ -1,5 +1,12 @@
 <?php
     session_start();
+        if(isset($_SESSION['email']))
+        {
+?>
+
+
+
+<?php
     include 'includes/dbconn.php';
 ?>
 
@@ -245,4 +252,9 @@
 </html>
 
 
-
+<?php
+        }
+        else{
+            include 'login.php';
+        }
+?>

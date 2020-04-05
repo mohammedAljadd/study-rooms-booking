@@ -1,0 +1,175 @@
+.already{
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 10px;
+    position: absolute;
+    top: 120px;
+    left: 750px;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+}
+table{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 13px;
+    position: relative;
+    left: 10px;
+    top: -15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.already input[type="datetime-local"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: white;
+    transition: 240ms;
+    border-radius: 10px;
+}
+.already input[type="datetime-local"]:focus{
+    width: 240px;
+    border-color: rgb(50, 226, 108);
+}
+.already input[type="submit"]{
+    border: 0;
+    background: none;
+    margin: 8px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 8px 3px;
+    width: 100px;
+    outline: none;
+    color: white;
+    transition: 240ms;
+    border-radius: 20px;
+    border-color: rgb(50, 226, 108);
+    margin-right: 12px;
+}
+
+.already input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(50, 226, 108);
+}
+
+.already input[type="reset"]{
+    border: 0;
+    background: none;
+    margin: 8px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 8px 3px;
+    width: 100px;
+    outline: none;
+    color: white;
+    transition: 240ms;
+    border-radius: 20px;
+    border-color: rgb(253, 65, 65);
+    margin-left: 12px;
+}
+
+.already input[type="reset"]:hover{
+    cursor: pointer;
+    background: rgb(253, 65, 65);
+}
+
+.box{
+    border-radius: 4px;
+    /* centerning the box ine the center of the page */
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* ----------------------- */
+    color: white;
+    /* Black w/opacity/see-through */
+    background-color: rgba(0,0,0, 0.55); 
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 10px 100px 10px;
+    text-align: center;
+    width: 40%;
+    height: 50%;
+    border-radius: 15px;
+}
+.box input[type="datetime-local"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 270px;
+    outline: none;
+    color: white;
+    transition: 240ms;
+    border-radius: 10px;
+}
+.box input[type="datetime-local"]:focus{
+    width: 320px;
+    border-color: rgb(50, 226, 108);
+}
+
+
+.box input[type="submit"]{
+    border: 0;
+    background: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 8px 3px;
+    width: 100px;
+    outline: none;
+    color: white;
+    transition: 240ms;
+    border-radius: 20px;
+    border-color: rgb(50, 226, 108);
+    margin-right: 12px;
+}
+
+.box input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(50, 226, 108);
+}
+
+.box input[type="reset"]{
+    border: 0;
+    background: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 8px 3px;
+    width: 100px;
+    outline: none;
+    color: white;
+    transition: 240ms;
+    border-radius: 20px;
+    border-color: rgb(253, 65, 65);
+    margin-left: 12px;
+}
+
+.box input[type="reset"]:hover{
+    cursor: pointer;
+    background: rgb(253, 65, 65);
+}
+
+.notYet{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 2px 4px 2px 4px;
+    width: 310px;
+    text-align: center;
+    border-radius: 13px;
+    position: relative;
+    top: 20px;
+    left: 40%;
+}

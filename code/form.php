@@ -17,12 +17,32 @@
 <body>
 <img src="img/Go.png" alt="" height="70" width="260" id="go">
 <div class="headache">
+<?php
+    if($_SESSION['email']!="aljadd.mohammed@ine.inpt.ma"){
+
+?>
         <ul  >
             <a href="home.php">Home</a>
             <a href="reservation.php">Reservation</a>
             <a href="password.php">Compte</a>
             <a href="contact.php">Contact</a>
         </ul>
+<?php
+    }
+    else{
+?>
+
+    <ul  >
+    
+            <a href="home.php">Home</a>
+            <a href="reservation.php">Reservation</a>
+            <a href="password.php">Compte</a>
+            <a href="updateUser.php">Modify users</a>
+            
+        </ul>
+        <?php
+    }
+        ?>
         <div class="welcom">
         <?php
         

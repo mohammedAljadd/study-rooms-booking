@@ -53,7 +53,78 @@
 
 
 
+    <?php
+        $nomSalle=$_SESSION['salle'];
+        $a=strpos($nomSalle,'SALLE');
+        if($a==true){
+            $idSalle=$nomSalle[($a+6)]."".$nomSalle[($a+7)];
+        }
+        elseif($a==false){
+            $idSalle=($nomSalle['7']+41);
+        }
+        $_SESSION['chosenIDSalle']=$idSalle;
+        
+        $sql = "SELECT date,date_fin FROM affectation where idSalle='".$idSalle."' order by date ;";
+        $result = mysqli_query($conn,$sql);
+        $Check=mysqli_num_rows($result);
+    ?>
+<?php
+    if($Check>0 ){
+        $_SESSION['ifAlready']="alreadyReserved";
+?>
+
+        <table align="center" border="1px" style="width:600px;line-height:39px;">
+                    <tr><th  colspan="2">Les horaires qui sont deja prises</th></tr>
+                    <tr>
+                        <th>debut</th>
+                        <th>fin</th>
+                    </tr>
+                    
+        <?php
+            while($row=mysqli_fetch_assoc($result))
+            {
+        ?>
+            <tr>
+                <td><?php  echo $row['date'] ;  ?></td>
+                <td><?php  echo $row['date_fin'] ;  ?></td>
+            </tr>
+
+    <?php
+            }
+    ?>
+
+
+        </table>
+        <div class="already">
+            <h1>Choisir le temps que vous convient</h1>
+            <form action="bookingConfirm.php" method="POST">
+            <input type="datetime-local" name="date_debut" placeholder="yyyy/mm/dd hh:mm:00">
+            <input type="datetime-local" name="date_fin" placeholder="yyyy/mm/dd hh:mm:00">   
+            <span> <input type="submit" name="submit"> </span> <span> <input type="reset"> </span>
+        </form>
+</div>
     
+
+<?php
+    }
+    elseif($Check==0 ){
+        
+?>             <div class="notYet">
+                <p>Cette salle n'est pas encore reservée, vous pouvez dès maintenant la réserver.
+                </div>
+<div class="box">
+<h1>Choisir le temps que vous convient</h1>
+        <form action="bookingConfirm.php" method="POST">
+            <input type="datetime-local" name="date_debut" placeholder="yyyy/mm/dd hh:mm:00">
+            <input type="datetime-local" name="date_fin" placeholder="yyyy/mm/dd hh:mm:00">   
+            <span> <input type="submit" name="submit"> </span> <span> <input type="reset"> </span>
+        </form>
+</div>
+
+
+<?php
+    }
+?>
 
 
 

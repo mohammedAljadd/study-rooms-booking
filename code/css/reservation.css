@@ -1,0 +1,14 @@
+.lastTabl{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.712);
+    color: white;
+    width: 600px;
+    position: relative;
+    top: 120px;
+    left: 28%;
+}
+.lOogout{
+    position: relative;
+    top: 36px;
+    left: 90px;
+}

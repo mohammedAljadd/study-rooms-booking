@@ -2,7 +2,6 @@
 <?php
     session_start();
     include 'includes/dbconn.php';
-    //$idSal=$_SESSION['chosenIDSalle'];
 ?>
 
 
@@ -211,6 +210,7 @@
 <?php
     }
     else{
+        $idSal=$_SESSION['chosenIDSalle'];
         $sql4 = "select nom from salle where id='".$idSal."';";
         $result4 = mysqli_query($conn,$sql4);
         while($row=mysqli_fetch_assoc($result4)){ 

@@ -134,7 +134,7 @@
 </div>
 
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
     <div class="box" >
         <h1>
         <?php

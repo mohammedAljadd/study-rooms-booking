@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/modify.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Modify</title>
 </head>
 <body>
@@ -53,7 +54,7 @@
     
 
 
-    <div class="box">
+    <div class="boxMe">
         <h1>Modify</h1>
     
     <form action="modify_check.php" method="POST" >

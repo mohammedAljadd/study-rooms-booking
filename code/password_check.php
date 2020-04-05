@@ -1,9 +1,13 @@
 <?php
+session_start();
+include 'includes/dbconn.php';
     if(isset($_POST['submit'])){
+        
         $pass = $_POST['pass'];
         $newPass = $_POST['newPass'];
         $newPassR = $_POST['newPassR'];
         $email = $_SESSION['email'];
+        echo $pass;
 
 
         if( empty($newPassR) || empty($newPass) || empty($pass)){
@@ -35,7 +39,7 @@
                         
                     }
                     else{
-                        header("location:password.php?wrongPassword");
+                        header("location:password.php?wrongPassword".$email."____".$pass);
                     }
 
 

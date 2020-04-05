@@ -1,6 +1,7 @@
 <?php
-    include 'includes/dbconn.php';
-    session_start();
+session_start();
+    include 'includes/dbconn.php'
+    
 ?>
 
 <!DOCTYPE html>

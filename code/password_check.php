@@ -39,7 +39,7 @@ include 'includes/dbconn.php';
                         
                     }
                     else{
-                        header("location:password.php?wrongPassword".$email."____".$pass);
+                        header("location:password.php?wrongPassword");
                     }
 
 

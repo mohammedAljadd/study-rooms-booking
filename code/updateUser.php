@@ -1,0 +1,83 @@
+<?php
+    session_start();
+    include 'includes/dbconn.php';
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modify.css">
+    <title>Modify</title>
+</head>
+<body>
+<img src="img/Go.png" alt="" height="70" width="260" id="go">
+<div class="headacheAdmin">
+<ul  >
+
+            <a href="home.php">Home</a>
+            <a href="reservation.php">Reservation</a>
+            <a href="password.php">Compte</a>
+            <a href="updateUser.php">Modify users</a>
+            <a href="affectation.php">Affectation</a>
+        </ul>
+</div>
+<div class="boxw">
+<h1>Users</h1>
+<table border="1">
+<tr>
+    <th>Nom</th>
+    <th>Prenom</th>
+    <th>Email</th>
+    <th>Password</th>
+</tr>
+<?php
+    $sql = " SELECT * FROM `prof`;";
+    $result = mysqli_query($conn,$sql);
+    $out = mysqli_num_rows($result);
+    if($out>0){
+        while($row = mysqli_fetch_assoc($result)){
+            echo "<tr>
+                <th>".$row['nom']."</th>  <th>".$row['prenom']."</th>
+                <th>".$row['email']."</th>  <th>".$row['password']."</th>
+                </tr>";
+        }
+    }
+
+?>
+</table>
+
+</div>
+    
+
+
+    <div class="box">
+        <h1>Modify</h1>
+    
+    <form action="modify_check.php" method="POST" >
+        <input type="text" placeholder="nom"  name="nom" > 
+        <input type="text" placeholder="prenom" name="prenom" > 
+        <input type="text" placeholder="Email" name="email" > 
+        <input type="password" placeholder="Password" name="password" >
+        
+        <label for="add"> Add </label>
+        <input type="radio"  name="modify" value="add">
+            
+        <label for="remove"> Remove </label>
+        <input type="radio" name="modify"  value="remove">
+        <br>
+        <span class="subset" > <input type="submit" name="submit" >   </span>      <span class="subset" > <input type="reset" value="reset"></span> 
+    </form>
+
+
+    </div>
+
+
+
+</body>
+</html>
+
+
+

@@ -80,9 +80,11 @@
             $idSalle=$nomSalle[($a+6)]."".$nomSalle[($a+7)];
         }
         elseif($a==false){
-            $idSalle=($nomSalle['7']+41);
+            $a=strpos($nomSalle,'AMPHI_E');
+            $idSalle=($nomSalle[$a+7]+41);
         }
         $_SESSION['chosenIDSalle']=$idSalle;
+        
         
         $sql = "SELECT date,date_fin FROM affectation where idSalle='".$idSalle."' order by date ;";
         $result = mysqli_query($conn,$sql);

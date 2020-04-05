@@ -1,5 +1,6 @@
 
 <?php
+    session_start();
     include 'includes/dbconn.php';
 ?>
 
@@ -38,9 +39,7 @@
                 }
             }
 
-            else{
-                echo "Welcom,Please Sign Up";
-            }
+            
             
         ?>
         <?php

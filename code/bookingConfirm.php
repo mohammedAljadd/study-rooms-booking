@@ -86,7 +86,7 @@
 
             }
             else{
-                $sql = " INSERT INTO `affectation` (`idProf`, `idSalle`, `date`, `date_fin`, `Marge`) 
+                $sql = " INSERT INTO affectation (`idProf`, `idSalle`, `date`, `date_fin`, `Marge`) 
                 VALUES ('$idProf', '$idSalle', '$debut', '$fin', '$diff') ;";
                 $result = mysqli_query($conn,$sql);
                 if($result){
@@ -94,7 +94,6 @@
                     header("location:reservation.php?VotreReservationDone");
                 }
             }
-
 
 
 

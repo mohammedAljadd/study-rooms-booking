@@ -73,7 +73,7 @@ body{
 }
 .all{
     position: absolute;
-    top: 55px;
+    top: 125px;
     text-align: center;
     background-color: rgb(0,0,0,0.5);
     margin: 24px 24px;
@@ -81,7 +81,7 @@ body{
 }
 .forma{
     position: relative;
-    top: 10px;
+    top: 240px;
     border-radius: 20px;
     color: white;
     background-color: rgb(0,0,0,0.5);

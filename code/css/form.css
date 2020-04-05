@@ -3,7 +3,7 @@ h1{
 }
 .box{
     position: relative;
-    top: 26px;
+    top: 126px;
     background-color: rgb(0,0,0,0.6);
     padding: 8px 17px;
     text-align: center;
@@ -140,3 +140,4 @@ h3{
     .table{
         background-color: black;
     }
+    

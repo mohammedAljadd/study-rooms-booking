@@ -210,8 +210,8 @@
 <?php
     }
     else{
-        $idSal=$_SESSION['chosenIDSalle'];
-        $sql4 = "select nom from salle where id='".$idSal."';";
+        $email = $_SESSION['email'];
+        $sql4 = "SELECT salle.nom FROM salle,affectation,prof where affectation.idProf=prof.idProf and prof.email='".$email."' and salle.id=affectation.idSalle;";
         $result4 = mysqli_query($conn,$sql4);
         while($row=mysqli_fetch_assoc($result4)){ 
             $sAl = $row['nom'];
@@ -222,7 +222,7 @@
     while($row=mysqli_fetch_assoc($result3)){ 
         $debut = $row['date'];
         $fin = $row['date_fin'];
-        $sal = $_SESSION['chosenIDSalle'];
+        
     
 ?>
 <?php

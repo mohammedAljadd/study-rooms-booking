@@ -37,5 +37,5 @@ la seconde est un formulaire pour ajouter ou supprimer un utilisateur. Cette  pa
 La différence est qu'elle continent lien 'affectation' .Dans cette dernière, 
 un tableau montrera à l'administrateur toutes les réservations qui sont prises. 
     
-    Une autre chose est que dans la base de données utilisée, un événement (event : comme trigger) va supprimera automatiquement une réservation qui devient ancienne.
+    Une autre chose est que dans la base de données utilisée, un événement (event : comme trigger) va supprimera automatiquement une réservation qui devient ancienne.Il faut l'activer sur localhost/phpmyadmin.
 

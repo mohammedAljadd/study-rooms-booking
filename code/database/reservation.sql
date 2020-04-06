@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Mar 08, 2020 at 03:04 PM
--- Server version: 10.3.20-MariaDB
--- PHP Version: 7.3.12
+-- Host: 127.0.0.1
+-- Generation Time: Apr 06, 2020 at 04:52 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -28,23 +28,20 @@ SET time_zone = "+00:00";
 -- Table structure for table `affectation`
 --
 
-DROP TABLE IF EXISTS `affectation`;
-CREATE TABLE IF NOT EXISTS `affectation` (
-  `idProf` int(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `affectation` (
+  `idProf` int(20) NOT NULL,
   `idSalle` int(20) NOT NULL,
   `date` datetime NOT NULL,
   `date_fin` datetime NOT NULL,
-  `Marge` int(11) DEFAULT NULL,
-  PRIMARY KEY (`idProf`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4;
+  `Marge` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `affectation`
 --
 
 INSERT INTO `affectation` (`idProf`, `idSalle`, `date`, `date_fin`, `Marge`) VALUES
-(1, 16, '2020-03-08 21:00:00', '2020-03-08 23:30:00', 9000),
-(3, 16, '2020-03-08 18:00:00', '2020-03-08 20:30:00', 9000);
+(1, 42, '2020-04-06 08:00:00', '2020-04-06 11:35:00', 12900);
 
 -- --------------------------------------------------------
 
@@ -52,12 +49,10 @@ INSERT INTO `affectation` (`idProf`, `idSalle`, `date`, `date_fin`, `Marge`) VAL
 -- Table structure for table `batiment`
 --
 
-DROP TABLE IF EXISTS `batiment`;
-CREATE TABLE IF NOT EXISTS `batiment` (
-  `id` int(20) NOT NULL AUTO_INCREMENT,
-  `nom` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+CREATE TABLE `batiment` (
+  `id` int(20) NOT NULL,
+  `nom` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `batiment`
@@ -76,32 +71,32 @@ INSERT INTO `batiment` (`id`, `nom`) VALUES
 -- Table structure for table `prof`
 --
 
-DROP TABLE IF EXISTS `prof`;
-CREATE TABLE IF NOT EXISTS `prof` (
-  `idProf` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `prof` (
+  `idProf` int(11) NOT NULL,
   `nom` varchar(30) NOT NULL,
   `prenom` varchar(30) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(40) NOT NULL,
-  PRIMARY KEY (`idProf`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4;
+  `gender` varchar(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `prof`
 --
 
-INSERT INTO `prof` (`idProf`, `nom`, `prenom`, `email`, `password`) VALUES
-(1, 'Mohammed', 'AL JADD', 'aljadd700@inpt.ac.ma', 'inpt99'),
-(2, 'Hassan', 'OMAR', 'hassan_omar@inpt.ac.ma', 'omarict55'),
-(3, 'Hajar', 'BERADDA', 'hajar_berrada@inpt.ac.ma', 'berradainpt22'),
-(4, 'Maryem', 'SOUAD', 'maryem_souad@inpt.ac.ma', 'souadinpt22'),
-(5, 'Amine', 'SAID', 'amine_said@inpt.ma', 'saidinpt54'),
-(6, 'Khadija', 'ALAMI', 'khadija_alami@inpt.ma', 'alamiinpt54'),
-(7, 'Ahmed', 'FAHIM', 'ahmed_fahim@inpt.ac.ma', 'fahiminpt102'),
-(8, 'Mohamed', 'ABDELLAH', 'mohamed_abdellah@inpt.ac.ma', 'abdellahinpt911'),
-(9, 'Abdellah', 'LOTIF', 'abdellah78@inpt.ac.ma', 'lotifi99inpt'),
-(10, 'Amine', 'AL JADD', 'amine199@inpt.ac.ma', 'amine89inpt0'),
-(11, 'Souad', 'BERRADA', 'berrada10@inpt.ac.ma', 'ber2019ine');
+INSERT INTO `prof` (`idProf`, `nom`, `prenom`, `email`, `password`, `gender`) VALUES
+(1, 'Mohammed', 'AL JADD', 'aljadd.mohammed@ine.inpt.ma', 'moRo995gig', 'M'),
+(2, 'Hassan', 'OMAR', 'hassan_omar@inpt.ac.ma', 'galaxy66', 'M'),
+(3, 'Hajar', 'BERADDA', 'hajar_berrada@inpt.ac.ma', 'berradainpt22', 'F'),
+(4, 'Maryem', 'SOUAD', 'maryem_souad@inpt.ac.ma', 'souadinpt22', 'F'),
+(5, 'Amine', 'SAID', 'amine_said@inpt.ma', 'saidinpt54', 'M'),
+(6, 'Khadija', 'ALAMI', 'khadija_alami@inpt.ma', 'alamiinpt54', 'F'),
+(7, 'Ahmed', 'FAHIM', 'ahmed_fahim@inpt.ac.ma', 'fahiminpt102', 'M'),
+(8, 'Mohamed', 'ABDELLAH', 'mohamed_abdellah@inpt.ac.ma', 'abdellahinpt911', 'M'),
+(9, 'Abdellah', 'LOTIF', 'abdellah78@inpt.ac.ma', 'lotifi99inpt', 'M'),
+(10, 'Amine', 'AL JADD', 'amine199@inpt.ac.ma', 'amine89inpt0', 'M'),
+(11, 'Souad', 'BERRADA', 'berrada10@inpt.ac.ma', 'ber2019in', 'F'),
+(30, 'Mouad', 'HAKIM', 'mouad_hakim@inpt.ac.ma', 'inpt55ensias', 'M');
 
 -- --------------------------------------------------------
 
@@ -109,13 +104,11 @@ INSERT INTO `prof` (`idProf`, `nom`, `prenom`, `email`, `password`) VALUES
 -- Table structure for table `salle`
 --
 
-DROP TABLE IF EXISTS `salle`;
-CREATE TABLE IF NOT EXISTS `salle` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `salle` (
+  `id` int(11) NOT NULL,
   `nom` varchar(50) DEFAULT NULL,
-  `idBatiment` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8mb4;
+  `idBatiment` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `salle`
@@ -162,15 +155,70 @@ INSERT INTO `salle` (`id`, `nom`, `idBatiment`) VALUES
 (38, 'salle038', 4),
 (39, 'salle039', 4),
 (40, 'salle040', 4),
-(42, 'Amphi_E1', 5),
-(43, 'Amphi_E2', 5),
-(44, 'Amphi_E3', 5);
+(41, 'Amphi_E1', 5),
+(42, 'Amphi_E2', 5),
+(43, 'Amphi_E3', 5);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `affectation`
+--
+ALTER TABLE `affectation`
+  ADD PRIMARY KEY (`idProf`);
+
+--
+-- Indexes for table `batiment`
+--
+ALTER TABLE `batiment`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `prof`
+--
+ALTER TABLE `prof`
+  ADD PRIMARY KEY (`idProf`);
+
+--
+-- Indexes for table `salle`
+--
+ALTER TABLE `salle`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `affectation`
+--
+ALTER TABLE `affectation`
+  MODIFY `idProf` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+
+--
+-- AUTO_INCREMENT for table `batiment`
+--
+ALTER TABLE `batiment`
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `prof`
+--
+ALTER TABLE `prof`
+  MODIFY `idProf` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+
+--
+-- AUTO_INCREMENT for table `salle`
+--
+ALTER TABLE `salle`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 DELIMITER $$
 --
 -- Events
 --
-DROP EVENT `delete_old`$$
 CREATE DEFINER=`root`@`localhost` EVENT `delete_old` ON SCHEDULE EVERY 1 SECOND STARTS '2020-03-06 12:38:47' ON COMPLETION NOT PRESERVE ENABLE DO DELETE FROM affectation WHERE date_fin<now()$$
 
 DELIMITER ;

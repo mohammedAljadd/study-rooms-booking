@@ -72,6 +72,8 @@
         <input type="text" placeholder="prenom" name="prenom" > 
         <input type="text" placeholder="Email" name="email" > 
         <input type="password" placeholder="Password" name="password" >
+        <input type="radio" name="gender" value="M"> Male
+        <input type="radio" name="gender" value="F"> Female<br>
         
         <label for="add"> Add </label>
         <input type="radio"  name="modify" value="add">

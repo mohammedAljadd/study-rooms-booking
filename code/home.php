@@ -1,14 +1,32 @@
 <?php
     session_start();
+    include 'includes/dbconn.php';
         if(isset($_SESSION['email']))
         {
+            $email = $_SESSION['email'];
+            $sql = "SELECT concat(if(gender='M','Mr ','Mme '),prof.prenom) as name from prof  where email='".$email."';";
+            $result=mysqli_query($conn,$sql);
+                while($row = mysqli_fetch_assoc($result)){
+                    $_SESSION['guess']=$row['name'] ;
+                }
 ?>
 <?php
-    include 'includes/dbconn.php';
+    
     if(isset($_SESSION['welcome']))
     {
 ?>
-    <script>alert('Welcome')</script>
+    <script>
+
+    var myDate = new Date();
+    var dateHour = myDate.getHours();
+    if(dateHour<18){
+        var guess = "<?php echo $_SESSION['guess'] ?>";
+        alert('Bonjour '+guess+'!');
+    }
+    else{
+        alert('Bonsoir '+guess+'!');
+    }
+    </script>
 <?php
     }
     unset($_SESSION['welcome']);

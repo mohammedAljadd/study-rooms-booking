@@ -9,9 +9,6 @@
                 while($row = mysqli_fetch_assoc($result)){
                     $_SESSION['guess']=$row['name'] ;
                 }
-?>
-<?php
-    
     if(isset($_SESSION['welcome']))
     {
 ?>
@@ -19,8 +16,8 @@
 
     var myDate = new Date();
     var dateHour = myDate.getHours();
+    var guess = "<?php echo $_SESSION['guess'] ?>";
     if(dateHour<18){
-        var guess = "<?php echo $_SESSION['guess'] ?>";
         alert('Bonjour '+guess+'!');
     }
     else{

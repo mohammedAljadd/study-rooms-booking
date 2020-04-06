@@ -7,6 +7,7 @@ if(isset($_POST['submit'])){
     $password = $_POST['password'];
 
     if(empty($email) || empty($password)){
+        $_SESSION['loginError']=1;
         header("location:login.php?error=emptyfields");
         exit();
     }
@@ -34,6 +35,7 @@ if(isset($_POST['submit'])){
             }
             
             else {
+                $_SESSION['loginError']=2;
                 header("location:login.php?error=wrongInformations"); 
             }
 

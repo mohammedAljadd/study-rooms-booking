@@ -4,9 +4,35 @@
         if(isset($_SESSION['email']))
         {
 ?>
-
+<script>
+    var error = "<?php echo $_SESSION['error']; ?>";
+    switch (error){
+                case 'Emptyfields':
+                    alert('Empty field');
+                    break;
+                case 'oldDate':
+                    alert('les dates sont anciennes');
+                    break;
+                case 'b3iiiiiiid':
+                    alert('Vous pouvez pas réserver plus d\'un jour avant');
+                    break;
+                case 'equal':
+                    alert('La date de début et la date de fin sont égales');
+                    break;
+                case 'short':
+                    alert('La durée de la réservation ne doit pas être inférieure à une heure');
+                    break;
+                case 'long':
+                    alert('La durée de la réservation ne doit pas dépasser 4 heures');
+                    break;
+                case 'inters':
+                    alert('les dates se croisent avec d\'autres dates');
+                    break;
+                }
+</script>
 
 <?php
+    unset($_SESSION['error']);
     include 'includes/dbconn.php';
 ?>
 

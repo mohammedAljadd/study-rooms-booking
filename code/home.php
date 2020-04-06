@@ -17,11 +17,16 @@
     var myDate = new Date();
     var dateHour = myDate.getHours();
     var guess = "<?php echo $_SESSION['guess'] ?>";
+    if(guess != 'Mr AL JADD'){
     if(dateHour<18){
         alert('Bonjour '+guess+'!');
     }
     else{
         alert('Bonsoir '+guess+'!');
+    }
+    }
+    else{
+        alert('Hello me !');
     }
     </script>
 <?php

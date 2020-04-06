@@ -5,8 +5,14 @@
 ?>
 <?php
     include 'includes/dbconn.php';
+    if(isset($_SESSION['welcome']))
+    {
 ?>
-
+    <script>alert('Welcome')</script>
+<?php
+    }
+    unset($_SESSION['welcome']);
+?>
 
 <!DOCTYPE html>
 <html lang="en">

@@ -22,6 +22,7 @@ if(isset($_POST['submit'])){
                 $result=mysqli_query($conn,$sql);
                 $out = mysqli_num_rows($result);
                 if($out>0){
+                    $_SESSION['welcome']=1;
                     header("location:home.php?loginSuccessed");
                     $sql="SELECT idProf FROM prof WHERE email='".$email."' and password='".$password."';";
                 $result=mysqli_query($conn,$sql);

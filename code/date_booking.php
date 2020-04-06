@@ -108,12 +108,13 @@
     <?php
         $nomSalle=$_SESSION['salle'];
         $a=strpos($nomSalle,'SALLE');
-        if($a==true){
+        if($a==0){
             $idSalle=$nomSalle[($a+6)]."".$nomSalle[($a+7)];
         }
+        
         elseif($a==false){
             $a=strpos($nomSalle,'AMPHI_E');
-            $idSalle=($nomSalle[$a+7]+41);
+            $idSalle=($nomSalle[$a+7]+40);
         }
         $_SESSION['chosenIDSalle']=$idSalle;
         

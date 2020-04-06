@@ -4,9 +4,21 @@
         if(isset($_SESSION['email']))
         {
 ?>
-
+<script>
+    var error = "<?php echo $_SESSION['error']; ?>";
+    switch (error){
+                case 'done':
+                    alert('Votre réservation a été effectuée');
+                    break;
+                case 'annuler':
+                    alert('Votre réservation a été annulée');
+                    break;
+                
+                }
+</script>
 
 <?php
+    unset($_SESSION['error']);
     include 'includes/dbconn.php';
 ?>
 

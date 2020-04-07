@@ -108,7 +108,7 @@
     <?php
         $nomSalle=$_SESSION['salle'];
         $a=strpos($nomSalle,'SALLE');
-        if($a==0){
+        if($a==0 || $a==21){
             $idSalle=$nomSalle[($a+6)]."".$nomSalle[($a+7)];
         }
         

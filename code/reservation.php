@@ -276,14 +276,20 @@
         <th> <?php echo $debut;  ?> </th>
         <th> <?php  echo $fin;  ?></th>
         <th>
-        <form action="reservation.php" method="POST" >
-        <button type="submit" name="suppr">annuler</button>
-        </form>
+        <button onClick="deleteMe()">annuler</button>
         </th>
     </tr>
     </table>
 </div>
-
+<script language="javascript">
+ function deleteMe()
+ {
+ if(confirm("Voulez-vous vraiment annuler votre réservation ?")){
+ window.location.href='delete.php';
+ return true;
+ }
+ } 
+ </script>
 <?php
     }
 ?>
@@ -296,14 +302,7 @@
 
 
 
-<?php
-    if(isset($_POST['suppr'])){
-        $sql = "DELETE FROM `affectation`  where idProf='".$Id."';";
-        $result = mysqli_query($conn,$sql);
-        header('location:reservation.php?removed'); 
-        $_SESSION['error']="annuler";
-    }
-?>
+
 
 <?php
         }

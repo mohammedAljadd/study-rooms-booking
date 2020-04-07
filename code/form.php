@@ -216,11 +216,11 @@
             ?>
             <?php   
                     
-                    $sql="SELECT concat(upper(salle.nom),' n\'est pas encors reservee') as nom FROM salle WHERE id not in (SELECT affectation.idSalle FROM affectation) and salle.idBatiment='".$bat."' UNION SELECT concat('First reservation of ',upper(salle.nom),' is ',min(affectation.date)) FROM affectation,salle WHERE affectation.idSalle=salle.id and salle.idBatiment='".$bat."' GROUP by affectation.idSalle HAVING COUNT(affectation.idSalle)<11;";
+                    $sql="SELECT concat(upper(salle.nom),' n\'est pas encors reservee') as nom,salle.id as id FROM salle WHERE id not in (SELECT affectation.idSalle FROM affectation) and salle.idBatiment='".$bat."' UNION SELECT concat('First reservation of ',upper(salle.nom),' is ',min(affectation.date)) as nom,salle.id as id FROM affectation,salle WHERE affectation.idSalle=salle.id and salle.idBatiment='".$bat."' GROUP by affectation.idSalle HAVING COUNT(affectation.idSalle)<11;;";
                     $result = mysqli_query($conn,$sql);
                     $option="";
                     while($row=mysqli_fetch_array($result)){
-                        $option=$option."<option>".$row['nom']."</option>";
+                        $option=$option."<option value=".$row['id'].">".$row['nom']."</option>";
                     }
             ?>
             

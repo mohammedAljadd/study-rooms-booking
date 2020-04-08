@@ -47,7 +47,7 @@
 </body>
 </html>
 <?php
-    if($_SESSION['logOut']==2){
+    if(isset($_SESSION['logOut']) && $_SESSION['logOut']==2){
         session_unset();
         session_destroy();
 ?>

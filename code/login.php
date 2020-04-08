@@ -45,3 +45,22 @@
 
 </body>
 </html>
+<?php
+    if(isset($_SESSION['logOut'])){
+        session_unset();
+        session_destroy();
+?>
+<script>
+    var myDate = new Date();
+    var dateHour = myDate.getHours();
+    if(dateHour<18 && dateHour>5){
+        alert("Merci d'utiliser notre site Web, bonne journée ");
+    }
+    else{
+        alert("Merci d'utiliser notre site Web, bonne soirée");
+    }
+    
+</script>
+<?php
+    }
+?>

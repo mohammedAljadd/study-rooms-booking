@@ -3,6 +3,9 @@
         session_start();
         session_unset();
         session_destroy();
-        header("Location:login.php");    
+        session_start();
+        $_SESSION['logOut']=1;
+        header("Location:login.php");
+    
     }
 ?>

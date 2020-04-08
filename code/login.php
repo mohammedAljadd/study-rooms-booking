@@ -54,10 +54,10 @@
     var myDate = new Date();
     var dateHour = myDate.getHours();
     if(dateHour<18 && dateHour>5){
-        alert("Merci d'utiliser notre site Web, bonne journée ");
+        alert("Merci d'avoir utiliser notre site web,bonne journée ");
     }
     else{
-        alert("Merci d'utiliser notre site Web, bonne soirée");
+        alert("Merci d'avoir utiliser notre site web, bonne soirée");
     }
     
 </script>

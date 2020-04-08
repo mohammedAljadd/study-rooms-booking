@@ -93,7 +93,6 @@
 </html>
 
 
-
 <?php
         }
         elseif(!isset($_SESSION['email'])){
@@ -102,8 +101,15 @@
         elseif($_SESSION['email']!="aljadd.mohammed@ine.inpt.ma"){
             ?>
 
-            <h1>You are not allowed to visit this web page as you are not the administrator!</h1> 
-            
+            <script>
+                alert("Vous n\'êtes pas autorisé à visiter cette page Web car vous n\'êtes pas l\'administrateur. Merci!");
+            </script>
+            <script>
+                window.location.replace("login.php");
+            </script>
             <?php
+            session_start();
+            session_unset();
+            session_destroy();
         }
 ?>

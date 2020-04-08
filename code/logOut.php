@@ -1,11 +1,19 @@
 <?php
-    if(isset($_POST['logout'])){
-        session_start();
+session_start();
+if(isset($_POST['logout'])){
+    if($_SESSION['email']=="aljadd.mohammed@ine.inpt.ma"){
         session_unset();
         session_destroy();
         session_start();
         $_SESSION['logOut']=1;
         header("Location:login.php");
-    
     }
+    else{
+        session_unset();
+        session_destroy();
+        session_start();
+        $_SESSION['logOut']=2;
+        header("Location:login.php");
+    }
+}
 ?>

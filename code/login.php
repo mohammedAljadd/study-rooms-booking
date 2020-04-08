@@ -1,3 +1,8 @@
+<?php
+            if(session_id() == '') {
+                session_start();
+               }
+        ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +11,7 @@
     <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
  
-        <?php
-            if(session_id() == '') {
-                session_start();
-               }
-        ?>
+        
         <script>
             var loginError= "<?php echo $_SESSION['loginError']  ?>";
             if(loginError==1){
@@ -46,7 +47,7 @@
 </body>
 </html>
 <?php
-    if(isset($_SESSION['logOut'])){
+    if($_SESSION['logOut']==2){
         session_unset();
         session_destroy();
 ?>
@@ -62,5 +63,6 @@
     
 </script>
 <?php
+
     }
 ?>

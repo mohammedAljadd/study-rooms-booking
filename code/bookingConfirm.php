@@ -4,7 +4,7 @@
         include 'includes/dbconn.php';
         $idProf = $_SESSION['idprof'];
         $nomSalle=$_SESSION['salle'];
-        $idSalle=$_SESSION['chosenIDSalle'];
+        $idSalle=$_SESSION['salle'];
         
         
 

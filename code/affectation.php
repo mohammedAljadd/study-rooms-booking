@@ -55,8 +55,8 @@
         while($row = mysqli_fetch_assoc($result)){
             if($row['a']=="Mohammed AL JADD"){
                 echo "<tr>
-                <th style='color:rgb(255, 104, 104)'>C'est vous</th>  <th>".$row['b']."</th>
-                <th>".$row['c']."</th>  <th>".$row['d']."</th>
+                <th style='color:rgb(255, 104, 104)'>C'est vous</th>  <th style='color:rgb(255, 104, 104)'>".$row['b']."</th>
+                <th style='color:rgb(255, 104, 104)'>".$row['c']."</th>  <th style='color:rgb(255, 104, 104)'>".$row['d']."</th>
                 </tr>";
 
             }

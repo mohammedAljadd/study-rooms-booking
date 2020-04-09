@@ -36,10 +36,10 @@
 <h1>Affectation</h1>
 <table border="1">
 <tr>
-    <th>PROF</th>
-    <th>La salle réservée</th>
-    <th>Date de début</th>
-    <th>Date de fin</th>
+    <th style='color:rgb(174, 197, 251)'>PROF</th>
+    <th style='color:rgb(174, 197, 251)'>La salle réservée</th>
+    <th style='color:rgb(174, 197, 251)'>Date de début</th>
+    <th style='color:rgb(174, 197, 251)'>Date de fin</th>
     
 </tr>
 <?php

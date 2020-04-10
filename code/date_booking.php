@@ -4,6 +4,14 @@
         if(isset($_SESSION['email']))
         {
 ?>
+<?php
+    include 'includes/dbconn.php';
+    $email = $_SESSION['email'];
+    $sql = "SELECT affectation.idProf FROM affectation,prof WHERE affectation.idProf=prof.idProf AND prof.email='".$email."';";
+    $result = mysqli_query($conn,$sql);
+    $outDb = mysqli_num_rows($result);
+    if($outDb==0){
+?>
 <script>
     var error = "<?php echo $_SESSION['error']; ?>";
     switch (error){
@@ -33,7 +41,6 @@
 
 <?php
     unset($_SESSION['error']);
-    include 'includes/dbconn.php';
 ?>
 
 <!DOCTYPE html>
@@ -173,7 +180,12 @@
 
     </body>
 </html>
-
+<?php
+    }
+    elseif($outDb>0){
+        include 'reservation.php';
+    }
+?>
 
 <?php
         }

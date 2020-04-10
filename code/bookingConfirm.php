@@ -1,6 +1,8 @@
 <?php
     if(isset($_POST['submit'])){
-        session_start();
+        if(session_id() == '') {
+            session_start();
+           }
         include 'includes/dbconn.php';
         $idProf = $_SESSION['idprof'];
         $nomSalle=$_SESSION['salle'];

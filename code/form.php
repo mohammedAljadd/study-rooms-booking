@@ -4,10 +4,13 @@
         {
 ?>
 
-
-
 <?php
     include 'includes/dbconn.php';
+    $email = $_SESSION['email'];
+    $sql = "SELECT affectation.idProf FROM affectation,prof WHERE affectation.idProf=prof.idProf AND prof.email='".$email."';";
+    $result = mysqli_query($conn,$sql);
+    $outDb = mysqli_num_rows($result);
+    if($outDb==0){
 ?>
 
 
@@ -250,7 +253,12 @@
     
 </body>
 </html>
-
+<?php
+    }
+    elseif($outDb>0){
+        include 'reservation.php';
+    }
+?>
 
 <?php
         }

@@ -114,15 +114,15 @@
     
     </div>
 
-
+     
 
     <div class="box" >
     <h1>Quote</h1> <br>
-    <div class="maqola">
-        “The art of reading and studying consists <br> 
-        in remembering the essentials and forgetting <br>
-        what is not essential.” <br>
-                Adolf Hitler, Mein Kampf.
+    <div class="maqola" style='color: #fafb91';>
+        “The man who does not read books <br> 
+        has no advantage over the one <br>
+        who cannot read them.” <br>
+        Mark Twain.
     </div>
 
 </div>

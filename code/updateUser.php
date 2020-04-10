@@ -39,10 +39,10 @@
 <h1>Users</h1>
 <table border="1">
 <tr>
-    <th>Nom</th>
-    <th>Prenom</th>
-    <th>Email</th>
-    <th>Password</th>
+    <th  style='color:rgb(174, 197, 251)'>Nom</th>
+    <th  style='color:rgb(174, 197, 251)'>Prenom</th>
+    <th  style='color:rgb(174, 197, 251)'>Email</th>
+    <th  style='color:rgb(174, 197, 251)'>Password</th>
 </tr>
 <?php
     $sql = " SELECT * FROM `prof`;";

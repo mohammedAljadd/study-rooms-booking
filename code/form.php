@@ -196,7 +196,6 @@
             <h3>
         <?php
             $bat = $_SESSION['bat'];
-            unset($_SESSION['bat']);
             switch($bat){
 
                 case "bata":

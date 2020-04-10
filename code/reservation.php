@@ -219,7 +219,7 @@
             <?php
                 if(isset($_POST['submit'])){
                     if(isset($_POST['bat']) ){
-                    $_SESSION['bat'] = $_POST['bat'];
+                        $_SESSION['bat2']=$_SESSION['bat'] = $_POST['bat'];
                     header('location:form.php');
                 }
                 else{

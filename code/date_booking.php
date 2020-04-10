@@ -10,7 +10,7 @@
     $sql = "SELECT affectation.idProf FROM affectation,prof WHERE affectation.idProf=prof.idProf AND prof.email='".$email."';";
     $result = mysqli_query($conn,$sql);
     $outDb = mysqli_num_rows($result);
-    if($outDb==0){
+    if($outDb==0 && isset($_SESSION['salle'])){
 ?>
 <script>
     var error = "<?php echo $_SESSION['error']; ?>";
@@ -182,8 +182,8 @@
 </html>
 <?php
     }
-    elseif($outDb>0){
-        include 'reservation.php';
+    else{
+        header("location:reservation.php");
     }
 ?>
 

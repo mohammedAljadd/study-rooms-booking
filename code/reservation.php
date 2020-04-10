@@ -259,7 +259,7 @@
 <div class="lastTabl">
     <table border="1" class="lastTable" align="center"  style="width:600px;line-height:39px;color:#fff;">
         <tr>
-            <th colspan="3">Vous avez reservé   
+            <th colspan="3" style='color:rgb(144, 167, 241)'>Vous avez reservé   
             <?php 
            
             
@@ -268,9 +268,9 @@
 
         </tr>
     <tr>
-        <th>Debut</th>
-        <th>Fin</th>
-        <th>Voulez vous annuler?</th>
+        <th  style='color:rgb(174, 197, 251)'>Debut</th>
+        <th  style='color:rgb(174, 197, 251)'>Fin</th>
+        <th  style='color:rgb(255, 104, 104)'>Voulez vous annuler?</th>
     </tr>
     <tr>
         <th> <?php echo $debut;  ?> </th>

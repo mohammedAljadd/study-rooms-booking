@@ -83,15 +83,40 @@
         <br>
         <span class="subset" > <input type="submit" name="submit" >   </span>      <span class="subset" > <input type="reset" value="reset"></span> 
     </form>
-
+    
+ 
 
     </div>
-
-
-
 </body>
 </html>
-
+<?php
+    
+    if(isset($_SESSION['add'])){
+        ?>
+        <script language="javascript">
+ 
+    if(confirm("Voulez-vous vraiment ajouter le nouvel utilisateur?")){
+        window.location.href='addCode.php';
+ } 
+ </script>
+        <?php
+    }
+    elseif(isset($_SESSION['remove'])){
+        echo $_SESSION['remove'];
+    }
+    elseif(isset($_SESSION['added'])){
+        ?>
+        <script language="javascript">
+        alert("le nouvel utilisateur a été ajouté");
+ </script>
+        <?php
+    }
+?>
+<?php
+    unset($_SESSION['add']);
+    unset($_SESSION['remove']);
+    unset($_SESSION['added']);
+?>
 
 <?php
         }

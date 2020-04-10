@@ -10,7 +10,7 @@
     $sql = "SELECT affectation.idProf FROM affectation,prof WHERE affectation.idProf=prof.idProf AND prof.email='".$email."';";
     $result = mysqli_query($conn,$sql);
     $outDb = mysqli_num_rows($result);
-    if($outDb==0){
+    if($outDb==0 && isset($_SESSION['bat'])){
 ?>
 
 
@@ -196,6 +196,7 @@
             <h3>
         <?php
             $bat = $_SESSION['bat'];
+            unset($_SESSION['bat']);
             switch($bat){
 
                 case "bata":
@@ -255,8 +256,8 @@
 </html>
 <?php
     }
-    elseif($outDb>0){
-        include 'reservation.php';
+    else{
+        header("location:reservation.php");
     }
 ?>
 

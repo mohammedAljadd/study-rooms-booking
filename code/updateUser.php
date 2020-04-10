@@ -93,29 +93,46 @@
     
     if(isset($_SESSION['add'])){
         ?>
-        <script language="javascript">
- 
-    if(confirm("Voulez-vous vraiment ajouter le nouvel utilisateur?")){
-        window.location.href='addCode.php';
- } 
- </script>
+                <script language="javascript"> 
+                    if(confirm("Voulez-vous vraiment ajouter le nouvel utilisateur?")){
+                        window.location.href='addCode.php';
+                    } 
+                </script>
         <?php
     }
     elseif(isset($_SESSION['remove'])){
-        echo $_SESSION['remove'];
-    }
-    elseif(isset($_SESSION['added'])){
         ?>
-        <script language="javascript">
-        alert("le nouvel utilisateur a été ajouté");
- </script>
+        <script>
+        if(confirm("Voulez-vous vraiment supprimer l'utilisateur <?php  echo "' ".$_SESSION['name'].' '.$_SESSION['prenom']." '"  ?>?")){
+            window.location.href='removeCode.php';
+        }
+     </script>
+     <?php 
+    }
+    ?>
+    <?php
+    if(isset($_SESSION['added'])){
+        ?>
+            <script language="javascript">
+            alert("le nouvel utilisateur<?php  echo "<".$_SESSION['name'].' '.$_SESSION['prenom'].">"  ?> a été ajouté avec succès!");
+            </script>
+        <?php
+    }
+    if(isset($_SESSION['removed'])){
+        ?>
+            <script language="javascript">
+            alert("l'utilisateur  <?php  echo "' ".$_SESSION['name'].' '.$_SESSION['prenom']." '"  ?> a été supprimé avec succès!");
+            </script>
         <?php
     }
 ?>
+
+
 <?php
     unset($_SESSION['add']);
     unset($_SESSION['remove']);
     unset($_SESSION['added']);
+    unset($_SESSION['removed']);
 ?>
 
 <?php

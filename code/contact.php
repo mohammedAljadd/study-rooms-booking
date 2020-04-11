@@ -79,7 +79,17 @@
     </div>    
 </body>
 </html>
-
+<?php
+    if(isset($_SESSION['contact'])){
+?>
+<script>
+    var a = "<?php echo $_SESSION['contact']  ?>";
+    alert(a);
+</script>
+<?php
+unset($_SESSION['contact']);
+    }
+?>
 
 <?php
         }

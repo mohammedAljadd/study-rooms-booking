@@ -15,10 +15,10 @@
         <script>
             var loginError= "<?php echo $_SESSION['loginError']  ?>";
             if(loginError==1){
-                alert('Empty fileds');
+                alert('Champs vides');
             }
             else{
-                alert('Wrong informations');
+                alert('Informations erronées');
             }
         </script>
         

@@ -11,7 +11,8 @@ include 'includes/dbconn.php';
 
 
         if( empty($newPassR) || empty($newPass) || empty($pass)){
-            header("location:password.php?emptyField");
+            $_SESSION['pass'] = 'Champs vides';
+            header("location:password.php");
         }
 
 
@@ -27,19 +28,22 @@ include 'includes/dbconn.php';
                             
                             $result=mysqli_query($conn,$sql);
                             if($result){
-                                header("location:password.php?passwordChanged");
+                                $_SESSION['pass'] = 'Mot de passe changé';
+                                header("location:password.php");
                             }
                             else{
                             header("location:password.php?somethingWrong");
                         }
                         }
                         else{
-                            header("location:password.php?passwordDoesntMatch");
+                            $_SESSION['pass'] = 'Les mots de passe ne correspondent pas';
+                            header("location:password.php");
                         }
                         
                     }
                     else{
-                        header("location:password.php?wrongPassword");
+                        $_SESSION['pass'] = 'Mot de passe incorrect, veuillez réessayer';
+                        header("location:password.php");
                     }
 
 

@@ -90,8 +90,17 @@
             <span> <input type="submit" value="changer" name="submit"> </span> <span> <input type="reset"> </span>
         </form>
     </div> 
-
-
+<?php
+    if(isset($_SESSION['pass'])){
+?>
+<script>
+    var a = "<?php echo $_SESSION['pass']  ?>";
+    alert(a);
+</script>
+<?php
+unset($_SESSION['pass']);
+    }
+?>
 
     <?php
         }

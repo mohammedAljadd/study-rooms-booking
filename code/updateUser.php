@@ -75,16 +75,15 @@
         <input type="radio" name="gender" value="M"> Male
         <input type="radio" name="gender" value="F"> Female<br>
         
-        <label for="add"> Add </label>
         <input type="radio"  name="modify" value="add">
+        <label for="add"> Add </label>
             
-        <label for="remove"> Remove </label>
         <input type="radio" name="modify"  value="remove">
+        <label for="remove"> Remove </label>
         <br>
         <span class="subset" > <input type="submit" name="submit" >   </span>      <span class="subset" > <input type="reset" value="reset"></span> 
     </form>
     
- 
 
     </div>
 </body>
@@ -108,7 +107,7 @@
         }
      </script>
      <?php 
-    }
+    } 
     ?>
     <?php
     if(isset($_SESSION['added'])){
@@ -126,6 +125,16 @@
         <?php
     }
 ?>
+<?php
+    if(isset($_SESSION['errorModify'])){
+        ?>
+            <script language="javascript">
+            alert("<?php echo $_SESSION['errorModify']." !"  ?>");
+            </script>
+        <?php
+    }
+    ?>
+
 
 
 <?php
@@ -133,6 +142,7 @@
     unset($_SESSION['remove']);
     unset($_SESSION['added']);
     unset($_SESSION['removed']);
+    unset($_SESSION['errorModify']);
 ?>
 
 <?php

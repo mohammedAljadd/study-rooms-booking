@@ -13,7 +13,8 @@
         $out = mysqli_num_rows($result);
         
         if( empty($modify) ||  empty($prenom) ||  empty($modify) ||  empty($password) || empty($email) || empty($modify) ){
-            header("location:updateUser.php?empty");
+            $_SESSION['errorModify'] = 'Champs vides';
+            header("location:updateUser.php");
         }
 
         elseif($email != "aljadd.mohammed@ine.inpt.ma"){
@@ -31,10 +32,10 @@
         }
     }
     else{
-        header("location:updateUser.php?cannot_use_your_email");
+        $_SESSION['errorModify'] = 'Vous ne pouvez pas utiliser votre e-mail';
+        header("location:updateUser.php");
     }
     
-
     }
 
 

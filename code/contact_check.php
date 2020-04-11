@@ -15,7 +15,7 @@ if($_POST['submit']){
         $headers = "From: ".$email;
         $txt = "You received e-mail from ".$name.".\n\n".$message;
         mail($mailTo ,$subject,$txt,$headers);
-        $_SESSION['contact'] = 'Courrier envoyé avec succès,Nous vous répondrons dès que possible!';
+        $_SESSION['contact'] = 'Courrier envoyé avec succès, Nous vous répondrons dès que possible!';
         header("Location:contact.php");
 }
 }

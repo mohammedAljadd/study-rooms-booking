@@ -122,7 +122,7 @@
     “Sometimes it is the people no one can <br> 
     imagine anything of who do the things <br> 
     no one can imagine.” <br>
-― Alan Turing
+Alan Turing
     </div>
 
 </div>

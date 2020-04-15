@@ -119,10 +119,10 @@
     <div class="box" >
     <h1>Quote</h1> <br>
     <div class="maqola" style='color: #fafb91';>
-        “The man who does not read books <br> 
-        has no advantage over the one <br>
-        who cannot read them.” <br>
-        Mark Twain.
+    “Sometimes it is the people no one can <br> 
+    imagine anything of who do the things <br> 
+    no one can imagine.” <br>
+― Alan Turing
     </div>
 
 </div>

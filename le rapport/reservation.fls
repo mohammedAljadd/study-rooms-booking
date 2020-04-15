@@ -39,6 +39,12 @@ INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp
 INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty
 INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fourier-orns.sty
 INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fourier-orns.sty
+INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
+INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
+INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\reservation.aux
@@ -54,20 +60,6 @@ INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\s
 INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\grfext\grfext.sty
-INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\grfext\grfext.sty
-INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
-INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
 INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fourier\futr8t.tfm
 INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fourier\futr8t.tfm
 INPUT C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fourier\futr8t.tfm
@@ -128,6 +120,11 @@ INPUT c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\img\dataBase.
 INPUT c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\img\dataBase.png
 INPUT c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\img\dataBase.png
 INPUT c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\img\dataBase.png
+INPUT c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\img\moqups.png
+INPUT c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\img\moqups.png
+INPUT c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\img\moqups.png
+INPUT c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\img\moqups.png
+INPUT c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\img\moqups.png
 INPUT c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\img\visual.png
 INPUT c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\img\visual.png
 INPUT c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\img\visual.png

@@ -225,6 +225,69 @@ La première page est la page de contact comme l'image suivante montrant
 
                \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth,height=10cm]{img/form-select.jpeg}}  
   
+  
+  Si vous sélectionnez une salle qui est déjà réservée, la page de réservation de date affiche son contenu comme l'image suivante qui montre les dates qui sont deja prises
+  
+  
+  
+  \vspace{0.7cm}
+   
+\hspace*{-0.7in}
+
+               \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth,height=10cm]{img/date-already.png}}
+  
+  sinon cela se présente comme suit
+  
+  
+  
+               \vspace{0.7cm}
+               \hspace*{-0.7in}
+
+               \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth,height=10cm]{img/date-not-yet.png}}
+  
+  
+  
+  
+  Maintenant, la boîte d'alerte affichera plusieurs messages en fonction des dates entrées par l'utilisateur. Pour un champ vide, le message d'alerte est le même que d'habitude. Il y a cinques messages qui peuvent apparaître :
+  
+  \begin{enumerate}
+ 
+ 
+  \item \textcolor{red}{les dates sont égales :} 
+  \vspace{0.7cm}
+               \hspace*{-0.7in}
+
+               \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth,height=7.5cm]{img/date-equal.png}}
+  \item \textcolor{red}{les dates sont anciennes :} 
+  \vspace{0.7cm}
+               \hspace*{-0.7in}
+
+               \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth,height=7.5cm]{img/date-old.png}}
+  \item \textcolor{red}{la durée de la réservation est courte :} 
+  \vspace{0.7cm}
+               \hspace*{-0.7in}
+
+               \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth,height=7.5cm]{img/date-inferior.png}}
+  \item \textcolor{red}{la durée de la réservation est longue :} 
+  \vspace{0.7cm}
+               \hspace*{-0.7in}
+
+               \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth,height=7.5cm]{img/date-superior.png}}
+  \item \textcolor{red}{les dates se croisent avec une autre date :} 
+  \vspace{0.7cm}
+               \hspace*{-0.7in}
+
+               \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth,height=7.5cm]{img/date-intersect.png}}
+  \item \textcolor{red}{les dates sont correctes :} 
+  \vspace{0.7cm}
+               \hspace*{-0.7in}
+
+               \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth,height=7.5cm]{img/date-done.png}}
+  
+\end{enumerate}  
+  
+  
+  
 \item \textcolor{red}{\huge Les problèmes rencontrés dans mon projet} :
 \begin{enumerate}
 \item    \textcolor{green}{ GMAIL et PHP} :

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.14)  15 APR 2020 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.14)  15 APR 2020 19:10
 entering extended mode
 **"c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/reservation.tex"
 ("c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/reservation.tex"
@@ -545,47 +545,58 @@ Overfull \hbox (47.00003pt too wide) in paragraph at lines 285--286
  []
 
 [18 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-intersect.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-done.png>]
-<img/gmail-block.PNG, id=105, 665.48625pt x 335.00156pt>
+<img/reservation-annuler.png, id=105, 1028.34187pt x 496.85625pt>
+File: img/reservation-annuler.png Graphic file (type png)
+<use img/reservation-annuler.png>
+Package pdftex.def Info: img/reservation-annuler.png  used on input line 294.
+(pdftex.def)             Requested size: 614.311pt x 213.39383pt.
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 294--295
+[] 
+ []
+
+<img/gmail-block.PNG, id=106, 665.48625pt x 335.00156pt>
 File: img/gmail-block.PNG Graphic file (type png)
 <use img/gmail-block.PNG>
-Package pdftex.def Info: img/gmail-block.PNG  used on input line 300.
+Package pdftex.def Info: img/gmail-block.PNG  used on input line 309.
 (pdftex.def)             Requested size: 614.33644pt x 341.43124pt.
 
-Overfull \hbox (1.13905pt too wide) in paragraph at lines 299--301
+Overfull \hbox (1.13905pt too wide) in paragraph at lines 308--310
 []|  [] 
  []
 
-<img/ht-error.PNG, id=106, 776.9025pt x 249.18094pt>
+[19 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/reservation-annuler.png>]
+<img/ht-error.PNG, id=112, 776.9025pt x 249.18094pt>
 File: img/ht-error.PNG Graphic file (type png)
 <use img/ht-error.PNG>
-Package pdftex.def Info: img/ht-error.PNG  used on input line 312.
+Package pdftex.def Info: img/ht-error.PNG  used on input line 321.
 (pdftex.def)             Requested size: 614.3034pt x 256.09648pt.
 
-Overfull \hbox (1.13905pt too wide) in paragraph at lines 311--313
+Overfull \hbox (1.13905pt too wide) in paragraph at lines 320--322
 []|  [] 
  []
 
-LaTeX Font Info:    Trying to load font information for U+futs on input line 315.
+LaTeX Font Info:    Trying to load font information for U+futs on input line 324.
 ("C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fourier\ufuts.fd"
 File: ufuts.fd 2004/03/02 Fontinst v1.926 font definitions for U/futs.
-) [19 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/gmail-block.PNG>]
-Overfull \hbox (22.60217pt too wide) in paragraph at lines 315--316
+) [20 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/gmail-block.PNG>]
+Overfull \hbox (22.60217pt too wide) in paragraph at lines 324--325
 []\U/futs/m/n/10 B\T1/futs/m/n/10 Comme vous le voyez sur l'image même si j'entre le nom d'utilisateur
  []
 
-[20 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/ht-error.PNG>] ("c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\reservation.aux") ) 
+[21 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/ht-error.PNG>] ("c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\reservation.aux") ) 
 Here is how much of TeX's memory you used:
- 3030 strings out of 480930
- 44822 string characters out of 2898821
+ 3036 strings out of 480930
+ 44999 string characters out of 2898821
  279761 words of memory out of 3000000
- 18820 multiletter control sequences out of 15000+200000
+ 18825 multiletter control sequences out of 15000+200000
  590862 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,6n,37p,904b,296s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-orns.pfb><C:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on "c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\reservation.pdf" (20 pages, 5709365 bytes).
+Output written on "c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\reservation.pdf" (21 pages, 6417602 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
+ 134 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

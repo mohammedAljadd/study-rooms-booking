@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1586973769 "c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/reservation.tex" "c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport/reservation.pdf" "reservation" 1586973772
+["pdflatex"] 1586974242 "c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/reservation.tex" "c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport/reservation.pdf" "reservation" 1586974246
   "C:/Users/AL JADD/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1586892454 10018556 802afcb8b42c98b0a4254f1a64774759 ""
   "C:/Users/AL JADD/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1586960165 79336 42ee3b4df6a688ba0fc2a84e869e8d1a ""
   "C:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc" 1458477487 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -58,8 +58,8 @@
   "C:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/tex/latex/l3backend/l3backend-pdfmode.def" 1584014714 25398 19ae1e59d7f4a47fefb457d851f6f503 ""
   "C:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pdftexcmds/pdftexcmds.sty" 1574601224 19963 36fd8e818f9f0f32e2db8413d4970122 ""
   "C:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty" 1463135581 57049 34128738f682d033422ca125f82e5d62 ""
-  "c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/reservation.tex" 1586973768 14686 90789b4057e3c62041d989e2a4b7e80e ""
-  "c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport/reservation.aux" 1586973772 8 a94a2480d3289e625eea47cd1b285758 ""
+  "c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/reservation.tex" 1586974241 15270 39324c26a2269f9e88090f73e1962a1f ""
+  "c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport/reservation.aux" 1586974245 8 a94a2480d3289e625eea47cd1b285758 ""
   "img/Go.png" 1586898971 76291 6eec4e981a353bebcf1033fd659a9fb0 ""
   "img/contact.png" 1586947454 749156 ef3e3c6eff7b5d7559351246d9bd78ba ""
   "img/dataBase.png" 1586956759 67631 a45c77f93b153f4ef06a119d3e3d185e ""
@@ -83,13 +83,14 @@
   "img/password-matching.png" 1586947577 7542 f5070a166518791700b53909ff5c3345 ""
   "img/password-wrong.png" 1586947555 7305 7b9981163445a1c42a8d55fa626780e0 ""
   "img/password.png" 1586970211 824673 25f08ea68aca3cdab163cb301eac0d49 ""
+  "img/reservation-annuler.png" 1586948267 823777 51fc849d3bbf690710959a5eb9da5fde ""
   "img/reservation.png" 1586947624 733307 017bdb0eb32da8bc4fc93f2d30caa9ea ""
   "img/visual.png" 1586957407 73568 a3713d5385ce7961ad1301b47c4ba6d2 ""
-  "reservation.aux" 1586973772 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
-  "reservation.tex" 1586973768 14686 90789b4057e3c62041d989e2a4b7e80e ""
+  "reservation.aux" 1586974245 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "reservation.tex" 1586974241 15270 39324c26a2269f9e88090f73e1962a1f ""
   (generated)
-  "reservation.aux"
-  "c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport/reservation.pdf"
   "c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport/reservation.log"
-  "reservation.pdf"
+  "c:\xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport/reservation.pdf"
   "reservation.log"
+  "reservation.pdf"
+  "reservation.aux"

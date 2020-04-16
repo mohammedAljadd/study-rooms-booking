@@ -2,7 +2,7 @@
 
 Membres collaboratifs:
 
-    - **Mr** Mohammed AL JADD.
+    - Mr Mohammed AL JADD.
     - Mr Mahmoud ELHAMLAOUI.
 
 Problématique:
@@ -24,3 +24,7 @@ Description du projet:
     Le projet a été destiné aux professeurs de l'INPT pour leur permettre de réserver n'importe quelle salle à tout moment et de n'importe où.
     Le répertoire du projet contient trois dossiers, un contient les codes sources, le deuxième pour les maquettes et le troisième du rapport du projet.
     Le dossier de rapport contient le fichier Latex, les images et le fichier pdf.
+    La page HOME de mon projet :
+   
+   ![alt text](https://raw.githubusercontent.com/mohammedAljadd/Dev_Web_INPT_2020_G0
+/branch/rapport/img/login.png)

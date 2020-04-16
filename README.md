@@ -2,7 +2,7 @@
 
 Membres collaboratifs:
 
-    - **Mr Mohammed AL JADD**.
+    - **Mr** Mohammed AL JADD.
     - Mr Mahmoud ELHAMLAOUI.
 
 Problématique:

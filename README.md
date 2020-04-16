@@ -24,6 +24,7 @@ Description du projet:
     Le projet a été destiné aux professeurs de l'INPT pour leur permettre de réserver n'importe quelle salle à tout moment et de n'importe où.
     Le répertoire du projet contient trois dossiers, un contient les codes sources, le deuxième pour les maquettes et le troisième du rapport du projet.
     Le dossier de rapport contient le fichier Latex, les images et le fichier pdf.
-    La page HOME de mon projet :
+    
+ La page HOME de mon projet :
    
-   ![alt text](https://github.com/ENSIAS-MEH/Dev_Web_INPT_2020_G0/tree/master/le%20rapport/img/login.png)
+   ![alt text](https://github.com/ENSIAS-MEH/Dev_Web_INPT_2020_G0/blob/master/le%20rapport/img/login.PNG)

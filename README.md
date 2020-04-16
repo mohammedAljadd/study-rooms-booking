@@ -17,7 +17,7 @@ Lien pour les maquettes:
 
 Les langages de programmations : 
     
-    **HTML**,CSS,JavaScript et PHP.
+    HTML,CSS,JavaScript et PHP.
 
 Description du projet:
 

@@ -27,4 +27,4 @@ Description du projet:
     
  La page HOME de mon projet :
    
-   ![alt text](https://github.com/ENSIAS-MEH/Dev_Web_INPT_2020_G0/blob/master/le%20rapport/img/login.PNG)
+   ![alt text](https://github.com/ENSIAS-MEH/Dev_Web_INPT_2020_G0/blob/master/le%20rapport/img/home.PNG)

@@ -26,5 +26,4 @@ Description du projet:
     Le dossier de rapport contient le fichier Latex, les images et le fichier pdf.
     La page HOME de mon projet :
    
-   ![alt text](https://raw.githubusercontent.com/mohammedAljadd/Dev_Web_INPT_2020_G0
-/branch/rapport/img/login.png)
+   ![alt text](https://github.com/ENSIAS-MEH/Dev_Web_INPT_2020_G0/tree/master/le%20rapport/img/login.png)

@@ -27,8 +27,8 @@
         $Chek = 1;
 
         $tard = $debutSTR-strtotime($Actual);
-        
-        
+        $toleD=date("H:i",strtotime($debut));
+        $toleF=date("H:i",strtotime($fin));
 
         if(empty($_POST['date_debut']) || empty($_POST['date_fin'])){
             $_SESSION['error']="Emptyfields";
@@ -37,6 +37,14 @@
         elseif($tard<0){
             $_SESSION['error']="oldDate";
             header("location:date_booking.php?oldDate");
+        }
+        elseif($tard>172800){
+            $_SESSION['error']="b3iiiiiiid";
+            header("location:date_booking.php?b3iiiiiiid");
+        }
+        elseif($toleD<'08:00' || $toleD>'17:00' || $toleF<'08:00' || $toleF>'17:00'){
+            $_SESSION['error']="holdOn";
+            header("location:date_booking.php?holdOn");
         }
         elseif($tard>86400){
             $_SESSION['error']="b3iiiiiiid";

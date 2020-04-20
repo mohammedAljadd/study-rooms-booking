@@ -23,6 +23,7 @@
         $finSTR = strtotime($fin) ;
         $diff = $finSTR-$debutSTR;
         $Actual=date("Y-m-d H:i:00 ");
+        $Actual = date('Y/m/d H:i:s', strtotime($Actual)-3600);
         $Chek = 1;
 
         $tard = $debutSTR-strtotime($Actual);

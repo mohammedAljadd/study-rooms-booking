@@ -37,7 +37,7 @@
                     alert('les dates se croisent avec d\'autres dates');
                     break;
                 case 'holdOn':
-                    alert('les heures tolérées sont comprises entre 08h00 et 16h00');
+                    alert('les heures tolérées sont comprises entre 08h00 et 18h00');
                 }
 </script>
 

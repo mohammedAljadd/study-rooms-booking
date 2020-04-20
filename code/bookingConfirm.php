@@ -42,7 +42,7 @@
             $_SESSION['error']="b3iiiiiiid";
             header("location:date_booking.php?b3iiiiiiid");
         }
-        elseif($toleD<'08:00' || $toleD>'17:00' || $toleF<'08:00' || $toleF>'17:00'){
+        elseif($toleD<'08:00' || $toleD>'17:00' || $toleF<'08:00' || $toleF>'18:00'){
             $_SESSION['error']="holdOn";
             header("location:date_booking.php?holdOn");
         }

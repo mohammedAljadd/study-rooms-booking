@@ -18,7 +18,6 @@ if(isset($_SESSION['last_action'])){
     $_SESSION['last_action'] = time();
 ?>
 <?php
-    session_start();
         if(isset($_SESSION['email']) && $_SESSION['email']=="aljadd.mohammed@ine.inpt.ma")
         {
 ?>

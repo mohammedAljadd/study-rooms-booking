@@ -1,5 +1,23 @@
 <?php
+if(session_id() == '') {
     session_start();
+   }
+$expireAfter = 15;
+if(isset($_SESSION['last_action'])){
+    $secondsInactive = time() - $_SESSION['last_action'];
+    $expireAfterSeconds = $expireAfter * 60;
+    if($secondsInactive >= $expireAfterSeconds){
+        ?>
+            <script>
+                alert("La session a expiré, veuillez vous reconnecter!");
+            </script>
+                <?php
+                    session_unset();
+                    session_destroy();
+    }}
+    $_SESSION['last_action'] = time();
+?>
+<?php
         if(isset($_SESSION['email']))
         {
 ?>

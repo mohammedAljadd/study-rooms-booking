@@ -46,10 +46,6 @@
             $_SESSION['error']="holdOn";
             header("location:date_booking.php?holdOn");
         }
-        elseif($tard>86400){
-            $_SESSION['error']="b3iiiiiiid";
-            header("location:date_booking.php?b3iiiiiiid");
-        }
         elseif($diff==0){
             $_SESSION['error']="equal";
             header("location:date_booking.php?Debut=fin");

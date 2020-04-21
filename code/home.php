@@ -1,6 +1,6 @@
 <?php
 session_start();
-$expireAfter = 0.1;
+$expireAfter = 15;
 if(isset($_SESSION['last_action'])){
     $secondsInactive = time() - $_SESSION['last_action'];
     $expireAfterSeconds = $expireAfter * 60;

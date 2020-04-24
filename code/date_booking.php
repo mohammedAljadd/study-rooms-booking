@@ -35,6 +35,10 @@ if(isset($_SESSION['last_action'])){
                 case 'Emptyfields':
                     alert('Empty field');
                     break;
+                    
+                case 'Sunday':
+                    alert('Vous ne pouvez pas réserver le Dimanche, Merci de prendre un autre jour !');
+                    break;
                 case 'oldDate':
                     alert('les dates sont anciennes');
                     break;

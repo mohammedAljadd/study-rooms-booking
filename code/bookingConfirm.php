@@ -29,10 +29,15 @@
         $tard = $debutSTR-strtotime($Actual);
         $toleD=date("H:i",strtotime($debut));
         $toleF=date("H:i",strtotime($fin));
+        $day = date("l",$debutSTR);
 
         if(empty($_POST['date_debut']) || empty($_POST['date_fin'])){
             $_SESSION['error']="Emptyfields";
             header("location:date_booking.php?emptyFields");
+        }
+        if($day == 'Sunday'){
+            $_SESSION['error']="Sunday";
+            header("location:date_booking.php?sunday");
         }
         elseif($tard<0){
             $_SESSION['error']="oldDate";

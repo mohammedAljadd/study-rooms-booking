@@ -258,7 +258,6 @@ if(isset($_SESSION['last_action'])){
     while($row=mysqli_fetch_assoc($result3)){ 
         $debut = $row['date'];
         $fin = $row['date_fin'];
-        
     
 ?>
 <?php
@@ -273,11 +272,35 @@ if(isset($_SESSION['last_action'])){
     <?php
         }
     ?>
+<?php
+        $day =    date("l",strtotime($debut));
+        switch($day){
+            case "Monday":
+                $day='Lundi';
+            break;
+            case "Tuesday":
+                $day='Mardi';
+            break;
+            case "Wednesday":
+                $day='Mercredi';
+            break;
+            case "Thursday":
+                $day='Jeudi';
+            break;
+            case "Friday":
+                $day='Vendredi';
+            break;
+            case "Saturday":
+                $day='Samedi';
+            break;
 
+        }
+
+?>
 <div class="lastTabl">
     <table border="1" class="lastTable" align="center"  style="width:600px;line-height:39px;color:#fff;">
         <tr>
-            <th colspan="3" style='color:rgb(144, 167, 241)'>Vous avez reservé   
+            <th colspan="4" style='color:rgb(144, 167, 241)'>Vous avez reservé   
             <?php 
            
             
@@ -286,11 +309,14 @@ if(isset($_SESSION['last_action'])){
 
         </tr>
     <tr>
+    
+        <th  style='color:rgb(174, 197, 251)'>Le jour</th>
         <th  style='color:rgb(174, 197, 251)'>Debut</th>
         <th  style='color:rgb(174, 197, 251)'>Fin</th>
         <th  style='color:rgb(255, 104, 104)'>Voulez vous annuler?</th>
     </tr>
     <tr>
+    <th> <?php echo $day;  ?> </th>
         <th> <?php echo $debut;  ?> </th>
         <th> <?php  echo $fin;  ?></th>
         <th>

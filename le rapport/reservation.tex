@@ -79,6 +79,22 @@
                \noindent\makebox[\textwidth]{\includegraphics[width=19cm,height=11cm]{img/dataBase.png}}
          
          
+	 \vspace{0.4cm}
+           
+           
+            \setlength{\parindent}{1cm} supposons qu'une salle soit réservée pour les prochaines 48 heures, si un utilisateur souhaite la réserver, il doit attendre que la première réservation est terminée, mais grâce à un événement (\textcolor{red}{event}) dans la base de données, la durée de la réservation diminue automatiquement lorsque l'heure de la réservation est venue, donc quand une heure s'est écoulée, la salle peut être réservée car l'utilisateur a le droit de réserver au moins une heure .
+	\textcolor{red}{Database event} :        
+         
+         \hspace*{-1.05in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=19cm,height=11cm]{img/decrease-margin.png}}
+         
+         
+         Un autre événement dans la base de données va supprimer toute réservation terminée :
+         
+		\hspace*{-1.05in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=19cm,height=8.5cm]{img/old-reservation.png}}         
+         
+         
          
         
          \item \textcolor{amethyst}{Créer des maquettes}.

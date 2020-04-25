@@ -247,10 +247,11 @@ if(isset($_SESSION['last_action'])){
     }
     else{
         $email = $_SESSION['email'];
-        $sql4 = "SELECT salle.nom FROM salle,affectation,prof where affectation.idProf=prof.idProf and prof.email='".$email."' and salle.id=affectation.idSalle;";
+        $sql4 = "SELECT salle.nom salle,batiment.nom batiment FROM salle,affectation,prof,batiment where affectation.idProf=prof.idProf and prof.email='".$email."' and salle.id=affectation.idSalle and salle.idBatiment=batiment.id;";
         $result4 = mysqli_query($conn,$sql4);
         while($row=mysqli_fetch_assoc($result4)){ 
-            $sAl = $row['nom'];
+            $salle= $row['salle'];
+            $batiment = $row['batiment'];
         
     } 
     $sql3 = "select date,date_fin,idSalle from affectation where idProf='".$Id."'";
@@ -304,7 +305,7 @@ if(isset($_SESSION['last_action'])){
             <?php 
            
             
-            echo strtoupper($sAl ) ; 
+            echo strtoupper($salle).' dans '.$batiment ; 
             ?> </th>
 
         </tr>

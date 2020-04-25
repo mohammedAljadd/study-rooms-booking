@@ -43,7 +43,7 @@ if(isset($_SESSION['last_action'])){
                     alert('les dates sont anciennes');
                     break;
                 case 'b3iiiiiiid':
-                    alert('Vous pouvez pas réserver plus d\'un jour avant');
+                    alert('Vous pouvez pas réserver plus de deux jours avant');
                     break;
                 case 'equal':
                     alert('La date de début et la date de fin sont égales');

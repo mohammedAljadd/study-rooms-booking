@@ -87,7 +87,6 @@ if(isset($_SESSION['last_action'])){
     <div class="box">
         <form action="contact_check.php" method="POST">
             <input name="smya"  type="text" placeholder="Full name">
-            <input  name="email" type="text" placeholder="Email">
             <input  name="subject" type="text" placeholder="Subject">
             <textarea  name="message" name="" id="" cols="40" rows="8" placeholder="Any Problems ?" ></textarea>
             <span class="subset" > <input type="submit"  name="submit">   </span>      <span class="subset" > <input type="reset" value="reset"></span>       

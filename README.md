@@ -17,7 +17,7 @@ Lien pour les maquettes:
 
 Les langages de programmation utilisés : 
     
-    HTML,CSS,JavaScript et PHP.
+    HTML,CSS,JavaScript,Mysql et PHP.
 
 Description du projet:
 

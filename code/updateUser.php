@@ -67,10 +67,17 @@ if(isset($_SESSION['last_action'])){
     $out = mysqli_num_rows($result);
     if($out>0){
         while($row = mysqli_fetch_assoc($result)){
+            if($row['email']=='aljadd.mohammed@ine.inpt.ma')
             echo "<tr>
-                <th>".$row['nom']."</th>  <th>".$row['prenom']."</th>
-                <th>".$row['email']."</th>  <th>".$row['password']."</th>
+                <th style='color:rgb(255, 104, 104)'>".$row['nom']."</th>  <th style='color:rgb(255, 104, 104)'>".$row['prenom']."</th>
+                <th style='color:rgb(255, 104, 104)'>".$row['email']."</th>  <th style='color:rgb(255, 104, 104)'>".$row['password']."</th>
                 </tr>";
+                else{
+                    echo "<tr>
+                    <th>".$row['nom']."</th>  <th>".$row['prenom']."</th>
+                    <th>".$row['email']."</th>  <th>".$row['password']."</th>
+                    </tr>";
+                }
         }
     }
 

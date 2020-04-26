@@ -52,20 +52,33 @@ if(isset($_SESSION['last_action'])){
 
 <div class="box">
 <h1>Affectation</h1>
-<table border="1">
+<table border="1" class="affecTable">
 <tr>
     <th style='color:rgb(174, 197, 251)'>PROF</th>
     <th style='color:rgb(174, 197, 251)'>La salle réservée</th>
+    <th style='color:rgb(174, 197, 251)'>Le jour</th>
     <th style='color:rgb(174, 197, 251)'>Date de début</th>
     <th style='color:rgb(174, 197, 251)'>Date de fin</th>
+    <th style='color:rgb(174, 197, 251)'>Batiment</th>
     
 </tr>
 <?php
-    $sql = " SELECT   CONCAT(prof.nom ,' ', prof.prenom ) as 
-    a,
-    salle.nom as b,date as c,date_fin as d 
-    FROM prof,salle,affectation where prof.idProf=affectation.idProf 
-    and salle.id=affectation.idSalle order by c;";
+    $sql = " SELECT   CONCAT(prof.nom ,' ', prof.prenom ) as a, 
+    salle.nom as b,
+    date as c,
+    date_fin as d,
+    batiment.nom as e,
+	case 
+      when DAYNAME(date) = 'Monday' then 'Lundi'
+      when DAYNAME(date) = 'Tuesday' then 'Mardi'
+      when DAYNAME(date) = 'Wednesday' then 'Mercredi'
+      when DAYNAME(date) = 'Thursday' then 'Jeudi'
+      when DAYNAME(date) = 'Friday' then 'Vendredi'
+      when DAYNAME(date) = 'Saturday' then 'Samedi'
+    end as myDay
+    FROM prof,salle,affectation,batiment 
+    where prof.idProf=affectation.idProf and salle.id=affectation.idSalle 
+    and batiment.id=salle.idBatiment order by c;";
     $result = mysqli_query($conn,$sql);
     $out = mysqli_num_rows($result);
     
@@ -74,7 +87,9 @@ if(isset($_SESSION['last_action'])){
             if($row['a']=="Mohammed AL JADD"){
                 echo "<tr>
                 <th style='color:rgb(255, 104, 104)'>C'est vous</th>  <th style='color:rgb(255, 104, 104)'>".$row['b']."</th>
-                <th style='color:rgb(255, 104, 104)'>".$row['c']."</th>  <th style='color:rgb(255, 104, 104)'>".$row['d']."</th>
+                <th style='color:rgb(255, 104, 104)'>".$row['myDay']."</th>
+                <th style='color:rgb(255, 104, 104)'>".$row['c']."</th>  <th style='color:rgb(255, 104, 104)'>".$row['d']."</th> 
+                <th style='color:rgb(255, 104, 104)'>".$row['e']."</th>
                 </tr>";
 
             }
@@ -83,7 +98,9 @@ if(isset($_SESSION['last_action'])){
             
             echo "<tr>
                 <th>".$row['a']."</th>  <th>".$row['b']."</th>
+                <th>".$row['myDay']."</th>
                 <th>".$row['c']."</th>  <th>".$row['d']."</th>
+                <th>".$row['e']."</th>
                 </tr>";
             }
         }

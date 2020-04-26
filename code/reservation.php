@@ -298,14 +298,16 @@ if(isset($_SESSION['last_action'])){
         }
 
 ?>
+
 <div class="lastTabl">
     <table border="1" class="lastTable" align="center"  style="width:600px;line-height:39px;color:#fff;">
         <tr>
             <th colspan="4" style='color:rgb(144, 167, 241)'>Vous avez reservé   
             <?php 
            
-            
-            echo strtoupper($salle).' dans '.$batiment ; 
+            $salle = str_split($salle, 5);
+            $batiment = explode('_', $batiment);
+            echo '<span style="color:rgb(255, 104, 104)">La '.$salle[0].' '.$salle[1].'</span> dans <span style="color:rgb(255, 104, 104)">Le '.strtolower($batiment[0]).' '.$batiment[1].'</span>' ; 
             ?> </th>
 
         </tr>

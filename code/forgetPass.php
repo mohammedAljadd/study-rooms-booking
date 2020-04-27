@@ -33,14 +33,14 @@
     <img src="img/login.png" height="170" width="640" id="img" >
 
     <div class="box">
-        <h1>Login</h1>
-    
-    <form action="login_check.php" method="POST" >
-        <input type="text" placeholder="Email"  name="email" > 
-        <input type="password" placeholder="Password" name="password" > 
+    <br>
+        <h1>Entrer votre email</h1>
+        <br>
+    <form action="forget_pass_check.php" method="POST" >
+        <input type="text" placeholder="Email"  name="email_forget" > 
+        
         <span class="subset" > <input type="submit" name="submit" >   </span>      <span class="subset" > <input type="reset" value="reset"></span> 
         <br>
-        <a href="forgetPass.php" style="color: rgb(243, 043, 103);">Mot de passe oublié?</a>
     </form>
 
 

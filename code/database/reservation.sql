@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 25, 2020 at 10:23 PM
+-- Generation Time: Apr 27, 2020 at 07:52 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -36,15 +36,6 @@ CREATE TABLE `affectation` (
   `Marge` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `affectation`
---
-
-INSERT INTO `affectation` (`idProf`, `idSalle`, `date`, `date_fin`, `Marge`) VALUES
-(3, 1, '2020-04-25 21:02:00', '2020-04-25 23:00:00', 5786),
-(9, 21, '2020-04-27 08:00:00', '2020-04-27 12:00:00', 14400),
-(11, 41, '2020-04-27 08:35:00', '2020-04-27 12:00:00', 14400);
-
 -- --------------------------------------------------------
 
 --
@@ -70,6 +61,26 @@ INSERT INTO `batiment` (`id`, `nom`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `forget_password`
+--
+
+CREATE TABLE `forget_password` (
+  `email` varchar(50) NOT NULL,
+  `random` int(20) NOT NULL,
+  `validity` int(50) NOT NULL,
+  `fin` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `forget_password`
+--
+
+INSERT INTO `forget_password` (`email`, `random`, `validity`, `fin`) VALUES
+('hajar_berrada@inpt.ac.ma', 8288635, 736, '2020-04-27 07:04:46');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `prof`
 --
 
@@ -89,7 +100,7 @@ CREATE TABLE `prof` (
 INSERT INTO `prof` (`idProf`, `nom`, `prenom`, `email`, `password`, `gender`) VALUES
 (1, 'Mohammed', 'AL JADD', 'aljadd.mohammed@ine.inpt.ma', 'moRo995gig', 'M'),
 (2, 'Hassan', 'OMAR', 'hassan_omar@inpt.ac.ma', 'galaxy66', 'M'),
-(3, 'Hajar', 'BERADDA', 'hajar_berrada@inpt.ac.ma', 'beradda911', 'F'),
+(3, 'Hajar', 'BERADDA', 'hajar_berrada@inpt.ac.ma', 'oppo99', 'F'),
 (4, 'Maryem', 'SOUAD', 'maryem_souad@inpt.ac.ma', 'souadinpt22', 'F'),
 (5, 'Khadija', 'ALAMI', 'khadija_alami@inpt.ma', 'alamiinpt54', 'F'),
 (6, 'Ahmed', 'FAHIM', 'ahmed_fahim@inpt.ac.ma', 'oppotest65', 'M'),
@@ -177,6 +188,12 @@ ALTER TABLE `batiment`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `forget_password`
+--
+ALTER TABLE `forget_password`
+  ADD PRIMARY KEY (`email`);
+
+--
 -- Indexes for table `prof`
 --
 ALTER TABLE `prof`
@@ -228,6 +245,14 @@ affectation.Marge = TIMESTAMPDIFF(second,now(),affectation.date_fin)
 
 WHERE
 affectation.date < now()$$
+
+CREATE DEFINER=`root`@`localhost` EVENT `delete_randon` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-27 02:14:48' ON COMPLETION NOT PRESERVE ENABLE DO DELETE FROM forget_password WHERE forget_password.validity =0$$
+
+CREATE DEFINER=`root`@`localhost` EVENT `decrease random validty` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-27 02:26:38' ON COMPLETION NOT PRESERVE ENABLE DO UPDATE forget_password
+set
+forget_password.validity = TIMESTAMPDIFF(second,now(),forget_password.fin)
+
+WHERE 1$$
 
 DELIMITER ;
 COMMIT;

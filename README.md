@@ -13,7 +13,7 @@ Problématique:
   
 Le pour les maquettes:
 
-    /maquettes
+    [my directory](/maquettes)
 
 Les langages de programmation utilisés : 
     

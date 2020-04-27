@@ -124,37 +124,55 @@
                              $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
                              $headers .= 'From:' . $sender;
                              $txt = $message = "
-                                 <html>
-                                 <head>
-                                 <title>Reservation</title>
-                                 </head>
-                                 <body>
-                                 <h2>Les informations sur la reservation :</h2>
-                                 <table border='1' style='padding:7px 7px 7px 7px'>
-                                 <tr >
-                                 <th style='padding:7px 20px 7px 20px;color:red'>La salle</th>
-                                 <th style='padding:7px 20px 7px 20px;color:red'>Le batiment</th>
-                                 <th style='padding:7px 20px 7px 20px;color:red'>Le jour</th>
-                                 <th style='padding:7px 20px 7px 20px;color:red'>Debut</th>
-                                 <th style='padding:7px 20px 7px 20px;color:red'>Fin</th>
-                                 </tr>
-                                 <tr>
-                                 <th style='padding:7px 20px 7px 20px'>".$nomSalle."</th>
-                                 <th style='padding:7px 20px 7px 20px'>".$batiment."</th>
-                                 <th style='padding:7px 20px 7px 20px'>".$day."</th>
-                                 <th style='padding:7px 20px 7px 20px'>".$debut."</th>
-                                 <th style='padding:7px 20px 7px 20px'>".$fin."</th>
-                                 </tr>
-                                 </table>
-                                 </body>
-                                 </html>
-                                 ";
-                                 $message = "<h2>Une réservation a été effectuée par ".$sender.'</h2>'."\n\n".$txt;
-                                 if(mail($recipient, $subject, $message, $headers)){
-                                 $_SESSION['contact'] = 'Courrier envoyé avec succès, Nous vous répondrons dès que possible!';
-                                 $result = mysqli_query($conn,$sql);
-                                 header("location:reservation.php?VotreReservationDone");
-                             }
+                                <html>
+                                <head>
+                                <title>Reservation</title>
+                                <style>
+            
+                                @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+                                tr:nth-child(even){background-color: #f2f2f2}
+                                table, th, td {
+                                padding: 8px;
+                                text-align: center;
+                                border-bottom: 1px solid #ddd;
+                                }
+                                table {
+                                border-collapse: collapse;
+                                width: 70%;
+                                }
+                                th {
+                                background-color: #d1e4eb;
+                                color: black;
+                                }
+                                </style>
+                                </head>
+                                <body>
+                                <h4 style='font-family:'Ubuntu';font-weight: bold>Les informations sur la reservation :</h4><br>
+                                <table style='padding:7px 7px 7px 7px'>
+                                <tr >
+                                <th style='padding:7px 20px 7px 20px;color:red;font-family:'Ubuntu''><h4>La salle</h4></th>
+                                <th style='padding:7px 20px 7px 20px;color:red;font-family:'Ubuntu''><h4>Le batiment</h4></th>
+                                <th style='padding:7px 20px 7px 20px;color:red;font-family:'Ubuntu''><h4>Le jour</h4></th>
+                                <th style='padding:7px 20px 7px 20px;color:red;font-family:'Ubuntu''><h4>Debut</h4></th>
+                                <th style='padding:7px 20px 7px 20px;color:red;font-family:'Ubuntu''><h4>Fin</h4></th>
+                                </tr>
+                                <tr>
+                                <td style='padding:7px 20px 7px 20px;font-family:'Ubuntu''><h4>".$nomSalle."</h4></td>
+                                <td style='padding:7px 20px 7px 20px;font-family:'Ubuntu''><h4>".$batiment."</h4></td>
+                                <td style='padding:7px 20px 7px 20px;font-family:'Ubuntu''><h4>".$day."</h4></td>
+                                <td style='padding:7px 20px 7px 20px;font-family:'Ubuntu''><h4>".$debut."</h4></td>
+                                <td style='padding:7px 20px 7px 20px;font-family:'Ubuntu''><h4>".$fin."</h4></td>
+                                </tr>
+                                </table>
+                                </body>
+                                </html>
+                    ";
+                    $message = "<h4 style='font-family:'Ubuntu';font-weight: bold'>Une réservation a été effectuée par ".$sender.'</h4>'."\n\n".$txt;
+                    if(mail($recipient, $subject, $message, $headers)){
+                    $_SESSION['contact'] = 'Courrier envoyé avec succès, Nous vous répondrons dès que possible!';
+                    $result = mysqli_query($conn,$sql);
+                    header("location:reservation.php?VotreReservationDone");
+                }
                 
                             
             }
@@ -204,34 +222,51 @@
                 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
                 $headers .= 'From:' . $sender;
                 $txt = $message = "
-                    <html>
-                    <head>
-                    <title>Reservation</title>
-                    </head>
-                    <body>
-                    <h2>Les informations sur la reservation :</h2>
-                    <table border='1' style='padding:7px 7px 7px 7px'>
-                    <tr >
-                    <th style='padding:7px 20px 7px 20px;color:red'>La salle</th>
-                    <th style='padding:7px 20px 7px 20px;color:red'>Le batiment</th>
-                    <th style='padding:7px 20px 7px 20px;color:red'>Le jour</th>
-                    <th style='padding:7px 20px 7px 20px;color:red'>Debut</th>
-                    <th style='padding:7px 20px 7px 20px;color:red'>Fin</th>
-                    </tr>
-                    <tr>
-                    <th style='padding:7px 20px 7px 20px'>".$nomSalle."</th>
-                    <th style='padding:7px 20px 7px 20px'>".$batiment."</th>
-                    <th style='padding:7px 20px 7px 20px'>".$day."</th>
-                    <th style='padding:7px 20px 7px 20px'>".$debut."</th>
-                    <th style='padding:7px 20px 7px 20px'>".$fin."</th>
-                    </tr>
-                    </table>
-                    </body>
-                    </html>
+                                <html>
+                                <head>
+                                <link href='https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap' rel='stylesheet'>
+                                <title>Reservation</title>
+                                <style>
+            
+                                tr:nth-child(even){background-color: #f2f2f2}
+                                table, th, td {
+                                padding: 8px;
+                                text-align: center;
+                                border-bottom: 1px solid #ddd;
+                                }
+                                table {
+                                border-collapse: collapse;
+                                width: 70%;
+                                }
+                                th {
+                                background-color: #d1e4eb;
+                                color: black;
+                                }
+                                </style>
+                                </head>
+                                <body>
+                                <h4 style='font-family:'Ubuntu';font-weight: bold>Les informations sur la reservation :</h4><br>
+                                <table style='padding:7px 7px 7px 7px'>
+                                <tr >
+                                <th style='padding:7px 20px 7px 20px;color:red;font-family: 'Josefin Sans', sans-serif; '><h4>La salle</h4></th>
+                                <th style='padding:7px 20px 7px 20px;color:red;font-family: 'Josefin Sans', sans-serif; '><h4>Le batiment</h4></th>
+                                <th style='padding:7px 20px 7px 20px;color:red;font-family: 'Josefin Sans', sans-serif; '><h4>Le jour</h4></th>
+                                <th style='padding:7px 20px 7px 20px;color:red;font-family: 'Josefin Sans', sans-serif; '><h4>Debut</h4></th>
+                                <th style='padding:7px 20px 7px 20px;color:red;font-family: 'Josefin Sans', sans-serif; '><h4>Fin</h4></th>
+                                </tr>
+                                <tr>
+                                <td style='padding:7px 20px 7px 20px;font-family: 'Josefin Sans', sans-serif; '><h4>".$nomSalle."</h4></td>
+                                <td style='padding:7px 20px 7px 20px;font-family: 'Josefin Sans', sans-serif; '><h4>".$batiment."</h4></td>
+                                <td style='padding:7px 20px 7px 20px;font-family: 'Josefin Sans', sans-serif; '><h4>".$day."</h4></td>
+                                <td style='padding:7px 20px 7px 20px;font-family: 'Josefin Sans', sans-serif; '><h4>".$debut."</h4></td>
+                                <td style='padding:7px 20px 7px 20px;font-family: 'Josefin Sans', sans-serif; '><h4>".$fin."</h4></td>
+                                </tr>
+                                </table>
+                                </body>
+                                </html>
                     ";
-                $message = "<h2>Une réservation a été effectuée par ".$sender.'</h2>'."\n\n".$txt;
-                if(mail($recipient, $subject, $message, $headers)){
-                    $_SESSION['contact'] = 'Courrier envoyé avec succès, Nous vous répondrons dès que possible!';
+                    $message = "<h4 style='font-family: 'Josefin Sans', sans-serif; ;font-weight: bold'>Une réservation a été effectuée par ".$sender.'</h4>'."\n\n".$txt;
+                    if(mail($recipient, $subject, $message, $headers)){
                     $result = mysqli_query($conn,$sql);
                     header("location:reservation.php?VotreReservationDone");
                 }

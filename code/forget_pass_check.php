@@ -82,19 +82,25 @@ if(isset($_POST['Recode'])){
                     $myHour = date('H', $date);
                     if($myHour<18 && $myHour>5){
                       $bonjour='Bonjour';
+                      $bon = 'Bonne journée';
                     }
                     else{
                       $bonjour='Bonsoir';
+                      $bon = 'Bonne soirée';
                     }
-                  $headers = 'From:' . $sender;
-                  $txt = "Votre code est :".$random;
-                  $message = $bonjour." ".$myGuess.",
-                  veuillez copier le code ci-dessous pour réinitialiser votre mot de passe.
-                  Le code expirera dans 5 minutes  "."\n\n".$txt;
-                  if(mail($recipient, $subject, $message, $headers)){
-                      $_SESSION['randomSent'] = "Un code a été envoyé à votre email, veuillez le copier ci-dessous";
-                      header("Location:enterRandom.php");
-                  }
+                    $headers = "MIME-Version: 1.0" . "\r\n";
+                    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                    $headers .= 'From:' . $sender;
+                    $txt = "<h4>Votre code est : <span style='color:red'>".$random."</span><h4>";
+                    $message = "<h4>".$bonjour." ".$myGuess.",<h4><br>
+                    <h4>Veuillez copier le code ci-dessous pour réinitialiser votre mot de passe.<h4>
+                    <h4>Le code expirera dans 5 minutes.  <h4>"."\n\n".$txt."
+                    Si les cinq minutes sont passées, vous pouvez cliquer sur le bouton renvoyer pour obtenir un autre code.
+                    <br><br>si vous rencontrez des problèmes, veuillez envoyer un message à cet e-mail mohammedaljadd8@gmail.com<br><br>".$bon.".<br><br>Administration INPT." ;
+                    if(mail($recipient, $subject, $message, $headers)){
+                        $_SESSION['randomSent'] = "Un code a été envoyé à votre email, veuillez le copier ci-dessous";
+                        header("Location:enterRandom.php");
+                    }
                 }
                 
                                 

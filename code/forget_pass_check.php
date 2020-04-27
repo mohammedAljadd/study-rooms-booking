@@ -24,13 +24,16 @@ if(isset($_POST['email_forget'])){
                   veuillez copier le code ci-dessous pour réinitialiser votre mot de passe.
                   Le code expirera dans les 5 minutes  "."\n\n".$txt;
                   if(mail($recipient, $subject, $message, $headers)){
+                      $_SESSION['randomSent'] = "Un code a été envoyé à votre email, veuillez le copier ci-dessous";
                       header("Location:enterRandom.php");
                   }
                 }
-                else{
-                  echo 'Noo';
-                }
+                
                                 
+    }
+    else{
+      $_SESSION['emailError']=" L'email saisi n'existe pas, merci de saisir un email valide";
+                  header("Location:forgetPass.php");
     }
 }
 
@@ -41,6 +44,7 @@ if(isset($_POST['submit_code'])){
     $result= mysqli_query($conn,$sql);
     $out = mysqli_num_rows($result);
     if($out>0){
+      $_SESSION['changePass'] = "Vous pouvez maintenant changer votre mot de passe";
       header("Location:resetPass.php");
     }
     else{

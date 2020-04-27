@@ -13,17 +13,11 @@
  
         
         <script>
-            var loginError= "<?php echo $_SESSION['loginError']  ?>";
-            if(loginError==1){
-                alert('Champs vides');
-            }
-            else{
-                alert('Informations erronées');
-            }
+            alert("<?php echo $_SESSION['emailError'] ?>");
         </script>
         
 <?php
-    unset($_SESSION['loginError']);
+    unset($_SESSION['emailError']);
 ?>
         
  

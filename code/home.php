@@ -46,6 +46,15 @@ if(isset($_SESSION['last_action'])){
     }
     unset($_SESSION['welcome']);
 ?>
+ 
+ <script>
+            alert("<?php echo $_SESSION['noForget'] ?>");
+        </script>
+        
+<?php
+    unset($_SESSION['noForget']);
+?>
+        
 
 <!DOCTYPE html>
 <html lang="en">

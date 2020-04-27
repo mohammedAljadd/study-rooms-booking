@@ -12,7 +12,20 @@
     <title>Change Password</title>
 </head>
 <body>
-
+<?php
+            if(session_id() == '') {
+                session_start();
+               }
+        ?>
+        
+        <script>
+            alert("<?php echo $_SESSION['changePass'] ?>");
+        </script>
+        
+<?php
+    unset($_SESSION['changePass']);
+?>
+    
 
 <div class="box" >
 <br>
@@ -26,7 +39,6 @@
     </div> 
     <?php
     include 'includes/dbconn.php';
-    session_start();
     if(isset($_POST['submit'])){
         $newPass = $_POST['newPass'];
         $newPassR = $_POST['newPassR'];
@@ -38,6 +50,7 @@
             $result=mysqli_query($conn,$sql);
             if($result){
                 $_SESSION['email'] = $_SESSION['email_forget'];
+                $_SESSION['noForget'] = "Votre mot de passe a été changé avec succès";
                 header("location:home.php");
             }
         }

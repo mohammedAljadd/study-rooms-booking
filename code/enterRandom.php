@@ -1,4 +1,13 @@
+<?php
+    session_start();
+?>
 
+<script>
+    alert("<?php echo $_SESSION['randomSent']  ?>");
+</script>
+<?php
+    unset($_SESSION['randomSent'] );
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

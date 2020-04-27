@@ -11,9 +11,9 @@ Problématique:
     - Le professeur a besoin d'être dans l'institut pour trouver une salle disponible.
     - L'emploi du temps doit être modifié chaque fois qu'il n'y a pas de salle disponible.
   
-Lien pour les maquettes:
+Le pour les maquettes:
 
-    https://app.moqups.com/IVpoM23cPK/view/page/a150bb875 .
+    /maquettes
 
 Les langages de programmation utilisés : 
     

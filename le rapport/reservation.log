@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.14)  25 APR 2020 21:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.14)  27 APR 2020 22:10
 entering extended mode
 **./reservation.tex
 (reservation.tex
@@ -402,7 +402,7 @@ Overfull \hbox (1.13905pt too wide) in paragraph at lines 78--80
 File: img/decrease-margin.png Graphic file (type png)
 <use img/decrease-margin.png>
 Package pdftex.def Info: img/decrease-margin.png  used on input line 89.
-(pdftex.def)             Requested size: 540.6486pt x 312.97652pt.
+(pdftex.def)             Requested size: 398.34499pt x 312.97652pt.
 
 Overfull \hbox (1.13905pt too wide) in paragraph at lines 88--90
 []|  [] 
@@ -413,451 +413,605 @@ Overfull \hbox (1.13905pt too wide) in paragraph at lines 88--90
 File: img/old-reservation.png Graphic file (type png)
 <use img/old-reservation.png>
 Package pdftex.def Info: img/old-reservation.png  used on input line 95.
-(pdftex.def)             Requested size: 540.65038pt x 241.8518pt.
+(pdftex.def)             Requested size: 398.3479pt x 241.8518pt.
 
 Overfull \hbox (1.13905pt too wide) in paragraph at lines 94--96
 []|  [] 
  []
 
 [4 <./img/decrease-margin.png> <./img/old-reservation.png>]
-<img/moqups.png, id=26, 1028.34187pt x 523.9575pt>
+<img/decrease-random-validty.png, id=26, 531.48563pt x 474.27188pt>
+File: img/decrease-random-validty.png Graphic file (type png)
+<use img/decrease-random-validty.png>
+Package pdftex.def Info: img/decrease-random-validty.png  used on input line 10
+3.
+(pdftex.def)             Requested size: 398.34561pt x 241.84651pt.
+
+Overfull \hbox (1.13905pt too wide) in paragraph at lines 102--104
+[]|  [] 
+ []
+
+<img/delete_randon.png, id=27, 530.73282pt x 484.81125pt>
+File: img/delete_randon.png Graphic file (type png)
+<use img/delete_randon.png>
+Package pdftex.def Info: img/delete_randon.png  used on input line 108.
+(pdftex.def)             Requested size: 398.34018pt x 241.8502pt.
+
+Overfull \hbox (1.13905pt too wide) in paragraph at lines 107--109
+[]|  [] 
+ []
+
+<img/moqups.png, id=28, 1028.34187pt x 523.9575pt>
 File: img/moqups.png Graphic file (type png)
 <use img/moqups.png>
-Package pdftex.def Info: img/moqups.png  used on input line 106.
+Package pdftex.def Info: img/moqups.png  used on input line 117.
 (pdftex.def)             Requested size: 512.16121pt x 227.61586pt.
 
-Overfull \hbox (1.13905pt too wide) in paragraph at lines 105--108
+Overfull \hbox (1.13905pt too wide) in paragraph at lines 116--119
 []|  []
  []
 
-
-Overfull \hbox (4.28615pt too wide) in paragraph at lines 111--112
+[5 <./img/decrease-random-validty.png> <./img/delete_randon.png>]
+Overfull \hbox (4.28615pt too wide) in paragraph at lines 122--123
 []\T1/futs/m/n/10 J'ai re-gardé un video sur youtube pour ap-pren-dre com-ment 
 com-miter du []VI-SUAL STU-DIO CODE[],
  []
 
-<img/visual.png, id=27, 1028.34187pt x 553.31718pt>
+<img/visual.png, id=34, 1028.34187pt x 553.31718pt>
 File: img/visual.png Graphic file (type png)
 <use img/visual.png>
-Package pdftex.def Info: img/visual.png  used on input line 119.
+Package pdftex.def Info: img/visual.png  used on input line 130.
 (pdftex.def)             Requested size: 512.16121pt x 341.43207pt.
 
-Overfull \hbox (1.13905pt too wide) in paragraph at lines 118--120
+Overfull \hbox (1.13905pt too wide) in paragraph at lines 129--131
 []|  [] 
  []
 
-[5 <./img/moqups.png>]
-Overfull \hbox (8.11035pt too wide) in paragraph at lines 123--124
+[6 <./img/moqups.png>]
+Overfull \hbox (8.11035pt too wide) in paragraph at lines 134--135
 []\T1/futs/m/n/10 Pour la sécu-rité de ce site Web il y a plusieurs choses que 
 j'ai fait. La pre-mière chose est d'empêcher
  []
 
-[6 <./img/visual.png>]
+[7 <./img/visual.png>]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 137.
+(Font)              scaled to size 9.19998pt on input line 148.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 137.
+(Font)              scaled to size 6.99199pt on input line 148.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 137.
+(Font)              scaled to size 5.51999pt on input line 148.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 137.
+(Font)              scaled to size 9.19998pt on input line 148.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 137.
+(Font)              scaled to size 6.99199pt on input line 148.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 137.
-<img/login.png, id=36, 1028.34187pt x 498.36188pt>
+(Font)              scaled to size 5.51999pt on input line 148.
+<img/login.png, id=44, 1028.34187pt x 496.10344pt>
 File: img/login.png Graphic file (type png)
 <use img/login.png>
-Package pdftex.def Info: img/login.png  used on input line 169.
-(pdftex.def)             Requested size: 534.91347pt x 241.84209pt.
+Package pdftex.def Info: img/login.png  used on input line 184.
+(pdftex.def)             Requested size: 534.91347pt x 241.85133pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 168--170
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 183--185
 []|  [] 
  []
 
-[7 <./img/login.png>]
-<img/login-empty-fileds.png, id=42, 1028.34187pt x 496.85625pt>
+[8 <./img/login.png>]
+<img/login-empty-fileds.png, id=49, 1028.34187pt x 496.85625pt>
 File: img/login-empty-fileds.png Graphic file (type png)
 <use img/login-empty-fileds.png>
-Package pdftex.def Info: img/login-empty-fileds.png  used on input line 181.
+Package pdftex.def Info: img/login-empty-fileds.png  used on input line 196.
 (pdftex.def)             Requested size: 597.52141pt x 241.84685pt.
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 181--182
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 196--197
 [] 
  []
 
-<img/login-wrong-infos.png, id=43, 1028.34187pt x 478.03593pt>
+<img/login-wrong-infos.png, id=50, 1028.34187pt x 478.03593pt>
 File: img/login-wrong-infos.png Graphic file (type png)
 <use img/login-wrong-infos.png>
-Package pdftex.def Info: img/login-wrong-infos.png  used on input line 189.
+Package pdftex.def Info: img/login-wrong-infos.png  used on input line 204.
 (pdftex.def)             Requested size: 597.52141pt x 184.93794pt.
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 189--190
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 204--205
 [] 
  []
 
-<img/home.png, id=44, 1028.34187pt x 499.11469pt>
-File: img/home.png Graphic file (type png)
-<use img/home.png>
-Package pdftex.def Info: img/home.png  used on input line 200.
-(pdftex.def)             Requested size: 534.91347pt x 241.84946pt.
-
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 199--201
-[]|  [] 
- []
-
-[8 <./img/login-empty-fileds.png> <./img/login-wrong-infos.png>]
-<img/contact.png, id=50, 1028.34187pt x 495.35063pt>
-File: img/contact.png Graphic file (type png)
-<use img/contact.png>
-Package pdftex.def Info: img/contact.png  used on input line 211.
-(pdftex.def)             Requested size: 534.91347pt x 241.84715pt.
+[9 <./img/login-empty-fileds.png> <./img/login-wrong-infos.png>]
+<img/email-reset.png, id=56, 1028.34187pt x 496.10344pt>
+File: img/email-reset.png Graphic file (type png)
+<use img/email-reset.png>
+Package pdftex.def Info: img/email-reset.png  used on input line 211.
+(pdftex.def)             Requested size: 512.16121pt x 184.94069pt.
 
 Overfull \hbox (4.43399pt too wide) in paragraph at lines 210--212
 []|  [] 
  []
 
-<img/password.png, id=51, 1028.34187pt x 496.85625pt>
-File: img/password.png Graphic file (type png)
-<use img/password.png>
-Package pdftex.def Info: img/password.png  used on input line 218.
-(pdftex.def)             Requested size: 534.91347pt x 241.84685pt.
+<img/email-reset-incorrect.png, id=57, 764.10469pt x 363.60844pt>
+File: img/email-reset-incorrect.png Graphic file (type png)
+<use img/email-reset-incorrect.png>
+Package pdftex.def Info: img/email-reset-incorrect.png  used on input line 219.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 217--219
+(pdftex.def)             Requested size: 512.16902pt x 184.9496pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 218--220
 []|  [] 
  []
 
-[9 <./img/home.png> <./img/contact.png>]
-<img/password-wrong.png, id=57, 869.49844pt x 353.06906pt>
-File: img/password-wrong.png Graphic file (type png)
-<use img/password-wrong.png>
-Package pdftex.def Info: img/password-wrong.png  used on input line 228.
-(pdftex.def)             Requested size: 597.5399pt x 227.62274pt.
+<img/code-sent.png, id=58, 684.30656pt x 371.88937pt>
+File: img/code-sent.png Graphic file (type png)
+<use img/code-sent.png>
+Package pdftex.def Info: img/code-sent.png  used on input line 227.
+(pdftex.def)             Requested size: 512.1845pt x 184.9455pt.
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 228--229
-[] 
- []
-
-[10 <./img/password.png> <./img/password-wrong.png>]
-<img/password-matching.png, id=63, 864.98157pt x 392.96812pt>
-File: img/password-matching.png Graphic file (type png)
-<use img/password-matching.png>
-Package pdftex.def Info: img/password-matching.png  used on input line 237.
-(pdftex.def)             Requested size: 597.52426pt x 227.62784pt.
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 237--238
-[] 
- []
-
-<img/reservation.png, id=64, 1028.34187pt x 497.60907pt>
-File: img/reservation.png Graphic file (type png)
-<use img/reservation.png>
-Package pdftex.def Info: img/reservation.png  used on input line 245.
-(pdftex.def)             Requested size: 534.91347pt x 241.84883pt.
-
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 244--246
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 226--228
 []|  [] 
  []
 
-<img/form.png, id=65, 1028.34187pt x 496.85625pt>
-File: img/form.png Graphic file (type png)
-<use img/form.png>
-Package pdftex.def Info: img/form.png  used on input line 253.
-(pdftex.def)             Requested size: 534.91347pt x 241.84685pt.
+[10 <./img/email-reset.png> <./img/email-reset-incorrect.png>]
+<img/code-gmail.jpg, id=64, 717.43031pt x 395.97937pt>
+File: img/code-gmail.jpg Graphic file (type jpg)
+<use img/code-gmail.jpg>
+Package pdftex.def Info: img/code-gmail.jpg  used on input line 236.
+(pdftex.def)             Requested size: 512.18153pt x 241.84917pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 252--254
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 235--237
 []|  [] 
  []
 
-[11 <./img/password-matching.png> <./img/reservation.png>]
-<img/form-select.jpeg, id=71, 1035.87pt x 776.9025pt>
-File: img/form-select.jpeg Graphic file (type jpg)
-<use img/form-select.jpeg>
-Package pdftex.def Info: img/form-select.jpeg  used on input line 260.
-(pdftex.def)             Requested size: 534.92526pt x 241.84491pt.
+<img/enter-code.png, id=65, 1028.34187pt x 496.10344pt>
+File: img/enter-code.png Graphic file (type png)
+<use img/enter-code.png>
+Package pdftex.def Info: img/enter-code.png  used on input line 243.
+(pdftex.def)             Requested size: 512.16121pt x 241.85133pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 259--261
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 242--244
 []|  [] 
  []
 
-<img/date-already.png, id=72, 1028.34187pt x 498.36188pt>
-File: img/date-already.png Graphic file (type png)
-<use img/date-already.png>
-Package pdftex.def Info: img/date-already.png  used on input line 270.
-(pdftex.def)             Requested size: 534.91347pt x 241.84209pt.
+[11 <./img/code-sent.png> <./img/code-gmail.jpg>]
+<img/code-incorrect.png, id=70, 623.32875pt x 344.78813pt>
+File: img/code-incorrect.png Graphic file (type png)
+<use img/code-incorrect.png>
+Package pdftex.def Info: img/code-incorrect.png  used on input line 252.
+(pdftex.def)             Requested size: 512.1601pt x 241.84984pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 251--253
+[]|  [] 
+ []
+
+<img/code-correct.png, id=71, 645.16031pt x 318.43968pt>
+File: img/code-correct.png Graphic file (type png)
+<use img/code-correct.png>
+Package pdftex.def Info: img/code-correct.png  used on input line 262.
+(pdftex.def)             Requested size: 512.17151pt x 241.8466pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 261--263
+[]|  [] 
+ []
+
+[12 <./img/enter-code.png> <./img/code-incorrect.png>]
+<img/password-reset.png, id=77, 1028.34187pt x 496.85625pt>
+File: img/password-reset.png Graphic file (type png)
+<use img/password-reset.png>
+Package pdftex.def Info: img/password-reset.png  used on input line 270.
+(pdftex.def)             Requested size: 512.16121pt x 241.84685pt.
 
 Overfull \hbox (4.43399pt too wide) in paragraph at lines 269--271
 []|  [] 
  []
 
-[12 <./img/form.png> <./img/form-select.jpeg>]
-<img/date-not-yet.png, id=77, 1028.34187pt x 497.60907pt>
-File: img/date-not-yet.png Graphic file (type png)
-<use img/date-not-yet.png>
-Package pdftex.def Info: img/date-not-yet.png  used on input line 278.
-(pdftex.def)             Requested size: 534.91347pt x 241.84883pt.
+<img/home.png, id=78, 1028.34187pt x 499.11469pt>
+File: img/home.png Graphic file (type png)
+<use img/home.png>
+Package pdftex.def Info: img/home.png  used on input line 303.
+(pdftex.def)             Requested size: 534.91347pt x 241.84946pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 277--279
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 302--304
 []|  [] 
  []
 
+[13 <./img/code-correct.png> <./img/password-reset.png>]
+<img/contact.png, id=85, 1028.34187pt x 495.35063pt>
+File: img/contact.png Graphic file (type png)
+<use img/contact.png>
+Package pdftex.def Info: img/contact.png  used on input line 314.
+(pdftex.def)             Requested size: 534.91347pt x 241.84715pt.
 
-Overfull \hbox (6.58708pt too wide) in paragraph at lines 283--284
-[]\T1/futs/m/n/10 Maintenant, la boîte d'alerte af-fichera plusieurs mes-sages 
-en fonc-tion des dates en-trées par l'utilisateur.
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 313--315
+[]|  [] 
  []
 
-[13 <./img/date-already.png> <./img/date-not-yet.png>]
-<img/date-equal.png, id=84, 689.57625pt x 210.7875pt>
-File: img/date-equal.png Graphic file (type png)
-<use img/date-equal.png>
-Package pdftex.def Info: img/date-equal.png  used on input line 292.
-(pdftex.def)             Requested size: 534.92113pt x 241.85374pt.
-
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 292--293
-[] 
- []
-
-<img/date-old.png, id=85, 782.925pt x 263.48438pt>
-File: img/date-old.png Graphic file (type png)
-<use img/date-old.png>
-Package pdftex.def Info: img/date-old.png  used on input line 297.
-(pdftex.def)             Requested size: 534.9385pt x 241.86177pt.
-
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 297--298
-[] 
- []
-
-<img/date-inferior.png, id=86, 886.81313pt x 257.46187pt>
-File: img/date-inferior.png Graphic file (type png)
-<use img/date-inferior.png>
-Package pdftex.def Info: img/date-inferior.png  used on input line 302.
-(pdftex.def)             Requested size: 534.94716pt x 241.8531pt.
-
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 302--303
-[] 
- []
-
-[14 <./img/date-equal.png> <./img/date-old.png>]
-<img/date-superior.png, id=92, 752.8125pt x 256.70906pt>
-File: img/date-superior.png Graphic file (type png)
-<use img/date-superior.png>
-Package pdftex.def Info: img/date-superior.png  used on input line 307.
-(pdftex.def)             Requested size: 534.94861pt x 241.851pt.
-
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 307--308
-[] 
- []
-
-<img/date-intersect.png, id=93, 712.16063pt x 240.14719pt>
-File: img/date-intersect.png Graphic file (type png)
-<use img/date-intersect.png>
-Package pdftex.def Info: img/date-intersect.png  used on input line 312.
-(pdftex.def)             Requested size: 534.93416pt x 241.85416pt.
-
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 312--313
-[] 
- []
-
-[15 <./img/date-inferior.png> <./img/date-superior.png>]
-<img/date-OutOfRange.png, id=99, 804.00375pt x 392.96812pt>
-File: img/date-OutOfRange.png Graphic file (type png)
-<use img/date-OutOfRange.png>
-Package pdftex.def Info: img/date-OutOfRange.png  used on input line 318.
-(pdftex.def)             Requested size: 534.90115pt x 241.85683pt.
-
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 318--319
-[] 
- []
-
-[16 <./img/date-intersect.png> <./img/date-OutOfRange.png>]
-<img/sunday.png, id=105, 896.59969pt x 383.18156pt>
-File: img/sunday.png Graphic file (type png)
-<use img/sunday.png>
-Package pdftex.def Info: img/sunday.png  used on input line 326.
-(pdftex.def)             Requested size: 534.92679pt x 241.85002pt.
-
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 326--327
-[] 
- []
-
-<img/date-done.png, id=106, 719.68875pt x 377.15906pt>
-File: img/date-done.png Graphic file (type png)
-<use img/date-done.png>
-Package pdftex.def Info: img/date-done.png  used on input line 337.
-(pdftex.def)             Requested size: 534.95532pt x 241.84712pt.
-
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 337--338
-[] 
- []
-
-[17 <./img/sunday.png> <./img/date-done.png>]
-<img/reservation-annuler.png, id=112, 1028.34187pt x 496.85625pt>
-File: img/reservation-annuler.png Graphic file (type png)
-<use img/reservation-annuler.png>
-Package pdftex.def Info: img/reservation-annuler.png  used on input line 345.
+<img/password.png, id=86, 1028.34187pt x 496.85625pt>
+File: img/password.png Graphic file (type png)
+<use img/password.png>
+Package pdftex.def Info: img/password.png  used on input line 321.
 (pdftex.def)             Requested size: 534.91347pt x 241.84685pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 344--346
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 320--322
 []|  [] 
  []
 
-<img/home-admin.png, id=113, 1025.33063pt x 499.11469pt>
-File: img/home-admin.png Graphic file (type png)
-<use img/home-admin.png>
-Package pdftex.def Info: img/home-admin.png  used on input line 355.
-(pdftex.def)             Requested size: 534.91162pt x 241.84946pt.
+[14 <./img/home.png> <./img/contact.png>]
+<img/password-wrong.png, id=92, 869.49844pt x 353.06906pt>
+File: img/password-wrong.png Graphic file (type png)
+<use img/password-wrong.png>
+Package pdftex.def Info: img/password-wrong.png  used on input line 331.
+(pdftex.def)             Requested size: 597.5399pt x 227.62274pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 354--356
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 331--332
+[] 
+ []
+
+[15 <./img/password.png> <./img/password-wrong.png>]
+<img/password-matching.png, id=98, 864.98157pt x 392.96812pt>
+File: img/password-matching.png Graphic file (type png)
+<use img/password-matching.png>
+Package pdftex.def Info: img/password-matching.png  used on input line 340.
+(pdftex.def)             Requested size: 597.52426pt x 227.62784pt.
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 340--341
+[] 
+ []
+
+<img/reservation.png, id=99, 1028.34187pt x 497.60907pt>
+File: img/reservation.png Graphic file (type png)
+<use img/reservation.png>
+Package pdftex.def Info: img/reservation.png  used on input line 348.
+(pdftex.def)             Requested size: 534.91347pt x 241.84883pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 347--349
 []|  [] 
  []
 
-[18 <./img/reservation-annuler.png>]
-<img/modify.png, id=118, 1028.34187pt x 498.36188pt>
-File: img/modify.png Graphic file (type png)
-<use img/modify.png>
-Package pdftex.def Info: img/modify.png  used on input line 364.
+<img/form.png, id=100, 1028.34187pt x 496.85625pt>
+File: img/form.png Graphic file (type png)
+<use img/form.png>
+Package pdftex.def Info: img/form.png  used on input line 356.
+(pdftex.def)             Requested size: 534.91347pt x 241.84685pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 355--357
+[]|  [] 
+ []
+
+[16 <./img/password-matching.png> <./img/reservation.png>]
+<img/form-select.jpeg, id=106, 1035.87pt x 776.9025pt>
+File: img/form-select.jpeg Graphic file (type jpg)
+<use img/form-select.jpeg>
+Package pdftex.def Info: img/form-select.jpeg  used on input line 363.
+(pdftex.def)             Requested size: 534.92526pt x 241.84491pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 362--364
+[]|  [] 
+ []
+
+<img/date-already.png, id=107, 1028.34187pt x 498.36188pt>
+File: img/date-already.png Graphic file (type png)
+<use img/date-already.png>
+Package pdftex.def Info: img/date-already.png  used on input line 373.
 (pdftex.def)             Requested size: 534.91347pt x 241.84209pt.
-
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 363--365
-[]|  [] 
- []
-
-<img/modify-add.png, id=119, 684.30656pt x 347.79938pt>
-File: img/modify-add.png Graphic file (type png)
-<use img/modify-add.png>
-Package pdftex.def Info: img/modify-add.png  used on input line 373.
-(pdftex.def)             Requested size: 534.94731pt x 241.84457pt.
 
 Overfull \hbox (4.43399pt too wide) in paragraph at lines 372--374
 []|  [] 
  []
 
-[19 <./img/home-admin.png> <./img/modify.png>]
-<img/modify-remove.png, id=126, 1028.34187pt x 496.10344pt>
-File: img/modify-remove.png Graphic file (type png)
-<use img/modify-remove.png>
-Package pdftex.def Info: img/modify-remove.png  used on input line 381.
-(pdftex.def)             Requested size: 534.91347pt x 241.85133pt.
+[17 <./img/form.png> <./img/form-select.jpeg>]
+<img/date-not-yet.png, id=112, 1028.34187pt x 497.60907pt>
+File: img/date-not-yet.png Graphic file (type png)
+<use img/date-not-yet.png>
+Package pdftex.def Info: img/date-not-yet.png  used on input line 381.
+(pdftex.def)             Requested size: 534.91347pt x 241.84883pt.
 
 Overfull \hbox (4.43399pt too wide) in paragraph at lines 380--382
 []|  [] 
  []
 
-<img/modify-remove-accept.png, id=127, 773.89125pt x 405.01312pt>
+
+Overfull \hbox (6.58708pt too wide) in paragraph at lines 386--387
+[]\T1/futs/m/n/10 Maintenant, la boîte d'alerte af-fichera plusieurs mes-sages 
+en fonc-tion des dates en-trées par l'utilisateur.
+ []
+
+[18 <./img/date-already.png> <./img/date-not-yet.png>]
+<img/date-equal.png, id=118, 689.57625pt x 210.7875pt>
+File: img/date-equal.png Graphic file (type png)
+<use img/date-equal.png>
+Package pdftex.def Info: img/date-equal.png  used on input line 395.
+(pdftex.def)             Requested size: 534.92113pt x 241.85374pt.
+
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 395--396
+[] 
+ []
+
+<img/date-old.png, id=119, 782.925pt x 263.48438pt>
+File: img/date-old.png Graphic file (type png)
+<use img/date-old.png>
+Package pdftex.def Info: img/date-old.png  used on input line 400.
+(pdftex.def)             Requested size: 534.9385pt x 241.86177pt.
+
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 400--401
+[] 
+ []
+
+<img/date-inferior.png, id=120, 886.81313pt x 257.46187pt>
+File: img/date-inferior.png Graphic file (type png)
+<use img/date-inferior.png>
+Package pdftex.def Info: img/date-inferior.png  used on input line 405.
+(pdftex.def)             Requested size: 534.94716pt x 241.8531pt.
+
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 405--406
+[] 
+ []
+
+[19 <./img/date-equal.png> <./img/date-old.png>]
+<img/date-superior.png, id=127, 752.8125pt x 256.70906pt>
+File: img/date-superior.png Graphic file (type png)
+<use img/date-superior.png>
+Package pdftex.def Info: img/date-superior.png  used on input line 410.
+(pdftex.def)             Requested size: 534.94861pt x 241.851pt.
+
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 410--411
+[] 
+ []
+
+<img/date-intersect.png, id=128, 712.16063pt x 240.14719pt>
+File: img/date-intersect.png Graphic file (type png)
+<use img/date-intersect.png>
+Package pdftex.def Info: img/date-intersect.png  used on input line 415.
+(pdftex.def)             Requested size: 534.93416pt x 241.85416pt.
+
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 415--416
+[] 
+ []
+
+[20 <./img/date-inferior.png> <./img/date-superior.png>]
+<img/date-OutOfRange.png, id=134, 804.00375pt x 392.96812pt>
+File: img/date-OutOfRange.png Graphic file (type png)
+<use img/date-OutOfRange.png>
+Package pdftex.def Info: img/date-OutOfRange.png  used on input line 421.
+(pdftex.def)             Requested size: 534.90115pt x 241.85683pt.
+
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 421--422
+[] 
+ []
+
+[21 <./img/date-intersect.png> <./img/date-OutOfRange.png>]
+<img/sunday.png, id=140, 896.59969pt x 383.18156pt>
+File: img/sunday.png Graphic file (type png)
+<use img/sunday.png>
+Package pdftex.def Info: img/sunday.png  used on input line 429.
+(pdftex.def)             Requested size: 534.92679pt x 241.85002pt.
+
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 429--430
+[] 
+ []
+
+<img/date-done.png, id=141, 719.68875pt x 377.15906pt>
+File: img/date-done.png Graphic file (type png)
+<use img/date-done.png>
+Package pdftex.def Info: img/date-done.png  used on input line 440.
+(pdftex.def)             Requested size: 534.95532pt x 241.84712pt.
+
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 440--441
+[] 
+ []
+
+
+Overfull \hbox (1.877pt too wide) in paragraph at lines 444--445
+[]\T1/futs/m/n/10 Lorsque l'utilisateur ef-fectue une réser-va-tion, un e-mail 
+sera en-voyé à l'administrateur comme l'image
+ []
+
+[22 <./img/sunday.png> <./img/date-done.png>]
+<img/gmail-reservaton.jpg, id=147, 700.86844pt x 358.33875pt>
+File: img/gmail-reservaton.jpg Graphic file (type jpg)
+<use img/gmail-reservaton.jpg>
+Package pdftex.def Info: img/gmail-reservaton.jpg  used on input line 449.
+(pdftex.def)             Requested size: 534.94345pt x 241.8518pt.
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 449--450
+[] 
+ []
+
+<img/reservation-annuler.png, id=148, 1028.34187pt x 496.10344pt>
+File: img/reservation-annuler.png Graphic file (type png)
+<use img/reservation-annuler.png>
+Package pdftex.def Info: img/reservation-annuler.png  used on input line 457.
+(pdftex.def)             Requested size: 534.91347pt x 241.85133pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 456--458
+[]|  [] 
+ []
+
+[23 <./img/gmail-reservaton.jpg> <./img/reservation-annuler.png>]
+<img/gmail-annulation.jpg, id=153, 774.64406pt x 322.95656pt>
+File: img/gmail-annulation.jpg Graphic file (type jpg)
+<use img/gmail-annulation.jpg>
+Package pdftex.def Info: img/gmail-annulation.jpg  used on input line 464.
+(pdftex.def)             Requested size: 534.91869pt x 241.84723pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 463--465
+[]|  [] 
+ []
+
+<img/courrier-envoye.jpg, id=154, 598.48593pt x 317.68687pt>
+File: img/courrier-envoye.jpg Graphic file (type jpg)
+<use img/courrier-envoye.jpg>
+Package pdftex.def Info: img/courrier-envoye.jpg  used on input line 472.
+(pdftex.def)             Requested size: 534.9521pt x 241.85655pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 471--473
+[]|  [] 
+ []
+
+[24 <./img/gmail-annulation.jpg> <./img/courrier-envoye.jpg>]
+<img/courrier-gmail.png, id=158, 685.8122pt x 348.55219pt>
+File: img/courrier-gmail.png Graphic file (type png)
+<use img/courrier-gmail.png>
+Package pdftex.def Info: img/courrier-gmail.png  used on input line 480.
+(pdftex.def)             Requested size: 534.9523pt x 241.84682pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 479--481
+[]|  [] 
+ []
+
+<img/home-admin.png, id=159, 1025.33063pt x 499.11469pt>
+File: img/home-admin.png Graphic file (type png)
+<use img/home-admin.png>
+Package pdftex.def Info: img/home-admin.png  used on input line 494.
+(pdftex.def)             Requested size: 534.91162pt x 241.84946pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 493--495
+[]|  [] 
+ []
+
+[25 <./img/courrier-gmail.png> <./img/home-admin.png>]
+<img/modify.png, id=166, 1028.34187pt x 495.35063pt>
+File: img/modify.png Graphic file (type png)
+<use img/modify.png>
+Package pdftex.def Info: img/modify.png  used on input line 503.
+(pdftex.def)             Requested size: 534.91347pt x 241.84715pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 502--504
+[]|  [] 
+ []
+
+<img/modify-add.png, id=167, 684.30656pt x 347.79938pt>
+File: img/modify-add.png Graphic file (type png)
+<use img/modify-add.png>
+Package pdftex.def Info: img/modify-add.png  used on input line 512.
+(pdftex.def)             Requested size: 534.94731pt x 241.84457pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 511--513
+[]|  [] 
+ []
+
+[26 <./img/modify.png> <./img/modify-add.png>]
+<img/modify-remove.png, id=173, 1028.34187pt x 496.10344pt>
+File: img/modify-remove.png Graphic file (type png)
+<use img/modify-remove.png>
+Package pdftex.def Info: img/modify-remove.png  used on input line 520.
+(pdftex.def)             Requested size: 534.91347pt x 241.85133pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 519--521
+[]|  [] 
+ []
+
+<img/modify-remove-accept.png, id=174, 773.89125pt x 405.01312pt>
 File: img/modify-remove-accept.png Graphic file (type png)
 <use img/modify-remove-accept.png>
-Package pdftex.def Info: img/modify-remove-accept.png  used on input line 388.
+Package pdftex.def Info: img/modify-remove-accept.png  used on input line 527.
 (pdftex.def)             Requested size: 534.91843pt x 241.85408pt.
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 388--389
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 527--528
 [] 
  []
 
-[20 <./img/modify-add.png> <./img/modify-remove.png>]
-<img/modify-removed.png, id=133, 685.8122pt x 380.92313pt>
+[27 <./img/modify-remove.png> <./img/modify-remove-accept.png>]
+<img/modify-removed.png, id=180, 685.8122pt x 380.92313pt>
 File: img/modify-removed.png Graphic file (type png)
 <use img/modify-removed.png>
-Package pdftex.def Info: img/modify-removed.png  used on input line 396.
+Package pdftex.def Info: img/modify-removed.png  used on input line 535.
 (pdftex.def)             Requested size: 534.9523pt x 184.93929pt.
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 396--397
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 535--536
 [] 
  []
 
-<img/affectation.png, id=134, 1025.33063pt x 497.60907pt>
+<img/affectation.png, id=181, 1028.34187pt x 497.60907pt>
 File: img/affectation.png Graphic file (type png)
 <use img/affectation.png>
-Package pdftex.def Info: img/affectation.png  used on input line 403.
-(pdftex.def)             Requested size: 534.91162pt x 241.84883pt.
+Package pdftex.def Info: img/affectation.png  used on input line 542.
+(pdftex.def)             Requested size: 534.91347pt x 241.84883pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 402--404
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 541--543
 []|  [] 
  []
 
-[21 <./img/modify-remove-accept.png> <./img/modify-removed.png>]
-<img/expired-session.png, id=140, 857.45343pt x 440.39531pt>
+[28 <./img/modify-removed.png> <./img/affectation.png>]
+<img/expired-session.png, id=187, 857.45343pt x 440.39531pt>
 File: img/expired-session.png Graphic file (type png)
 <use img/expired-session.png>
-Package pdftex.def Info: img/expired-session.png  used on input line 411.
+Package pdftex.def Info: img/expired-session.png  used on input line 550.
 (pdftex.def)             Requested size: 534.9127pt x 241.84857pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 410--412
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 549--551
 []|  [] 
  []
 
-[22 <./img/affectation.png>]
-<img/cant-access.png, id=145, 868.74562pt x 413.29407pt>
+<img/cant-access.png, id=188, 868.74562pt x 413.29407pt>
 File: img/cant-access.png Graphic file (type png)
 <use img/cant-access.png>
-Package pdftex.def Info: img/cant-access.png  used on input line 427.
+Package pdftex.def Info: img/cant-access.png  used on input line 566.
 (pdftex.def)             Requested size: 534.94481pt x 241.85487pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 426--428
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 565--567
 []|  [] 
  []
 
-[23 <./img/expired-session.png>]
-<img/htaccess.png, id=150, 754.31813pt x 397.485pt>
+[29 <./img/expired-session.png>]
+<img/htaccess.png, id=193, 754.31813pt x 397.485pt>
 File: img/htaccess.png Graphic file (type png)
 <use img/htaccess.png>
-Package pdftex.def Info: img/htaccess.png  used on input line 434.
+Package pdftex.def Info: img/htaccess.png  used on input line 573.
 (pdftex.def)             Requested size: 534.91356pt x 241.8529pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 433--435
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 572--574
 []|  [] 
  []
 
-[24 <./img/cant-access.png> <./img/htaccess.png>]
-Overfull \hbox (0.14722pt too wide) in paragraph at lines 445--446
+[30 <./img/cant-access.png> <./img/htaccess.png>]
+Overfull \hbox (0.14722pt too wide) in paragraph at lines 584--585
 \T1/futs/m/n/10 tact, []\T1/futs/b/n/10 GMAIL[] \T1/futs/m/n/10 bloque tout mes
 -sage en-voyé par []\T1/futs/b/n/10 PHP[]\T1/futs/m/n/10 , elles sont traités c
 omme du spam. Mais l'application
  []
 
-<img/gmail-block.PNG, id=156, 665.48625pt x 335.00156pt>
+<img/gmail-block.PNG, id=199, 665.48625pt x 335.00156pt>
 File: img/gmail-block.PNG Graphic file (type png)
 <use img/gmail-block.PNG>
-Package pdftex.def Info: img/gmail-block.PNG  used on input line 449.
+Package pdftex.def Info: img/gmail-block.PNG  used on input line 588.
 (pdftex.def)             Requested size: 597.54092pt x 341.43124pt.
 
-Overfull \hbox (1.13905pt too wide) in paragraph at lines 448--450
-[]|  [] 
+Overfull \hbox (1.13905pt too wide) in paragraph at lines 587--591
+[]|  []
  []
 
-<img/ht-error.PNG, id=157, 776.9025pt x 249.18094pt>
+[31 <./img/gmail-block.PNG>]
+<img/ht-error.PNG, id=205, 776.9025pt x 249.18094pt>
 File: img/ht-error.PNG Graphic file (type png)
 <use img/ht-error.PNG>
-Package pdftex.def Info: img/ht-error.PNG  used on input line 461.
+Package pdftex.def Info: img/ht-error.PNG  used on input line 602.
 (pdftex.def)             Requested size: 455.25075pt x 199.1739pt.
 
-Overfull \hbox (1.13905pt too wide) in paragraph at lines 460--462
+Overfull \hbox (1.13905pt too wide) in paragraph at lines 601--603
 []|  [] 
  []
 
-LaTeX Font Info:    Trying to load font information for U+futs on input line 46
-4.
+LaTeX Font Info:    Trying to load font information for U+futs on input line 60
+5.
 ("C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fourier\ufuts.fd
 "
 File: ufuts.fd 2004/03/02 Fontinst v1.926 font definitions for U/futs.
-) [25 <./img/gmail-block.PNG>] [26 <./img/ht-error.PNG>] (reservation.aux) ) 
+) [32 <./img/ht-error.PNG>] (reservation.aux) ) 
 Here is how much of TeX's memory you used:
- 3161 strings out of 480930
- 45564 string characters out of 2898821
+ 3245 strings out of 480930
+ 47634 string characters out of 2898821
  285615 words of memory out of 3000000
- 18957 multiletter control sequences out of 15000+200000
+ 19027 multiletter control sequences out of 15000+200000
  590862 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,6n,37p,951b,295s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:
-/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C
-:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fo
-urier-orns.pfb><C:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-adobe/utopia/putb8a.pfb><C:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/adobe/utopia/putr8a.pfb>
-Output written on reservation.pdf (26 pages, 9489078 bytes).
+ 30i,6n,37p,951b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/AL JADD/AppData/Local/
+Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/AL JADD/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-orns.pfb><C:/Users/AL J
+ADD/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/U
+sers/AL JADD/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.
+pfb>
+Output written on reservation.pdf (32 pages, 11942711 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
+ 223 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 206 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 276 words of extra memory for PDF output out of 10000 (max. 10000000)
 

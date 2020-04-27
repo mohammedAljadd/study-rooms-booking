@@ -86,25 +86,157 @@
                         else{
                             $sql = " INSERT INTO `affectation` (`idProf`, `idSalle`, `date`, `date_fin`, `Marge`) 
                             VALUES ('$idProf', '$idSalle', '$debut', '$fin', '$diff') ;";
-                            $result = mysqli_query($conn,$sql);
-                            if($result){
-                            $_SESSION['error']="done";
-                            header("location:reservation.php?VotreReservationDone");
-                        }
-                        }
+                            $sql1 = "SELECT batiment.nom from batiment,salle WHERE batiment.id=salle.idBatiment and salle.id='".$idSalle."';";
+                            $result1 = mysqli_query($conn,$sql1);
+                            while($row = mysqli_fetch_assoc($result1)){
+                                $batiment = $row['nom'];
+                            }
+                            $day =    date("l",strtotime($debut));
+                             switch($day){
+                                 case "Monday":
+                                     $day='Lundi';
+                                 break;
+                                 case "Tuesday":
+                                     $day='Mardi';
+                                 break;
+                                 case "Wednesday":
+                                     $day='Mercredi';
+                                 break;
+                                 case "Thursday":
+                                     $day='Jeudi';
+                                 break;
+                                 case "Friday":
+                                     $day='Vendredi';
+                                 break;
+                                 case "Saturday":
+                                     $day='Samedi';
+                                 break;
+                     
+                             }
+                            
+                             $_SESSION['error']="done";
+
+                             $sender = $_SESSION['email'];
+                             $recipient = 'mohammedaljadd8@gmail.com';
+                             $name = $_SESSION['name'];
+                             $subject = "Réservation par ".$name;
+                             $headers = "MIME-Version: 1.0" . "\r\n";
+                             $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                             $headers .= 'From:' . $sender;
+                             $txt = $message = "
+                                 <html>
+                                 <head>
+                                 <title>Reservation</title>
+                                 </head>
+                                 <body>
+                                 <h2>Les informations sur la reservation :</h2>
+                                 <table border='1' style='padding:7px 7px 7px 7px'>
+                                 <tr >
+                                 <th style='padding:7px 20px 7px 20px;color:red'>La salle</th>
+                                 <th style='padding:7px 20px 7px 20px;color:red'>Le batiment</th>
+                                 <th style='padding:7px 20px 7px 20px;color:red'>Le jour</th>
+                                 <th style='padding:7px 20px 7px 20px;color:red'>Debut</th>
+                                 <th style='padding:7px 20px 7px 20px;color:red'>Fin</th>
+                                 </tr>
+                                 <tr>
+                                 <th style='padding:7px 20px 7px 20px'>".$nomSalle."</th>
+                                 <th style='padding:7px 20px 7px 20px'>".$batiment."</th>
+                                 <th style='padding:7px 20px 7px 20px'>".$day."</th>
+                                 <th style='padding:7px 20px 7px 20px'>".$debut."</th>
+                                 <th style='padding:7px 20px 7px 20px'>".$fin."</th>
+                                 </tr>
+                                 </table>
+                                 </body>
+                                 </html>
+                                 ";
+                                 $message = "<h2>Une réservation a été effectuée par ".$sender.'</h2>'."\n\n".$txt;
+                                 if(mail($recipient, $subject, $message, $headers)){
+                                 $_SESSION['contact'] = 'Courrier envoyé avec succès, Nous vous répondrons dès que possible!';
+                                 $result = mysqli_query($conn,$sql);
+                                 header("location:reservation.php?VotreReservationDone");
+                             }
+                
+                            
+            }
                 
 
 
 
             }
             else{
-                $sql = " INSERT INTO affectation (`idProf`, `idSalle`, `date`, `date_fin`, `Marge`) 
+                $sql = " INSERT INTO `affectation` (`idProf`, `idSalle`, `date`, `date_fin`, `Marge`) 
                 VALUES ('$idProf', '$idSalle', '$debut', '$fin', '$diff') ;";
-                $result = mysqli_query($conn,$sql);
-                if($result){
-                    $_SESSION['error']="done";
+                $sql1 = "SELECT batiment.nom from batiment,salle WHERE batiment.id=salle.idBatiment and salle.id='".$idSalle."';";
+                $result1 = mysqli_query($conn,$sql1);
+                while($row = mysqli_fetch_assoc($result1)){
+                    $batiment = $row['nom'];
+                }
+                $day =    date("l",strtotime($debut));
+                 switch($day){
+                     case "Monday":
+                         $day='Lundi';
+                     break;
+                     case "Tuesday":
+                         $day='Mardi';
+                     break;
+                     case "Wednesday":
+                         $day='Mercredi';
+                     break;
+                     case "Thursday":
+                         $day='Jeudi';
+                     break;
+                     case "Friday":
+                         $day='Vendredi';
+                     break;
+                     case "Saturday":
+                         $day='Samedi';
+                     break;
+         
+                 }
+                
+                $_SESSION['error']="done";
+
+                $sender = $_SESSION['email'];
+                $recipient = 'mohammedaljadd8@gmail.com';
+                $name = $_SESSION['name'];
+                $subject = "Réservation par ".$name;
+                $headers = "MIME-Version: 1.0" . "\r\n";
+                $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                $headers .= 'From:' . $sender;
+                $txt = $message = "
+                    <html>
+                    <head>
+                    <title>Reservation</title>
+                    </head>
+                    <body>
+                    <h2>Les informations sur la reservation :</h2>
+                    <table border='1' style='padding:7px 7px 7px 7px'>
+                    <tr >
+                    <th style='padding:7px 20px 7px 20px;color:red'>La salle</th>
+                    <th style='padding:7px 20px 7px 20px;color:red'>Le batiment</th>
+                    <th style='padding:7px 20px 7px 20px;color:red'>Le jour</th>
+                    <th style='padding:7px 20px 7px 20px;color:red'>Debut</th>
+                    <th style='padding:7px 20px 7px 20px;color:red'>Fin</th>
+                    </tr>
+                    <tr>
+                    <th style='padding:7px 20px 7px 20px'>".$nomSalle."</th>
+                    <th style='padding:7px 20px 7px 20px'>".$batiment."</th>
+                    <th style='padding:7px 20px 7px 20px'>".$day."</th>
+                    <th style='padding:7px 20px 7px 20px'>".$debut."</th>
+                    <th style='padding:7px 20px 7px 20px'>".$fin."</th>
+                    </tr>
+                    </table>
+                    </body>
+                    </html>
+                    ";
+                $message = "<h2>Une réservation a été effectuée par ".$sender.'</h2>'."\n\n".$txt;
+                if(mail($recipient, $subject, $message, $headers)){
+                    $_SESSION['contact'] = 'Courrier envoyé avec succès, Nous vous répondrons dès que possible!';
+                    $result = mysqli_query($conn,$sql);
                     header("location:reservation.php?VotreReservationDone");
                 }
+                
+                            
             }
 
 

@@ -103,6 +103,7 @@ if(isset($_SESSION['last_action'])){
                 $out = mysqli_num_rows($result);
                 if($out>0){
                     while($row = mysqli_fetch_assoc($result)){
+                        $_SESSION['name'] = $row['nom']." ".$row['prenom'];
                         echo "Welcome ".$row['nom']." ".$row['prenom'];
                     }
                 }

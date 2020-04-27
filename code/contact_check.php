@@ -12,7 +12,7 @@ if($_POST['submit']){
 
     else{
         $sender = $email;
-        $recipient = 'mohammedaljadd8@gmail.com';
+        $recipient = 'webaljadd@gmail.com';
 
         $subject = "Un message de ".$name." envoyé depuis la page de réservation";
 

@@ -44,7 +44,7 @@ while($row = mysqli_fetch_assoc($result)){
  
 
  $sender = $_SESSION['email'];
- $recipient = 'mohammedaljadd8@gmail.com';
+ $recipient = 'webaljadd@gmail.com';
  $name = $_SESSION['name'];
  $subject = "Réservation annulée par ".$name;
  $headers = "MIME-Version: 1.0" . "\r\n";

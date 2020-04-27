@@ -20,6 +20,8 @@ if(isset($_SESSION['last_action'])){
         if(isset($_SESSION['email']))
         {
             $email = $_SESSION['email'];
+            $sql = "delete from forget_password where email='".$email."'";
+            $result= mysqli_query($conn,$sql);
             $sql = "SELECT concat(if(gender='M','Mr ','Mme '),prof.prenom) as name from prof  where email='".$email."';";
             $result=mysqli_query($conn,$sql);
                 while($row = mysqli_fetch_assoc($result)){

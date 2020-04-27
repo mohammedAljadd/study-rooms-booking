@@ -13,7 +13,7 @@ Problématique:
   
 Le pour les maquettes:
 
-    [a relative link](README.md)
+    /maquettes
 
 Les langages de programmation utilisés : 
     

@@ -73,12 +73,24 @@ if(isset($_POST['Recode'])){
                   $sender = $email;
                   $recipient = 'webaljadd@gmail.com';
                   $subject = "Reservation_INPT password reset";
-
+                  $sql = "SELECT concat(if(gender='M','Mr ','Mme '),prof.prenom) as name from prof  where email='".$email."';";
+                  $result=mysqli_query($conn,$sql);
+                    while($row = mysqli_fetch_assoc($result)){
+                        $myGuess=$row['name'] ;
+                    }
+                    $date = strtotime("now");
+                    $myHour = date('H', $date);
+                    if($myHour<18 && $myHour>5){
+                      $bonjour='Bonjour';
+                    }
+                    else{
+                      $bonjour='Bonsoir';
+                    }
                   $headers = 'From:' . $sender;
                   $txt = "Votre code est :".$random;
-                  $message = "Bonjour,
+                  $message = $bonjour." ".$myGuess.",
                   veuillez copier le code ci-dessous pour réinitialiser votre mot de passe.
-                  Le code expirera dans les 5 minutes  "."\n\n".$txt;
+                  Le code expirera dans 5 minutes  "."\n\n".$txt;
                   if(mail($recipient, $subject, $message, $headers)){
                       $_SESSION['randomSent'] = "Un code a été envoyé à votre email, veuillez le copier ci-dessous";
                       header("Location:enterRandom.php");

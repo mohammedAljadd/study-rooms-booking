@@ -8,6 +8,17 @@
 <?php
     unset($_SESSION['randomSent'] );
 ?>
+
+<script>
+    alert("<?php echo $_SESSION['wrongRandom'] ?>");
+</script>
+
+
+<?php
+    unset($_SESSION['wrongRandom']);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +38,7 @@
         <br>
     <form action="forget_pass_check.php" method="POST" >
         <input type="text" placeholder="Le code envoyé"  name="random" > 
-        <span class="subset" > <input type="submit" name="submit_code" >   </span>      <span class="subset" > <input type="reset" value="reset"></span> 
+        <span class="subset" > <input type="submit" name="submit_code" >   </span>      <span class="subset" > <input type="submit" name="Recode" value="renvoyer"></span> 
         <br>
     </form>
 

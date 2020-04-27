@@ -48,7 +48,45 @@ if(isset($_POST['submit_code'])){
       header("Location:resetPass.php");
     }
     else{
-      echo 'noo';
+      $_SESSION['wrongRandom'] = "Le code que vous avez entrer est incorrect, veuillez entrer le code valide";
+      header("Location:enterRandom.php?wrongitp");
     }
 
 }
+if(isset($_POST['Recode'])){
+    $email = $_SESSION['email_forget'];
+    $sql = "delete from forget_password where email='".$email."'";
+    $result= mysqli_query($conn,$sql);
+    if($result){
+      echo "delete";
+    }
+    else{
+      echo 'no delete';
+    }
+    $random =  rand(1000000,9999999);
+    $endTimeSeconds = strtotime("now")+300;
+    $endTime=date("Y-m-d h:m:s",$endTimeSeconds);
+        $sql = " INSERT INTO `forget_password` (`email`, `random`, `validity`, `fin`) 
+                VALUES ('$email', '$random',300, '$endTime');";
+                $result= mysqli_query($conn,$sql);
+                if($result){
+                  $sender = $email;
+                  $recipient = 'webaljadd@gmail.com';
+                  $subject = "Reservation_INPT password reset";
+
+                  $headers = 'From:' . $sender;
+                  $txt = "Votre code est :".$random;
+                  $message = "Bonjour,
+                  veuillez copier le code ci-dessous pour réinitialiser votre mot de passe.
+                  Le code expirera dans les 5 minutes  "."\n\n".$txt;
+                  if(mail($recipient, $subject, $message, $headers)){
+                      $_SESSION['randomSent'] = "Un code a été envoyé à votre email, veuillez le copier ci-dessous";
+                      header("Location:enterRandom.php");
+                  }
+                }
+                
+                                
+    }
+    else{
+      echo 'asd';
+    }

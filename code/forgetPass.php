@@ -20,6 +20,13 @@
     unset($_SESSION['emailError']);
 ?>
         
+        <script>
+            alert("<?php echo $_SESSION['wrongRandom'] ?>");
+        </script>
+        
+<?php
+    unset($_SESSION['wrongRandom']);
+?>
  
 </head>
 <body>

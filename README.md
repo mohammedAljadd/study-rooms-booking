@@ -13,7 +13,7 @@ Problématique:
   
 Le pour les maquettes:
 
-    [a link](https://github.com/ENSIAS-MEH/Dev_Web_INPT_2020_G0/blob/master/maquettes/Add%20or%20remove%20user.jpg)
+    [a relative link](README.md)
 
 Les langages de programmation utilisés : 
     

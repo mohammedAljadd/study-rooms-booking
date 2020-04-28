@@ -59,6 +59,10 @@ if(isset($_SESSION['last_action'])){
                     break;
                 case 'holdOn':
                     alert('les heures tolérées sont comprises entre 08h00 et 18h00');
+                    break;
+                case 'Saturday':
+                    alert('les heures tolérées pour Samedi sont comprises entre 08h00 et 12h00');
+                    break;
                 }
 </script>
 
@@ -169,7 +173,7 @@ if(isset($_SESSION['last_action'])){
 
         </table>
         <div class="already">
-            <h1>Choisir le temps que vous convient</h1>
+        <h3 style="color:white;font-family:cursive">Heures tolérées: Lundi-Vendredi: 8 h à 18 h. <br> Samedi 8 h à 12 h.</h3> 
             <form action="bookingConfirm.php" method="POST">
             <input type="datetime-local" name="date_debut" placeholder="yyyy/mm/dd hh:mm:00">
             <input type="datetime-local" name="date_fin" placeholder="yyyy/mm/dd hh:mm:00">   
@@ -183,7 +187,7 @@ if(isset($_SESSION['last_action'])){
     elseif($Check==0 ){
         
 ?>             <div class="notYet">
-                <p>Cette salle n'est pas encore reservée, vous pouvez dès maintenant la réserver.
+                <p>Heures tolérées:  <br> Lundi-Vendredi: 8 h à 18 h. <br> Samedi 8 h à 12 h. 
                 </div>
 <div class="box">
 <h1>Choisir le temps que vous convient</h1>

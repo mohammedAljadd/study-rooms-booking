@@ -62,17 +62,26 @@ include 'includes/dbconn.php';
     if(isset($_POST['submit_code'])){
         $randomUser = $_POST['random'];
         $emaiL = $_SESSION['email_forget'];
+        $sql1 = "select * from forget_password where email='".$emaiL."';";
+        $result1= mysqli_query($conn,$sql1);
+        $out1 = mysqli_num_rows($result1);
         $sql = "select * from forget_password where email='".$emaiL."' and random='".$randomUser."';";
         $result= mysqli_query($conn,$sql);
         $out = mysqli_num_rows($result);
+        
         if($out>0){
           $_SESSION['changePass'] = "Vous pouvez maintenant changer votre mot de passe";
           header("Location:resetPass.php");
+        }
+        elseif($out1==0){
+          $_SESSION['wrongRandom'] = "Les 5 minutes sont passées, veuillez cliquer sur le bouton Renvoyer pour obtenir un nouveau";
+          header("Location:enterRandom.php");
         }
         else{
           $_SESSION['wrongRandom'] = "Le code que vous avez entrer est incorrect, veuillez entrer le code valide";
           header("Location:enterRandom.php?wrongitp");
         }
+        
 
     }
     if(isset($_POST['Recode'])){

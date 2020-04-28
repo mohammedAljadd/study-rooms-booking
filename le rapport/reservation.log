@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.14)  28 APR 2020 20:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.14)  28 APR 2020 21:41
 entering extended mode
 **"c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/reservation.tex"
 ("c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/reservation.tex"
@@ -553,372 +553,373 @@ Overfull \hbox (4.43399pt too wide) in paragraph at lines 313--315
 []|  [] 
  []
 
-<img/password.png, id=86, 1028.34187pt x 496.85625pt>
-File: img/password.png Graphic file (type png)
-<use img/password.png>
-Package pdftex.def Info: img/password.png  used on input line 321.
-(pdftex.def)             Requested size: 534.91347pt x 241.84685pt.
+<img/courrier-envoye.jpg, id=86, 598.48593pt x 317.68687pt>
+File: img/courrier-envoye.jpg Graphic file (type jpg)
+<use img/courrier-envoye.jpg>
+Package pdftex.def Info: img/courrier-envoye.jpg  used on input line 322.
+(pdftex.def)             Requested size: 534.9521pt x 241.85655pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 320--322
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 321--323
 []|  [] 
  []
 
 [14 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/home.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/contact.png>]
-<img/password-wrong.png, id=92, 869.49844pt x 353.06906pt>
-File: img/password-wrong.png Graphic file (type png)
-<use img/password-wrong.png>
-Package pdftex.def Info: img/password-wrong.png  used on input line 331.
-(pdftex.def)             Requested size: 597.5399pt x 227.62274pt.
+<img/courrier-gmail.png, id=92, 1026.83624pt x 497.60907pt>
+File: img/courrier-gmail.png Graphic file (type png)
+<use img/courrier-gmail.png>
+Package pdftex.def Info: img/courrier-gmail.png  used on input line 331.
+(pdftex.def)             Requested size: 534.91368pt x 241.84883pt.
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 331--332
-[] 
- []
-
-[15 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/password.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/password-wrong.png>]
-<img/password-matching.png, id=98, 864.98157pt x 392.96812pt>
-File: img/password-matching.png Graphic file (type png)
-<use img/password-matching.png>
-Package pdftex.def Info: img/password-matching.png  used on input line 340.
-(pdftex.def)             Requested size: 597.52426pt x 227.62784pt.
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 340--341
-[] 
- []
-
-<img/reservation.png, id=99, 1028.34187pt x 497.60907pt>
-File: img/reservation.png Graphic file (type png)
-<use img/reservation.png>
-Package pdftex.def Info: img/reservation.png  used on input line 348.
-(pdftex.def)             Requested size: 534.91347pt x 241.84883pt.
-
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 347--349
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 330--332
 []|  [] 
  []
 
-<img/form.png, id=100, 1028.34187pt x 496.85625pt>
-File: img/form.png Graphic file (type png)
-<use img/form.png>
-Package pdftex.def Info: img/form.png  used on input line 356.
+<img/password.png, id=93, 1028.34187pt x 496.85625pt>
+File: img/password.png Graphic file (type png)
+<use img/password.png>
+Package pdftex.def Info: img/password.png  used on input line 342.
 (pdftex.def)             Requested size: 534.91347pt x 241.84685pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 355--357
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 341--343
 []|  [] 
  []
 
-[16 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/password-matching.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/reservation.png>]
-<img/form-select.jpeg, id=106, 1035.87pt x 776.9025pt>
-File: img/form-select.jpeg Graphic file (type jpg)
-<use img/form-select.jpeg>
-Package pdftex.def Info: img/form-select.jpeg  used on input line 363.
-(pdftex.def)             Requested size: 534.92526pt x 241.84491pt.
+[15 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/courrier-envoye.jpg> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/courrier-gmail.png>]
+<img/password-wrong.png, id=98, 869.49844pt x 353.06906pt>
+File: img/password-wrong.png Graphic file (type png)
+<use img/password-wrong.png>
+Package pdftex.def Info: img/password-wrong.png  used on input line 352.
+(pdftex.def)             Requested size: 597.5399pt x 227.62274pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 362--364
-[]|  [] 
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 352--353
+[] 
  []
 
-<img/date-already.png, id=107, 1028.34187pt x 498.36188pt>
-File: img/date-already.png Graphic file (type png)
-<use img/date-already.png>
-Package pdftex.def Info: img/date-already.png  used on input line 373.
-(pdftex.def)             Requested size: 534.91347pt x 241.84209pt.
+[16 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/password.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/password-wrong.png>]
+<img/password-matching.png, id=104, 864.98157pt x 392.96812pt>
+File: img/password-matching.png Graphic file (type png)
+<use img/password-matching.png>
+Package pdftex.def Info: img/password-matching.png  used on input line 361.
+(pdftex.def)             Requested size: 597.52426pt x 227.62784pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 372--374
-[]|  [] 
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 361--362
+[] 
  []
 
-[17 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/form.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/form-select.jpeg>]
-<img/date-not-yet.png, id=112, 1028.34187pt x 497.60907pt>
-File: img/date-not-yet.png Graphic file (type png)
-<use img/date-not-yet.png>
-Package pdftex.def Info: img/date-not-yet.png  used on input line 381.
+<img/reservation.png, id=105, 1028.34187pt x 497.60907pt>
+File: img/reservation.png Graphic file (type png)
+<use img/reservation.png>
+Package pdftex.def Info: img/reservation.png  used on input line 369.
 (pdftex.def)             Requested size: 534.91347pt x 241.84883pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 380--382
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 368--370
+[]|  [] 
+ []
+
+<img/form.png, id=106, 1028.34187pt x 496.85625pt>
+File: img/form.png Graphic file (type png)
+<use img/form.png>
+Package pdftex.def Info: img/form.png  used on input line 377.
+(pdftex.def)             Requested size: 534.91347pt x 241.84685pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 376--378
+[]|  [] 
+ []
+
+[17 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/password-matching.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/reservation.png>]
+<img/form-select.jpeg, id=112, 1035.87pt x 776.9025pt>
+File: img/form-select.jpeg Graphic file (type jpg)
+<use img/form-select.jpeg>
+Package pdftex.def Info: img/form-select.jpeg  used on input line 384.
+(pdftex.def)             Requested size: 534.92526pt x 241.84491pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 383--385
+[]|  [] 
+ []
+
+<img/date-already.png, id=113, 1028.34187pt x 498.36188pt>
+File: img/date-already.png Graphic file (type png)
+<use img/date-already.png>
+Package pdftex.def Info: img/date-already.png  used on input line 394.
+(pdftex.def)             Requested size: 534.91347pt x 241.84209pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 393--395
+[]|  [] 
+ []
+
+[18 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/form.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/form-select.jpeg>]
+<img/date-not-yet.png, id=118, 1028.34187pt x 497.60907pt>
+File: img/date-not-yet.png Graphic file (type png)
+<use img/date-not-yet.png>
+Package pdftex.def Info: img/date-not-yet.png  used on input line 402.
+(pdftex.def)             Requested size: 534.91347pt x 241.84883pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 401--403
 []|  [] 
  []
 
 
-Overfull \hbox (6.58708pt too wide) in paragraph at lines 386--387
+Overfull \hbox (6.58708pt too wide) in paragraph at lines 407--408
 []\T1/futs/m/n/10 Maintenant, la boîte d'alerte af-fichera plusieurs mes-sages en fonc-tion des dates en-trées par l'utilisateur.
  []
 
-[18 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-already.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-not-yet.png>]
-<img/date-equal.png, id=118, 689.57625pt x 210.7875pt>
+[19 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-already.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-not-yet.png>]
+<img/date-equal.png, id=125, 689.57625pt x 210.7875pt>
 File: img/date-equal.png Graphic file (type png)
 <use img/date-equal.png>
-Package pdftex.def Info: img/date-equal.png  used on input line 395.
+Package pdftex.def Info: img/date-equal.png  used on input line 416.
 (pdftex.def)             Requested size: 534.92113pt x 241.85374pt.
 
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 395--396
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 416--417
 [] 
  []
 
-<img/date-old.png, id=119, 782.925pt x 263.48438pt>
+<img/date-old.png, id=126, 782.925pt x 263.48438pt>
 File: img/date-old.png Graphic file (type png)
 <use img/date-old.png>
-Package pdftex.def Info: img/date-old.png  used on input line 400.
+Package pdftex.def Info: img/date-old.png  used on input line 421.
 (pdftex.def)             Requested size: 534.9385pt x 241.86177pt.
-
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 400--401
-[] 
- []
-
-<img/date-inferior.png, id=120, 886.81313pt x 257.46187pt>
-File: img/date-inferior.png Graphic file (type png)
-<use img/date-inferior.png>
-Package pdftex.def Info: img/date-inferior.png  used on input line 405.
-(pdftex.def)             Requested size: 534.94716pt x 241.8531pt.
-
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 405--406
-[] 
- []
-
-[19 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-equal.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-old.png>]
-<img/date-superior.png, id=127, 752.8125pt x 256.70906pt>
-File: img/date-superior.png Graphic file (type png)
-<use img/date-superior.png>
-Package pdftex.def Info: img/date-superior.png  used on input line 410.
-(pdftex.def)             Requested size: 534.94861pt x 241.851pt.
-
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 410--411
-[] 
- []
-
-<img/date-intersect.png, id=128, 712.16063pt x 240.14719pt>
-File: img/date-intersect.png Graphic file (type png)
-<use img/date-intersect.png>
-Package pdftex.def Info: img/date-intersect.png  used on input line 415.
-(pdftex.def)             Requested size: 534.93416pt x 241.85416pt.
-
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 415--416
-[] 
- []
-
-[20 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-inferior.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-superior.png>]
-<img/date-OutOfRange.png, id=134, 804.00375pt x 392.96812pt>
-File: img/date-OutOfRange.png Graphic file (type png)
-<use img/date-OutOfRange.png>
-Package pdftex.def Info: img/date-OutOfRange.png  used on input line 421.
-(pdftex.def)             Requested size: 534.90115pt x 241.85683pt.
 
 Overfull \hbox (47.00003pt too wide) in paragraph at lines 421--422
 [] 
  []
 
-[21 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-intersect.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-OutOfRange.png>]
-<img/sunday.png, id=140, 896.59969pt x 383.18156pt>
+<img/date-inferior.png, id=127, 886.81313pt x 257.46187pt>
+File: img/date-inferior.png Graphic file (type png)
+<use img/date-inferior.png>
+Package pdftex.def Info: img/date-inferior.png  used on input line 426.
+(pdftex.def)             Requested size: 534.94716pt x 241.8531pt.
+
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 426--427
+[] 
+ []
+
+[20 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-equal.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-old.png>]
+<img/date-superior.png, id=133, 752.8125pt x 256.70906pt>
+File: img/date-superior.png Graphic file (type png)
+<use img/date-superior.png>
+Package pdftex.def Info: img/date-superior.png  used on input line 431.
+(pdftex.def)             Requested size: 534.94861pt x 241.851pt.
+
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 431--432
+[] 
+ []
+
+<img/date-intersect.png, id=134, 712.16063pt x 240.14719pt>
+File: img/date-intersect.png Graphic file (type png)
+<use img/date-intersect.png>
+Package pdftex.def Info: img/date-intersect.png  used on input line 436.
+(pdftex.def)             Requested size: 534.93416pt x 241.85416pt.
+
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 436--437
+[] 
+ []
+
+[21 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-inferior.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-superior.png>]
+<img/date-OutOfRange.png, id=140, 804.00375pt x 392.96812pt>
+File: img/date-OutOfRange.png Graphic file (type png)
+<use img/date-OutOfRange.png>
+Package pdftex.def Info: img/date-OutOfRange.png  used on input line 442.
+(pdftex.def)             Requested size: 534.90115pt x 241.85683pt.
+
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 442--443
+[] 
+ []
+
+[22 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-intersect.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-OutOfRange.png>]
+<img/sunday.png, id=146, 896.59969pt x 383.18156pt>
 File: img/sunday.png Graphic file (type png)
 <use img/sunday.png>
-Package pdftex.def Info: img/sunday.png  used on input line 429.
+Package pdftex.def Info: img/sunday.png  used on input line 450.
 (pdftex.def)             Requested size: 534.92679pt x 241.85002pt.
 
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 429--430
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 450--451
 [] 
  []
 
-<img/date-done.png, id=141, 719.68875pt x 377.15906pt>
+<img/date-done.png, id=147, 719.68875pt x 377.15906pt>
 File: img/date-done.png Graphic file (type png)
 <use img/date-done.png>
-Package pdftex.def Info: img/date-done.png  used on input line 440.
+Package pdftex.def Info: img/date-done.png  used on input line 461.
 (pdftex.def)             Requested size: 534.95532pt x 241.84712pt.
 
-Overfull \hbox (47.00003pt too wide) in paragraph at lines 440--441
+Overfull \hbox (47.00003pt too wide) in paragraph at lines 461--462
 [] 
  []
 
 
-Overfull \hbox (1.877pt too wide) in paragraph at lines 444--445
+Overfull \hbox (1.877pt too wide) in paragraph at lines 465--466
 []\T1/futs/m/n/10 Lorsque l'utilisateur ef-fectue une réser-va-tion, un e-mail sera en-voyé à l'administrateur comme l'image
  []
 
-[22 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/sunday.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-done.png>]
-<img/gmail-reservaton.jpg, id=147, 700.86844pt x 358.33875pt>
+[23 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/sunday.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/date-done.png>]
+<img/gmail-reservaton.jpg, id=153, 700.86844pt x 358.33875pt>
 File: img/gmail-reservaton.jpg Graphic file (type jpg)
 <use img/gmail-reservaton.jpg>
-Package pdftex.def Info: img/gmail-reservaton.jpg  used on input line 449.
+Package pdftex.def Info: img/gmail-reservaton.jpg  used on input line 470.
 (pdftex.def)             Requested size: 534.94345pt x 241.8518pt.
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 449--450
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 470--471
 [] 
  []
 
-<img/reservation-annuler.png, id=148, 1028.34187pt x 496.10344pt>
+<img/reservation-annuler.png, id=154, 1028.34187pt x 496.10344pt>
 File: img/reservation-annuler.png Graphic file (type png)
 <use img/reservation-annuler.png>
-Package pdftex.def Info: img/reservation-annuler.png  used on input line 457.
+Package pdftex.def Info: img/reservation-annuler.png  used on input line 478.
 (pdftex.def)             Requested size: 534.91347pt x 241.85133pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 456--458
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 477--479
 []|  [] 
  []
 
-[23 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/gmail-reservaton.jpg> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/reservation-annuler.png>]
-<img/gmail-annulation.jpg, id=153, 774.64406pt x 322.95656pt>
+[24 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/gmail-reservaton.jpg> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/reservation-annuler.png>]
+<img/gmail-annulation.jpg, id=159, 774.64406pt x 322.95656pt>
 File: img/gmail-annulation.jpg Graphic file (type jpg)
 <use img/gmail-annulation.jpg>
-Package pdftex.def Info: img/gmail-annulation.jpg  used on input line 464.
+Package pdftex.def Info: img/gmail-annulation.jpg  used on input line 485.
 (pdftex.def)             Requested size: 534.91869pt x 241.84723pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 463--465
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 484--486
 []|  [] 
  []
 
-<img/courrier-envoye.jpg, id=154, 598.48593pt x 317.68687pt>
-File: img/courrier-envoye.jpg Graphic file (type jpg)
-<use img/courrier-envoye.jpg>
-Package pdftex.def Info: img/courrier-envoye.jpg  used on input line 472.
-(pdftex.def)             Requested size: 534.9521pt x 241.85655pt.
-
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 471--473
-[]|  [] 
- []
-
-[24 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/gmail-annulation.jpg> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/courrier-envoye.jpg>]
-<img/courrier-gmail.png, id=158, 685.8122pt x 348.55219pt>
-File: img/courrier-gmail.png Graphic file (type png)
-<use img/courrier-gmail.png>
-Package pdftex.def Info: img/courrier-gmail.png  used on input line 480.
-(pdftex.def)             Requested size: 534.9523pt x 241.84682pt.
-
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 479--481
-[]|  [] 
- []
-
-<img/home-admin.png, id=159, 1025.33063pt x 499.11469pt>
+<img/home-admin.png, id=160, 1025.33063pt x 499.11469pt>
 File: img/home-admin.png Graphic file (type png)
 <use img/home-admin.png>
-Package pdftex.def Info: img/home-admin.png  used on input line 494.
+Package pdftex.def Info: img/home-admin.png  used on input line 502.
 (pdftex.def)             Requested size: 534.91162pt x 241.84946pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 493--495
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 501--503
 []|  [] 
  []
 
-[25 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/courrier-gmail.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/home-admin.png>]
-<img/modify.png, id=166, 1028.34187pt x 495.35063pt>
+[25 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/gmail-annulation.jpg>]
+<img/modify.png, id=165, 1028.34187pt x 495.35063pt>
 File: img/modify.png Graphic file (type png)
 <use img/modify.png>
-Package pdftex.def Info: img/modify.png  used on input line 503.
+Package pdftex.def Info: img/modify.png  used on input line 511.
 (pdftex.def)             Requested size: 534.91347pt x 241.84715pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 502--504
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 510--512
 []|  [] 
  []
 
-<img/modify-add.png, id=167, 684.30656pt x 347.79938pt>
+<img/modify-add.png, id=166, 684.30656pt x 347.79938pt>
 File: img/modify-add.png Graphic file (type png)
 <use img/modify-add.png>
-Package pdftex.def Info: img/modify-add.png  used on input line 512.
+Package pdftex.def Info: img/modify-add.png  used on input line 520.
 (pdftex.def)             Requested size: 534.94731pt x 241.84457pt.
-
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 511--513
-[]|  [] 
- []
-
-[26 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/modify.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/modify-add.png>]
-<img/modify-remove.png, id=173, 1028.34187pt x 496.10344pt>
-File: img/modify-remove.png Graphic file (type png)
-<use img/modify-remove.png>
-Package pdftex.def Info: img/modify-remove.png  used on input line 520.
-(pdftex.def)             Requested size: 534.91347pt x 241.85133pt.
 
 Overfull \hbox (4.43399pt too wide) in paragraph at lines 519--521
 []|  [] 
  []
 
-<img/modify-remove-accept.png, id=174, 773.89125pt x 405.01312pt>
-File: img/modify-remove-accept.png Graphic file (type png)
-<use img/modify-remove-accept.png>
-Package pdftex.def Info: img/modify-remove-accept.png  used on input line 527.
-(pdftex.def)             Requested size: 534.91843pt x 241.85408pt.
+[26 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/home-admin.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/modify.png>]
+<img/modify-remove.png, id=172, 1028.34187pt x 496.10344pt>
+File: img/modify-remove.png Graphic file (type png)
+<use img/modify-remove.png>
+Package pdftex.def Info: img/modify-remove.png  used on input line 528.
+(pdftex.def)             Requested size: 534.91347pt x 241.85133pt.
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 527--528
-[] 
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 527--529
+[]|  [] 
  []
 
-[27 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/modify-remove.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/modify-remove-accept.png>]
-<img/modify-removed.png, id=180, 685.8122pt x 380.92313pt>
-File: img/modify-removed.png Graphic file (type png)
-<use img/modify-removed.png>
-Package pdftex.def Info: img/modify-removed.png  used on input line 535.
-(pdftex.def)             Requested size: 534.9523pt x 184.93929pt.
+<img/modify-remove-accept.png, id=173, 773.89125pt x 405.01312pt>
+File: img/modify-remove-accept.png Graphic file (type png)
+<use img/modify-remove-accept.png>
+Package pdftex.def Info: img/modify-remove-accept.png  used on input line 535.
+(pdftex.def)             Requested size: 534.91843pt x 241.85408pt.
 
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 535--536
 [] 
  []
 
-<img/affectation.png, id=181, 1028.34187pt x 497.60907pt>
-File: img/affectation.png Graphic file (type png)
-<use img/affectation.png>
-Package pdftex.def Info: img/affectation.png  used on input line 542.
-(pdftex.def)             Requested size: 534.91347pt x 241.84883pt.
+[27 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/modify-add.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/modify-remove.png>]
+<img/modify-removed.png, id=179, 685.8122pt x 380.92313pt>
+File: img/modify-removed.png Graphic file (type png)
+<use img/modify-removed.png>
+Package pdftex.def Info: img/modify-removed.png  used on input line 543.
+(pdftex.def)             Requested size: 534.9523pt x 184.93929pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 541--543
-[]|  [] 
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 543--544
+[] 
  []
 
-[28 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/modify-removed.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/affectation.png>]
-<img/expired-session.png, id=187, 857.45343pt x 440.39531pt>
-File: img/expired-session.png Graphic file (type png)
-<use img/expired-session.png>
-Package pdftex.def Info: img/expired-session.png  used on input line 550.
-(pdftex.def)             Requested size: 534.9127pt x 241.84857pt.
+<img/affectation.png, id=180, 1028.34187pt x 497.60907pt>
+File: img/affectation.png Graphic file (type png)
+<use img/affectation.png>
+Package pdftex.def Info: img/affectation.png  used on input line 550.
+(pdftex.def)             Requested size: 534.91347pt x 241.84883pt.
 
 Overfull \hbox (4.43399pt too wide) in paragraph at lines 549--551
 []|  [] 
  []
 
-<img/cant-access.png, id=188, 868.74562pt x 413.29407pt>
+[28 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/modify-remove-accept.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/modify-removed.png>]
+<img/expired-session.png, id=186, 857.45343pt x 440.39531pt>
+File: img/expired-session.png Graphic file (type png)
+<use img/expired-session.png>
+Package pdftex.def Info: img/expired-session.png  used on input line 558.
+(pdftex.def)             Requested size: 534.9127pt x 241.84857pt.
+
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 557--559
+[]|  [] 
+ []
+
+[29 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/affectation.png>]
+<img/cant-access.png, id=191, 868.74562pt x 413.29407pt>
 File: img/cant-access.png Graphic file (type png)
 <use img/cant-access.png>
-Package pdftex.def Info: img/cant-access.png  used on input line 566.
+Package pdftex.def Info: img/cant-access.png  used on input line 574.
 (pdftex.def)             Requested size: 534.94481pt x 241.85487pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 565--567
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 573--575
 []|  [] 
  []
 
-[29 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/expired-session.png>]
-<img/htaccess.png, id=193, 754.31813pt x 397.485pt>
+[30 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/expired-session.png>]
+<img/htaccess.png, id=196, 754.31813pt x 397.485pt>
 File: img/htaccess.png Graphic file (type png)
 <use img/htaccess.png>
-Package pdftex.def Info: img/htaccess.png  used on input line 573.
+Package pdftex.def Info: img/htaccess.png  used on input line 581.
 (pdftex.def)             Requested size: 534.91356pt x 241.8529pt.
 
-Overfull \hbox (4.43399pt too wide) in paragraph at lines 572--574
+Overfull \hbox (4.43399pt too wide) in paragraph at lines 580--582
 []|  [] 
  []
 
-[30 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/cant-access.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/htaccess.png>]
-Overfull \hbox (0.14722pt too wide) in paragraph at lines 584--585
+[31 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/cant-access.png> <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/htaccess.png>]
+Overfull \hbox (0.14722pt too wide) in paragraph at lines 592--593
 \T1/futs/m/n/10 tact, []\T1/futs/b/n/10 GMAIL[] \T1/futs/m/n/10 bloque tout mes-sage en-voyé par []\T1/futs/b/n/10 PHP[]\T1/futs/m/n/10 , elles sont traités comme du spam. Mais l'application
  []
 
-<img/gmail-block.PNG, id=199, 665.48625pt x 335.00156pt>
+<img/gmail-block.PNG, id=203, 665.48625pt x 335.00156pt>
 File: img/gmail-block.PNG Graphic file (type png)
 <use img/gmail-block.PNG>
-Package pdftex.def Info: img/gmail-block.PNG  used on input line 588.
+Package pdftex.def Info: img/gmail-block.PNG  used on input line 596.
 (pdftex.def)             Requested size: 597.54092pt x 341.43124pt.
 
-Overfull \hbox (1.13905pt too wide) in paragraph at lines 587--591
+Overfull \hbox (1.13905pt too wide) in paragraph at lines 595--599
 []|  []
  []
 
-[31 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/gmail-block.PNG>]
-<img/ht-error.PNG, id=205, 776.9025pt x 249.18094pt>
+[32 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/gmail-block.PNG>]
+<img/ht-error.PNG, id=208, 776.9025pt x 249.18094pt>
 File: img/ht-error.PNG Graphic file (type png)
 <use img/ht-error.PNG>
-Package pdftex.def Info: img/ht-error.PNG  used on input line 602.
+Package pdftex.def Info: img/ht-error.PNG  used on input line 610.
 (pdftex.def)             Requested size: 455.25075pt x 199.1739pt.
 
-Overfull \hbox (1.13905pt too wide) in paragraph at lines 601--603
+Overfull \hbox (1.13905pt too wide) in paragraph at lines 609--611
 []|  [] 
  []
 
-LaTeX Font Info:    Trying to load font information for U+futs on input line 605.
+LaTeX Font Info:    Trying to load font information for U+futs on input line 613.
 ("C:\Users\AL JADD\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fourier\ufuts.fd"
 File: ufuts.fd 2004/03/02 Fontinst v1.926 font definitions for U/futs.
-) [32 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/ht-error.PNG>] ("c:/xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\reservation.aux") ) 
+) [33 <c:/xampp/htdocs/gitProject/Dev_Web_INPT_2020_G0-1/le rapport/img/ht-error.PNG>] ("c:/xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\reservation.aux") ) 
 Here is how much of TeX's memory you used:
  3246 strings out of 480930
  48114 string characters out of 2898821
@@ -928,9 +929,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  30i,6n,37p,1012b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-orns.pfb><C:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/AL JADD/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on "c:/xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\reservation.pdf" (32 pages, 11981249 bytes).
+Output written on "c:/xampp\htdocs\gitProject\Dev_Web_INPT_2020_G0-1\le rapport\reservation.pdf" (33 pages, 12013411 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
+ 226 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  276 words of extra memory for PDF output out of 10000 (max. 10000000)
 

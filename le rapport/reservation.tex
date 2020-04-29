@@ -3,7 +3,7 @@
 \usepackage{graphicx}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{fourier}
-\usepackage[a4paper, total={6.5in, 8in}]{geometry}
+\usepackage[a4paper, total={6.5in, 10in}]{geometry}
 \definecolor{amethyst}{rgb}{0.6, 0.4, 0.8}
 \title{Reservation des salles}
 \author{Mohammed AL JADD}
@@ -13,7 +13,7 @@
 
     
 
-
+\vspace{2cm}
 
 \includegraphics[width=\textwidth]{img/Go.png}
 
@@ -39,7 +39,7 @@
    
    
    
-   
+   \vspace{4cm}
    
    \item \textcolor{red}{\huge L'avancement du projet} :
    
@@ -79,11 +79,125 @@
                \noindent\makebox[\textwidth]{\includegraphics[width=19cm,height=11cm]{img/dataBase.png}}
          
          
-	 \vspace{0.4cm}
+	 \vspace{1cm}
+	 
+	 \begin{enumerate}
+	 \item \textcolor{red}{\large Tables :}
+	 
+	 
+	 
+	 Dans la base de données, il y a six tableaux:
+	 
+	  \begin{enumerate}
+	  
+	  \vspace{1cm}
+	 
+	  \item \textcolor{red}{Salle :} 
+	  \vspace{1cm}
+	  	Le premier tableau contient les salles
+	  	
+	  	 \hspace*{-1.05in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=19cm,height=9cm]{img/salle-table.png}}
+	  	
+	  \vspace{1cm}
+	  	
+	  \item \textcolor{red}{Batiment :}
+	  
+	  Le deuxième tableau contient les batiments :
+	  
+	  \vspace{1cm}
+	  
+	   \hspace*{-1.05in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=19cm,height=9cm]{img/batiment-table.png}}
+	  
+	  
+	  
+	  \vspace{1cm}
+	  \item \textcolor{red}{Prof :}
+	  
+		Le troisième tableau contient les informations des utilisateurs :	  
+		
+		\vspace{1cm}		
+		
+		\hspace*{-1.05in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=19cm,height=9cm]{img/prof-table.png}}		
+		
+		
+	  
+	  
+\vspace{3cm}	  
+	  
+	  \item \textcolor{red}{Affectation :}
+	  
+	  Le quatrième tableau contient toutes les réservations qui ont été faites :	 
+	  
+	  \vspace{1cm} 
+		
+		\hspace*{-1.05in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=19cm,height=9cm]{img/affectation-table.png}}
+	  
+	  
+	  \vspace{1cm}
+	  
+	  \item \textcolor{red}{Forget-password :}
+	  
+		Ce tableau contient le code envoyé pour la réinitialisation du mot de passe :	
+		\vspace{1cm}  
+		
+		\hspace*{-1.05in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=19cm,height=9cm]{img/reset-table.png}}	  
+	  
+	  \vspace{3cm}
+	  	
+	  \item \textcolor{red}{Bloqued-user :}
+	 
+	 La table Lost contient les utilisateurs qui n'ont pas réussi à entrer le bon code, bloqué ou non :
+	 \vspace{1cm}
+	 
+	 \hspace*{-1.05in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=19cm,height=9cm]{img/block-table.png}}	
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	  \end{enumerate}
+	 
+	 
+	 
+	 \vspace{3cm}
+	 
+	 
+	 \item \textcolor{red}{\large Events :}	 
+	 
+	 
+	 
            
            
             \setlength{\parindent}{1cm} supposons qu'une salle soit réservée pour les prochaines 48 heures, si un utilisateur souhaite la réserver, il doit attendre que la première réservation est terminée, mais grâce à un événement (\textcolor{red}{event}) dans la base de données, la durée de la réservation diminue automatiquement lorsque l'heure de la réservation est venue, donc quand une heure s'est écoulée, la salle peut être réservée car l'utilisateur a le droit de réserver au moins une heure .
-	\textcolor{red}{Database event} :        
+            \vspace{1.25cm}
+            
+            \setlength{\parindent}{1cm} Il y a huit événements \textcolor{red}{Event} dans la base de données, chacun est expliqué ci-dessous avec des images.\\
+	\textcolor{red}{Database event} :  
+	
+	\begin{enumerate}
+	\item \textcolor{blue}{Diminuer la durée de la réservation}
+	\item \textcolor{blue}{Supprimer les anciennes réservations}
+	\item \textcolor{blue}{Diminuer le temps de validité du code de réinitialisation du mot de passe}
+	\item \textcolor{blue}{Expirer du code de réinitialisation du mot de passe}
+	\item \textcolor{blue}{Bloquer les utilisateurs}
+	\item \textcolor{blue}{Diminuer le temps de blocage}
+	\item \textcolor{blue}{Débloquer les utilisateurs}
+	\item \textcolor{blue}{Effacer les tentatives infructueuses après une heure des dernières tentatives}
+
+	\end{enumerate}
+	
+	\vspace{2cm}
+	
+	
+	Cet événement diminuera la durée de la réservation quand il commencera :      
          
          \hspace*{-1.05in}
                \noindent\makebox[\textwidth]{\includegraphics[width=14cm,height=11cm]{img/decrease-margin.png}}
@@ -92,27 +206,39 @@
          Un autre événement dans la base de données va supprimer toute réservation terminée :
          
 		\hspace*{-1.05in}
-               \noindent\makebox[\textwidth]{\includegraphics[width=14cm,height=8.5cm]{img/old-reservation.png}}         
+               \noindent\makebox[\textwidth]{\includegraphics[width=14cm,height=9.5cm]{img/old-reservation.png}}         
          
          
-         
+         \vspace{4cm}
          
           Cet événement consiste à diminuer une variable 'validity' :
+          \vspace{0.5cm}
          
 		\hspace*{-1.05in}
-               \noindent\makebox[\textwidth]{\includegraphics[width=14cm,height=8.5cm]{img/decrease-random-validty.png}}
-               
+               \noindent\makebox[\textwidth]{\includegraphics[width=14cm,height=9.5cm]{img/decrease-random-validty.png}}
+               \vspace{1cm}
                 Lorsque la variable est égale à zéro, l'événement suivant supprimera la ligne de la table car le code envoyé aura expiré après 5 minutes :
-         
+                
+         \vspace{0.5cm}
+
 		\hspace*{-1.05in}
-               \noindent\makebox[\textwidth]{\includegraphics[width=14cm,height=8.5cm]{img/delete_randon.png}}
+               \noindent\makebox[\textwidth]{\includegraphics[width=14cm,height=9.5cm]{img/delete_randon.png}}
          
         
-        Un événement définira la colonne de blocage sur 'yes', ce qui signifie que l'utilisateur est bloqué pour la réinitialisation du mot de passe :
+        Un événement définira la colonne de blocage sur 'yes', ce qui signifie que l'utilisateur est bloqué pour la réinitialisation du mot de passe et le dernier code envoyé sera expiré just après :
         
         \vspace{0.4cm}
         \hspace*{-1.05in}
                \noindent\makebox[\textwidth]{\includegraphics[width=14cm,height=8.5cm]{img/block-user.png}}
+        
+        
+       Après avoir empêché un utilisateur de réinitialiser le mot de passe, un e-mail sera envoyé à son e-mail pour savoir si celui qui tentait de réinitialiser son mot de passe pour l'aider à en obtenir un nouveau :
+        
+        \vspace{0.4cm}
+        \hspace*{-1.05in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=17cm,height=8.5cm]{img/block-gmail.png}}
+        
+        
         
         
         
@@ -139,7 +265,7 @@
         
         
         
-        
+         \end{enumerate}
         
         
         
@@ -175,6 +301,8 @@
          \vspace{0.4cm}
                 \setlength{\parindent}{1cm} J'ai ajouté JavaScript à mon site Web pour le rendre plus dynamique, par exemple, lorsqu'il y a des erreurs comme si l'utilisateur n'a pas entré ses informations et soumis, le site Web affichera une erreur indiquant que les champs sont vides à l'aide de la boîte d'alerte.
          
+         
+         \vspace{4cm}
          \vspace{4.2cm}
    
     \end{enumerate}
@@ -213,18 +341,7 @@
         \end{tabular}
         
         \vspace{1cm}
-   \item \textcolor{red}{\huge Choses non fonctionnelles} :  
-   \vspace{0.7cm}
-        
-        \begin{enumerate}
-        \item\textcolor{blue}{Empêcher l'accès direct aux pages Web}
-        \item\textcolor{blue}{Empêcher l'accès direct aux pages Web d'administration}
-        \item\textcolor{blue}{Empêcher l'accès aux répertoires de l'application Web}
-        \item\textcolor{blue}{Empêcher la réinitialisation du mot de passe après 10 tentatives infructueuses}
-        \item\textcolor{blue}{Empêcher l'accès direct à certaines pages sans passer par des pages}
-        
-        
-        \end{enumerate}
+  
         
         
         
@@ -309,6 +426,14 @@ Si le code est incorrect :
 \hspace*{-0.7in}
                \noindent\makebox[\textwidth]{\includegraphics[width=18cm,height=8.5cm]{img/code-incorrect.png}}
                
+     \vspace{0.4cm}          
+       Si le code a expiré :       
+               
+               
+\vspace{0.4cm}
+\hspace*{-0.7in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=18cm,height=8.5cm]{img/five-minutes.png}}
+            
                
  \vspace{0.4cm}
 
@@ -631,7 +756,18 @@ Maintenant, si l'administrateur s'est connecté, les pages d'accueil contiendron
   
   
 	\vspace{3cm}
-\item \textcolor{red}{\huge Les choses non fonctionnelles} :  
+ \item \textcolor{red}{\huge Choses non fonctionnelles} :  
+   \vspace{0.7cm}
+        
+        \begin{enumerate}
+        \item\textcolor{blue}{Empêcher l'accès direct aux pages Web}
+        \item\textcolor{blue}{Empêcher l'accès direct aux pages Web d'administration}
+        \item\textcolor{blue}{Empêcher l'accès aux répertoires de l'application Web}
+        \item\textcolor{blue}{Empêcher la réinitialisation du mot de passe après 10 tentatives infructueuses}
+        \item\textcolor{blue}{Empêcher l'accès direct à certaines pages sans passer par des pages}
+        
+        
+        \end{enumerate} 
   
   Il y a certaines pages auxquelles les utilisateurs ne peuvent pas accéder à moins qu'ils ne soient l'administrateur, donc si l'utilisateur essaie d'entrer dans ces pages la boîte d'alerte lui donnera un message comme l'image suivante s'affiche et juste après cela, la session sera automatiquement détruite.
   
@@ -640,6 +776,18 @@ Maintenant, si l'administrateur s'est connecté, les pages d'accueil contiendron
 \vspace{0.7cm}
                \hspace*{-0.7in}
                \noindent\makebox[\textwidth]{\includegraphics[width=18.8cm,height=8.5cm]{img/cant-access.png}} 
+
+
+
+Si l'utilisateur n'a pas saisi le bon code de réinitialisation du mot de passe 10 fois, il n'est plus en mesure de réinitialiser le mot de passe pour les deux prochaines heures.
+
+
+
+  
+\vspace{0.7cm}
+               \hspace*{-0.7in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=18.8cm,height=8.5cm]{img/ten-attempts.png}} 
+
 
 
 \vspace{0.7cm}

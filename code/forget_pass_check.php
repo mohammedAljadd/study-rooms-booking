@@ -115,9 +115,44 @@ include 'includes/dbconn.php';
             $attempt=$row2['attempts'] ;
         }
           if($attempt==11){
-            $_SESSION['outOFreset']="Vous ne pouvez pas réinitialiser le mot de passe pendant les 2 heures suivantes, car vous n'avez pas entré le bon code de réinitialisation du mot de passe pendant 10 tentatives !";
-            header("Location:login.php");
-          }
+
+              $subject = "Password reset block";
+              $sql = "SELECT concat(if(gender='M','Mr ','Mme '),prof.prenom) as name from prof  where email='".$email."';";
+              $result=mysqli_query($conn,$sql);
+                while($row = mysqli_fetch_assoc($result)){
+                    $myGuess=$row['name'] ;
+                }
+                $date = strtotime("now");
+                $myHour = date('H', $date);
+                if($myHour<18 && $myHour>5){
+                  $bonjour='Bonjour';
+                  $bon = 'Bonne journée';
+                }
+                else{
+                  $bonjour='Bonsoir';
+                  $bon = 'Bonne soirée';
+                }
+
+              $head = '<h4>On '.date('j F o').', at '.date('H:i').',<h4>';
+              $headers = "MIME-Version: 1.0" . "\r\n";
+              $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+              $headers .= 'From: aljadd700@gmail.com';
+              $recipient='webaljadd@gmail.com';
+              $message = $head ." <br><h4>".$bonjour." ".$myGuess.",<h4><br>
+              <h4>Votre compte est  <span style='color:red'>bloqué</span> en ce moment contre la réinitialisation du mot de passe 
+              en raison de l'échec de la saisie du code envoyé correct pendant 10 tentatives . <h4>"."\n\n
+              Si vous qui tentiez de réinitialiser le mot de passe, veuillez nous le faire savoir pour vous débloquer et vous donner un nouveau mot de passe.
+              <br><br>Veuillez envoyer un message à cet e-mail mohammedaljadd8@gmail.com.<br><br>".$bon.".<br><br>Administration INPT.
+              <br>https://www.inpt.ac.ma/<br>";
+              if(mail($recipient, $subject, $message, $headers)){
+                $_SESSION['outOFreset']="Vous ne pouvez pas réinitialiser le mot de passe pendant les 2 heures suivantes, car vous n'avez pas entré le bon code de réinitialisation du mot de passe pendant 10 tentatives !";
+                header("Location:login.php");
+              }
+              else{
+                  echo 'cawalima';
+              }
+              
+            }
           else{
             $_SESSION['wrongRandom'] = "Le code que vous avez entrer est incorrect, veuillez entrer le code valide";
             header("Location:enterRandom.php?wrongitp");

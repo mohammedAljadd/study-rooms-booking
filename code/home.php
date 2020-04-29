@@ -21,6 +21,8 @@ if(isset($_SESSION['last_action'])){
         {
             $email = $_SESSION['email'];
             $sql = "delete from forget_password where email='".$email."'";
+            $sql2 = "delete from blocked_user where email='".$email."'";
+            $result2= mysqli_query($conn,$sql2);
             $result= mysqli_query($conn,$sql);
             $sql = "SELECT concat(if(gender='M','Mr ','Mme '),prof.prenom) as name from prof  where email='".$email."';";
             $result=mysqli_query($conn,$sql);

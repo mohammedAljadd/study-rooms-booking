@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2020 at 04:19 PM
+-- Generation Time: Apr 29, 2020 at 04:47 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -72,6 +72,13 @@ CREATE TABLE `blocked_user` (
   `lastAttemp` datetime(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `blocked_user`
+--
+
+INSERT INTO `blocked_user` (`email`, `attempts`, `block_time`, `block`, `lastAttemp`) VALUES
+('aljadd.mohammed@ine.inpt.ma', 11, 7179, 'yes', '2020-04-29 15:46:56.000000');
+
 -- --------------------------------------------------------
 
 --
@@ -90,7 +97,7 @@ CREATE TABLE `forget_password` (
 --
 
 INSERT INTO `forget_password` (`email`, `random`, `validity`, `fin`) VALUES
-('hajar_berrada@inpt.ac.ma', 5537922, 198, '2020-04-29 15:22:39');
+('hajar_berrada@inpt.ac.ma', 1933262, 167, '2020-04-29 15:50:04');
 
 -- --------------------------------------------------------
 
@@ -274,15 +281,18 @@ forget_password.validity = TIMESTAMPDIFF(second,now(),forget_password.fin)
 
 WHERE 1$$
 
-CREATE DEFINER=`root`@`localhost` EVENT `block user` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-29 01:16:14' ON COMPLETION NOT PRESERVE ENABLE DO UPDATE blocked_user
+CREATE DEFINER=`root`@`localhost` EVENT `block user` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-29 01:16:14' ON COMPLETION NOT PRESERVE ENABLE DO UPDATE blocked_user INNER JOIN forget_password ON blocked_user.email=forget_password.email
 set
 blocked_user.block = 'yes',
-blocked_user.block_time=7200
+blocked_user.block_time=7200,
+forget_password.fin=now()
 
 WHERE
 blocked_user.attempts=11
 and
-blocked_user.block_time=1$$
+blocked_user.block_time=1
+and 
+blocked_user.email=forget_password.email$$
 
 CREATE DEFINER=`root`@`localhost` EVENT `decrease block time` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-29 01:33:02' ON COMPLETION NOT PRESERVE ENABLE DO UPDATE blocked_user
 SET
@@ -293,7 +303,7 @@ blocked_user.block ='yes'$$
 CREATE DEFINER=`root`@`localhost` EVENT `unblock user` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-29 03:57:54' ON COMPLETION NOT PRESERVE ENABLE DO DELETE FROM blocked_user WHERE blocked_user.block_time<5 and blocked_user.block='yes'$$
 
 CREATE DEFINER=`root`@`localhost` EVENT `clear block` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-29 06:14:06' ON COMPLETION NOT PRESERVE ENABLE DO DELETE FROM blocked_user
-WHERE TIMESTAMPDIFF(second,blocked_user.lastAttemp,now())>3600$$
+WHERE TIMESTAMPDIFF(second,blocked_user.lastAttemp,now())>3600 and blocked_user.block !='yes'$$
 
 DELIMITER ;
 COMMIT;

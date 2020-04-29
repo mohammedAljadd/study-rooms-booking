@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2020 at 07:52 AM
+-- Generation Time: Apr 29, 2020 at 06:03 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -36,6 +36,13 @@ CREATE TABLE `affectation` (
   `Marge` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `affectation`
+--
+
+INSERT INTO `affectation` (`idProf`, `idSalle`, `date`, `date_fin`, `Marge`) VALUES
+(2, 1, '2020-04-29 08:00:00', '2020-04-29 12:00:00', 14400);
+
 -- --------------------------------------------------------
 
 --
@@ -61,6 +68,19 @@ INSERT INTO `batiment` (`id`, `nom`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `blocked_user`
+--
+
+CREATE TABLE `blocked_user` (
+  `email` varchar(30) NOT NULL,
+  `attempts` int(10) NOT NULL,
+  `block_time` int(10) NOT NULL,
+  `block` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `forget_password`
 --
 
@@ -70,13 +90,6 @@ CREATE TABLE `forget_password` (
   `validity` int(50) NOT NULL,
   `fin` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `forget_password`
---
-
-INSERT INTO `forget_password` (`email`, `random`, `validity`, `fin`) VALUES
-('hajar_berrada@inpt.ac.ma', 8288635, 736, '2020-04-27 07:04:46');
 
 -- --------------------------------------------------------
 
@@ -98,10 +111,10 @@ CREATE TABLE `prof` (
 --
 
 INSERT INTO `prof` (`idProf`, `nom`, `prenom`, `email`, `password`, `gender`) VALUES
-(1, 'Mohammed', 'AL JADD', 'aljadd.mohammed@ine.inpt.ma', 'moRo995gig', 'M'),
+(1, 'Mohammed', 'AL JADD', 'aljadd.mohammed@ine.inpt.ma', '1682009SS', 'M'),
 (2, 'Hassan', 'OMAR', 'hassan_omar@inpt.ac.ma', 'galaxy66', 'M'),
-(3, 'Hajar', 'BERADDA', 'hajar_berrada@inpt.ac.ma', 'oppo99', 'F'),
-(4, 'Maryem', 'SOUAD', 'maryem_souad@inpt.ac.ma', 'souadinpt22', 'F'),
+(3, 'Hajar', 'BERADDA', 'hajar_berrada@inpt.ac.ma', '99gsGt54', 'F'),
+(4, 'Maryem', 'SOUAD', 'maryem_souad@inpt.ac.ma', 'kjh345kl3', 'F'),
 (5, 'Khadija', 'ALAMI', 'khadija_alami@inpt.ma', 'alamiinpt54', 'F'),
 (6, 'Ahmed', 'FAHIM', 'ahmed_fahim@inpt.ac.ma', 'oppotest65', 'M'),
 (7, 'Mohamed', 'ABDELLAH', 'mohamed_abdellah@inpt.ac.ma', 'abdellahinpt911', 'M'),
@@ -188,6 +201,12 @@ ALTER TABLE `batiment`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `blocked_user`
+--
+ALTER TABLE `blocked_user`
+  ADD PRIMARY KEY (`email`);
+
+--
 -- Indexes for table `forget_password`
 --
 ALTER TABLE `forget_password`
@@ -246,13 +265,31 @@ affectation.Marge = TIMESTAMPDIFF(second,now(),affectation.date_fin)
 WHERE
 affectation.date < now()$$
 
-CREATE DEFINER=`root`@`localhost` EVENT `delete_randon` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-27 02:14:48' ON COMPLETION NOT PRESERVE ENABLE DO DELETE FROM forget_password WHERE forget_password.validity =0$$
+CREATE DEFINER=`root`@`localhost` EVENT `delete_randon` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-27 02:14:48' ON COMPLETION NOT PRESERVE ENABLE DO DELETE FROM forget_password WHERE forget_password.validity <0$$
 
 CREATE DEFINER=`root`@`localhost` EVENT `decrease random validty` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-27 02:26:38' ON COMPLETION NOT PRESERVE ENABLE DO UPDATE forget_password
 set
 forget_password.validity = TIMESTAMPDIFF(second,now(),forget_password.fin)
 
 WHERE 1$$
+
+CREATE DEFINER=`root`@`localhost` EVENT `block user` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-29 01:16:14' ON COMPLETION NOT PRESERVE ENABLE DO UPDATE blocked_user
+set
+blocked_user.block = 'yes',
+blocked_user.block_time=TIME_TO_SEC(now())+3600
+
+WHERE
+blocked_user.attempts=11
+and
+blocked_user.block_time=1$$
+
+CREATE DEFINER=`root`@`localhost` EVENT `decrease block time` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-29 01:33:02' ON COMPLETION NOT PRESERVE ENABLE DO UPDATE blocked_user
+SET
+blocked_user.block_time =blocked_user.block_time-1
+WHERE
+blocked_user.block ='yes'$$
+
+CREATE DEFINER=`root`@`localhost` EVENT `unblock user` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-29 03:57:54' ON COMPLETION NOT PRESERVE ENABLE DO DELETE FROM blocked_user WHERE blocked_user.block_time<0$$
 
 DELIMITER ;
 COMMIT;

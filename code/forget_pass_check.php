@@ -7,7 +7,7 @@ include 'includes/dbconn.php';
         $result= mysqli_query($conn,$sql);
         $random =  rand(1000000,9999999);
         $sql = "select email from prof where email='".$email."';";
-        $endTimeSeconds = strtotime("now")+300-3600;
+        $endTimeSeconds = strtotime("now")+315-3600;
         $endTime=date("Y-m-d H:i:s",$endTimeSeconds);
         $result= mysqli_query($conn,$sql);
         $out = mysqli_num_rows($result);
@@ -104,7 +104,7 @@ include 'includes/dbconn.php';
           }
           else{
             
-            $sql = "INSERT INTO `blocked_user` (`email`, `attempts`,`lastAttemp`) VALUES ('$emaiL',1,'$lastAttemp');";
+            $sql = "INSERT INTO `blocked_user` (`email`, `attempts`,`lastAttemp`,block_time) VALUES ('$emaiL',1,'$lastAttemp',1);";
             $result= mysqli_query($conn,$sql);
           }
           $email = $_SESSION['email_forget'];
@@ -138,7 +138,7 @@ include 'includes/dbconn.php';
           echo 'no delete';
         }
         $random =  rand(1000000,9999999);
-        $endTimeSeconds = strtotime("now")+300-3600; //3ndna mochkil zid sa3a n9ess sa3a
+        $endTimeSeconds = strtotime("now")+315-3600; //3ndna mochkil zid sa3a n9ess sa3a
         $endTime=date("Y-m-d H:i:s",$endTimeSeconds);
             $sql = " INSERT INTO `forget_password` (`email`, `random`, `validity`, `fin`) 
                     VALUES ('$email', '$random',300, '$endTime');";

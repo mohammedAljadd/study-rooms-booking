@@ -108,6 +108,38 @@
                \noindent\makebox[\textwidth]{\includegraphics[width=14cm,height=8.5cm]{img/delete_randon.png}}
          
         
+        Un événement définira la colonne de blocage sur 'yes', ce qui signifie que l'utilisateur est bloqué pour la réinitialisation du mot de passe :
+        
+        \vspace{0.4cm}
+        \hspace*{-1.05in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=14cm,height=8.5cm]{img/block-user.png}}
+        
+        
+        
+         Un événement décrémente le temps de blocage :
+        
+        \vspace{0.4cm}
+        \hspace*{-1.05in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=14cm,height=8.5cm]{img/decrease-block-time.png}}
+        
+        Un événement débloquera l'utilisateur :
+        
+        \vspace{0.4cm}
+        \hspace*{-1.05in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=14cm,height=8.5cm]{img/unblock-user.png}}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
          \item \textcolor{amethyst}{Créer des maquettes}.
          
          \vspace{0.4cm}
@@ -144,7 +176,7 @@
    \item \textcolor{red}{\huge L'illustration du calendrier du projet} :  
    \vspace{1.2cm}
    
-         \hspace*{+0.2in}
+         \hspace*{-0.9in}
         \begin{tabular}{|c | c | c|}
         \hline
           La tâche & date de début & date de fin\\ 
@@ -159,19 +191,40 @@
         \hline
         Apprenez \textcolor{blue}{\textbf{GITHUB}} & 2020/04/02  & 2020/04/03\\
         \hline
-        Créer des pages WEB & 2020/04/04  & 2020/04/28\\
+        Créer des pages WEB & 2020/04/04  & 2020/04/29\\
         \hline
-        Sécuriser le site web & 2020/04/04  & 2020/04/27\\
+        Sécuriser le site web & 2020/04/04  & 2020/04/29\\
         \hline
-        Ajouter \textcolor{blue}{\textbf{JavaScript}} & 2020/04/06  & 2020/04/28\\
+        Ajouter \textcolor{blue}{\textbf{JavaScript}} & 2020/04/06  & 2020/04/29\\
         \hline
-        Création d'événements (events) dans la base de données & 2020/04/25 & 2020/03/27\\
+        Création d'événements (events) dans la base de données & 2020/04/25 & 2020/03/29\\
         \hline
          Création d'un système de mot de passe oublié & 2020/04/26 & 2020/03/27\\
         \hline
         Créer des maquettes pour le système de mot de passe oublié & 2020/04/27  & 2020/04/28\\
         \hline
+        Empêcher l'utilisateur de réinitialiser le mot de passe après 10 tentatives infructueuses & 2020/04/29  & 2020/04/29\\
+        \hline
         \end{tabular}
+        
+        \vspace{1cm}
+   \item \textcolor{red}{\huge Choses non fonctionnelles} :  
+   \vspace{0.7cm}
+        
+        \begin{enumerate}
+        \item\textcolor{blue}{Empêcher l'accès direct aux pages Web}
+        \item\textcolor{blue}{Empêcher l'accès direct aux pages Web d'administration}
+        \item\textcolor{blue}{Empêcher l'accès aux répertoires de l'application Web}
+        \item\textcolor{blue}{Empêcher la réinitialisation du mot de passe après 10 tentatives infructueuses}
+        \item\textcolor{blue}{Empêcher l'accès direct à certaines pages sans passer par des pages}
+        
+        
+        \end{enumerate}
+        
+        
+        
+        
+        
         
    \vspace{1cm}
    \item \textcolor{red}{\huge La presentation du projet} :  
@@ -253,6 +306,16 @@ Si le code est incorrect :
                
                
  \vspace{0.4cm}
+
+Mais si l'utilisateur saisit un code 10 fois incorrect, il ne pourra pas réinitialiser ce mot de passe pendant les  \textcolor{red}{2 heures prochaines} :
+ 
+\vspace{0.4cm}
+\hspace*{-0.7in}
+               \noindent\makebox[\textwidth]{\includegraphics[width=18cm,height=8.5cm]{img/ten-attempts.png}} 
+ 
+ 
+ 
+ 
                
 Si le code est correct :
 

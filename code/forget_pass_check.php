@@ -11,7 +11,10 @@ include 'includes/dbconn.php';
         $endTime=date("Y-m-d H:i:s",$endTimeSeconds);
         $result= mysqli_query($conn,$sql);
         $out = mysqli_num_rows($result);
-        if($out>0){
+        $sql2 = "select * from  `blocked_user` where email='".$email."' and block='yes';";
+        $result2= mysqli_query($conn,$sql2);
+        $out2 = mysqli_num_rows($result2);
+        if($out>0 && $out2==0){
             $sql = " INSERT INTO `forget_password` (`email`, `random`, `validity`, `fin`) 
                     VALUES ('$email', '$random',300, '$endTime');";
                     $result= mysqli_query($conn,$sql);
@@ -53,6 +56,10 @@ include 'includes/dbconn.php';
                     
                                     
         }
+        elseif($out2>0){
+          $_SESSION['emailError']="Vous ne pouvez pas réinitialiser le mot de passe pendant les 2 heures suivantes, car vous n'avez pas entré le bon code de réinitialisation du mot de passe pendant 10 tentatives !";
+          header("Location:login.php");
+        }
         else{
           $_SESSION['emailError']=" L'email saisi n'existe pas, merci de saisir un email valide";
           header("Location:forgetPass.php");
@@ -74,12 +81,43 @@ include 'includes/dbconn.php';
           header("Location:resetPass.php");
         }
         elseif($out1==0){
-          $_SESSION['wrongRandom'] = "Les 5 minutes sont passées, veuillez cliquer sur le bouton Renvoyer pour obtenir un nouveau";
+          $_SESSION['wrongRandom'] = "Les 5 minutes sont passées, veuillez cliquer sur le bouton Renvoyer pour obtenir un nouveau code";
           header("Location:enterRandom.php");
         }
         else{
-          $_SESSION['wrongRandom'] = "Le code que vous avez entrer est incorrect, veuillez entrer le code valide";
-          header("Location:enterRandom.php?wrongitp");
+          $sql = "select * from  `blocked_user` where email='".$emaiL."';";
+          $result= mysqli_query($conn,$sql);
+          $out = mysqli_num_rows($result);
+          if($out>0){
+            while($row = mysqli_fetch_assoc($result)){
+              $attempts=$row['attempts'] ;
+          }
+          $newAttempts = $attempts+1;
+          $sql="UPDATE blocked_user set attempts='$newAttempts' WHERE email='".$emaiL."';";
+          $result=mysqli_query($conn,$sql);
+          
+
+          }
+          else{
+            $sql = "INSERT INTO `blocked_user` (`email`, `attempts`) VALUES ('$emaiL',1);";
+            $result= mysqli_query($conn,$sql);
+          }
+          $email = $_SESSION['email_forget'];
+          $ten=11;
+          $sql2 = "select * from  `blocked_user` where email='".$email."';";
+          $result2= mysqli_query($conn,$sql2);
+          while($row2 = mysqli_fetch_assoc($result2)){
+            $attempt=$row2['attempts'] ;
+        }
+          if($attempt==11){
+            $_SESSION['outOFreset']="Vous ne pouvez pas réinitialiser le mot de passe pendant les 2 heures suivantes, car vous n'avez pas entré le bon code de réinitialisation du mot de passe pendant 10 tentatives !";
+            header("Location:login.php");
+          }
+          else{
+            $_SESSION['wrongRandom'] = "Le code que vous avez entrer est incorrect, veuillez entrer le code valide";
+            header("Location:enterRandom.php?wrongitp");
+          }
+            
         }
         
 

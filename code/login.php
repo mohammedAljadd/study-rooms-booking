@@ -10,8 +10,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
- 
-        
+
+        <script>
+            alert("<?php echo $_SESSION['outOFreset'] ?>")
+        </script>
+<?php
+    unset($_SESSION['outOFreset']);
+?>
+
+
+        <script>
+            alert("<?php echo $_SESSION['emailError'] ?>")
+        </script>
+<?php
+    unset($_SESSION['emailError']);
+?>
+
         <script>
             var loginError= "<?php echo $_SESSION['loginError']  ?>";
             if(loginError==1){

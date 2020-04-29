@@ -1,7 +1,14 @@
 <?php
     session_start();
+    include 'includes/dbconn.php';
+    if(isset($_SESSION['email_forget'])){
+        $emaiL = $_SESSION['email_forget'];
     
-        if(isset($_SESSION['email_forget'])){
+    $sql = "select * from  `blocked_user` where email='".$emaiL."' and block='yes';";
+    $result= mysqli_query($conn,$sql);
+    $out = mysqli_num_rows($result);
+}
+        if(!$out>0){
 ?>
 
 <script>
@@ -54,7 +61,7 @@
           }
           else{
             $_SESSION['Th']='against';
-            header("Location:forgetPass.php");
+            header("Location:login.php");
           }
           ?>
 <script>

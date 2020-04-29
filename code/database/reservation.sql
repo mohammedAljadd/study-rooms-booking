@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2020 at 07:24 AM
+-- Generation Time: Apr 29, 2020 at 04:19 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -35,13 +35,6 @@ CREATE TABLE `affectation` (
   `date_fin` datetime NOT NULL,
   `Marge` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `affectation`
---
-
-INSERT INTO `affectation` (`idProf`, `idSalle`, `date`, `date_fin`, `Marge`) VALUES
-(2, 1, '2020-04-29 08:00:00', '2020-04-29 12:00:00', 14400);
 
 -- --------------------------------------------------------
 
@@ -91,6 +84,13 @@ CREATE TABLE `forget_password` (
   `validity` int(50) NOT NULL,
   `fin` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `forget_password`
+--
+
+INSERT INTO `forget_password` (`email`, `random`, `validity`, `fin`) VALUES
+('hajar_berrada@inpt.ac.ma', 5537922, 198, '2020-04-29 15:22:39');
 
 -- --------------------------------------------------------
 
@@ -290,7 +290,7 @@ blocked_user.block_time =blocked_user.block_time-1
 WHERE
 blocked_user.block ='yes'$$
 
-CREATE DEFINER=`root`@`localhost` EVENT `unblock user` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-29 03:57:54' ON COMPLETION NOT PRESERVE ENABLE DO DELETE FROM blocked_user WHERE blocked_user.block_time<0$$
+CREATE DEFINER=`root`@`localhost` EVENT `unblock user` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-29 03:57:54' ON COMPLETION NOT PRESERVE ENABLE DO DELETE FROM blocked_user WHERE blocked_user.block_time<5 and blocked_user.block='yes'$$
 
 CREATE DEFINER=`root`@`localhost` EVENT `clear block` ON SCHEDULE EVERY 1 SECOND STARTS '2020-04-29 06:14:06' ON COMPLETION NOT PRESERVE ENABLE DO DELETE FROM blocked_user
 WHERE TIMESTAMPDIFF(second,blocked_user.lastAttemp,now())>3600$$

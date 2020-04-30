@@ -217,7 +217,8 @@
                  }
                 
                 $_SESSION['error']="done";
-
+                $hour = date('H:i',strtotime(date('H:i'))-3600);
+                $hour = "<span style='color:red'>".date('l').' the '.date('d F o').' at '.$hour."</span>" ;
                 $sender = $_SESSION['email'];
                 $recipient = 'webaljadd@gmail.com';
                 $name = $_SESSION['name'];
@@ -225,6 +226,12 @@
                 $headers = "MIME-Version: 1.0" . "\r\n";
                 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
                 $headers .= 'From:' . $sender;
+                $datetime1 = new DateTime($debut);
+                $datetime2 = new DateTime($fin);
+                $interval = $datetime1->diff($datetime2);
+                $nbrHours = $interval->format('%h')." hours and ".$interval->format('%i')." minutes.";
+
+
                 $txt = $message = "
                                 <html>
                                 <head>
@@ -249,7 +256,7 @@
                                 </style>
                                 </head>
                                 <body>
-                                <h4 style='font-family:'Ubuntu';font-weight: bold>Les informations sur la reservation :</h4><br>
+                                <h4 style='font-family:'Ubuntu';font-weight: bold>Reservation informations: </h4><br>
                                 <table style='padding:7px 7px 7px 7px'>
                                 <tr >
                                 <th style='padding:7px 20px 7px 20px;color:red;font-family: 'Josefin Sans', sans-serif; '><h4>La salle</h4></th>
@@ -265,11 +272,12 @@
                                 <td style='padding:7px 20px 7px 20px;font-family: 'Josefin Sans', sans-serif; '><h4>".$debut."</h4></td>
                                 <td style='padding:7px 20px 7px 20px;font-family: 'Josefin Sans', sans-serif; '><h4>".$fin."</h4></td>
                                 </tr>
-                                </table>
+                                </table><br>
+                                <h4>The duration of this reservation is <span style='color:red'>". $nbrHours."</h4></span>
                                 </body>
                                 </html>
                     ";
-                    $message = "<h4 style='font-family: 'Josefin Sans', sans-serif; ;font-weight: bold'>Une réservation a été effectuée par ".$sender.'</h4>'."\n\n".$txt;
+                    $message = "<h4 style='font-family: 'Josefin Sans', sans-serif; ;font-weight: bold'>A reservation has been made by "."<span style='color:red'>".$name."</span>".' '.$sender.' on '.$hour.'.'.'</h4>'."\n\n".$txt;
                     if(mail($recipient, $subject, $message, $headers)){
                     $result = mysqli_query($conn,$sql);
                     header("location:reservation.php?VotreReservationDone");

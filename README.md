@@ -13,7 +13,7 @@ Problématique:
   
 Le répertoire des maquettes:
 
-    [Les maquettes](https://github.com/ENSIAS-MEH/Dev_Web_INPT_2020_G0/tree/master/maquettes/)
+    [Les maquettes](/maquettes/)
 
 Les langages de programmation utilisés : 
     

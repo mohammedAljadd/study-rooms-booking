@@ -11,9 +11,9 @@ Problématique:
     - Le professeur a besoin d'être dans l'institut pour trouver une salle disponible.
     - L'emploi du temps doit être modifié chaque fois qu'il n'y a pas de salle disponible.
   
-Le pour les maquettes:
+Le répertoire des maquettes:
 
-    /maquettes
+    Visit https://github.com/ENSIAS-MEH/Dev_Web_INPT_2020_G0/blob/master/maquettes/
 
 Les langages de programmation utilisés : 
     

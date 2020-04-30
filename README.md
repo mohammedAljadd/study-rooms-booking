@@ -13,7 +13,7 @@ Problématique:
   
 Le répertoire des maquettes:
 
-    /maquettes
+    [Contribution guidelines for this project](/maquettes )
 
 Les langages de programmation utilisés : 
     

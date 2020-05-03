@@ -44,9 +44,10 @@
         $newPassR = $_POST['newPassR'];
         $email = $_SESSION['email_forget'];
         if($newPass==$newPassR){
+            $password = md5($newPass);
             $sql="DELETE from forget_password where email='".$email."';";
             $result=mysqli_query($conn,$sql);
-            $sql="UPDATE prof set password='$newPass' WHERE email='".$email."';";
+            $sql="UPDATE prof set password='$password' WHERE email='".$email."';";
             $result=mysqli_query($conn,$sql);
             if($result){
                 $_SESSION['email'] = $_SESSION['email_forget'];

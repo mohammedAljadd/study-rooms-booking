@@ -4,6 +4,7 @@ include 'includes/dbconn.php';
 $name=$_SESSION['name']; 
 $prenom =$_SESSION['prenom'];
 $password =$_SESSION['password'];
+$password = md5($password);
 $email = $_SESSION['emailToremove'];
 $gender =$_SESSION['gender'];
 $sql = "INSERT INTO `prof` (`nom`, `prenom`, `email`, `password`,`gender`) VALUES ('$name', '$prenom', '$email', '$password','$gender') ;";

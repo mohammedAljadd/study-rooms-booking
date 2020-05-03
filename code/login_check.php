@@ -3,8 +3,9 @@
 session_start();
 if(isset($_POST['submit'])){
     include 'includes/dbconn.php';
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $password = mysqli_real_escape_string($conn, $_POST['password']);
+    $password = md5($password);
 
     if(empty($email) || empty($password)){
         $_SESSION['loginError']=1;

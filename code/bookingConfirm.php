@@ -4,7 +4,12 @@
             session_start();
            }
         include 'includes/dbconn.php';
-        $idProf = $_SESSION['idprof'];
+        $email = $_SESSION['email'];
+        $sql = "SELECT prof.idProf FROM `prof` WHERE email='".$email."'";
+        $result=mysqli_query($conn,$sql); 
+        while($row=mysqli_fetch_assoc($result)){
+            $idProf = $row['idProf'];
+        }
         $nomSalle=$_SESSION['salle'];
         $idSalle=$_SESSION['salle'];
         

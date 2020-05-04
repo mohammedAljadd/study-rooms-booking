@@ -52,6 +52,14 @@ if(isset($_SESSION['last_action'])){
             <a href="affectation.php">Affectation</a>
         </ul>
 </div>
+<style>
+table{
+    position:relative;
+    left:60px;
+    top:30px;
+}
+
+</style>
 <div class="boxw">
 <h1>Users</h1>
 <table border="1">
@@ -59,7 +67,6 @@ if(isset($_SESSION['last_action'])){
     <th  style='color:rgb(174, 197, 251)'>Nom</th>
     <th  style='color:rgb(174, 197, 251)'>Prenom</th>
     <th  style='color:rgb(174, 197, 251)'>Email</th>
-    <th  style='color:rgb(174, 197, 251)'>Password</th>
 </tr>
 <?php
     $sql = " SELECT * FROM `prof`;";
@@ -70,12 +77,12 @@ if(isset($_SESSION['last_action'])){
             if($row['email']=='aljadd.mohammed@ine.inpt.ma')
             echo "<tr>
                 <th style='color:rgb(255, 104, 104)'>".$row['nom']."</th>  <th style='color:rgb(255, 104, 104)'>".$row['prenom']."</th>
-                <th style='color:rgb(255, 104, 104)'>".$row['email']."</th>  <th style='color:rgb(255, 104, 104)'>".$row['password']."</th>
+                <th style='color:rgb(255, 104, 104)'>".$row['email']."</th> 
                 </tr>";
                 else{
                     echo "<tr>
                     <th>".$row['nom']."</th>  <th>".$row['prenom']."</th>
-                    <th>".$row['email']."</th>  <th>".$row['password']."</th>
+                    <th>".$row['email']."</th> 
                     </tr>";
                 }
         }

@@ -2,7 +2,7 @@
 session_start();
 include 'includes/dbconn.php';
     if(isset($_POST['email_forget'])){
-        $email = $_SESSION['email_forget']=mysqli_real_escape_string($conn,$_POST['email_forget']) ;
+        $email = $_SESSION['email_forget']=$_POST['email_forget'] ;
         $sql = "delete from forget_password where email='".$email."'";
         $result= mysqli_query($conn,$sql);
         $random =  rand(1000000,9999999);
@@ -67,7 +67,7 @@ include 'includes/dbconn.php';
     }
 
     if(isset($_POST['submit_code'])){
-        $randomUser = mysqli_real_escape_string($conn,$_POST['random']);
+        $randomUser = $_POST['random'];
         $emaiL = $_SESSION['email_forget'];
         $sql1 = "select * from forget_password where email='".$emaiL."';";
         $result1= mysqli_query($conn,$sql1);

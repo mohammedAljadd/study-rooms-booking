@@ -55,9 +55,25 @@ if(isset($_SESSION['last_action'])){
 <style>
 table{
     position:relative;
-    left:30px;
+    left:-5px;
     top:30px;
 }
+.activate button{
+    border:1px solid white;
+    padding:2px 5px;
+    margin:3.5px 3.5px;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    background:none;
+    color:#b8ff8c;
+    font-family: Montserrat,sans-serif;
+    transition: 750ms;
+    }
+    .activate button:hover{
+        cursor:pointer;
+        background-color: rgb(182, 206, 250,0.6);
+    } 
 button{
     border:1px solid white;
     padding:2px 5px;
@@ -84,9 +100,14 @@ button{
     <th  style='color:rgb(174, 197, 251)'>Prenom</th>
     <th  style='color:rgb(174, 197, 251)'>Email</th>
     <th  style='color:rgb(174, 197, 251)'>Supprimer</th>
+    <th  style='color:rgb(174, 197, 251)'>Activer</th>
 </tr> 
 <?php
-    $sql = " SELECT * FROM `prof`;";
+    $sql = " SELECT prof.nom,prof.prenom,'' gender,prof.email,'' as block FROM prof WHERE idProf=1
+    UNION
+    SELECT prof.nom,prof.prenom,prof.gender,prof.email,blocked_user.block FROM `prof`,blocked_user WHERE blocked_user.email=prof.email and idProf!=1
+        UNION 
+        SELECT  prof.nom,prof.prenom,prof.gender,prof.email,'no' FROM `prof` WHERE prof.email not in (SELECT email FROM blocked_user) and idProf!=1;";
     $result = mysqli_query($conn,$sql);
     $out = mysqli_num_rows($result);
     if($out>0){
@@ -96,19 +117,39 @@ button{
                 <th style='color:rgb(255, 104, 104)'>".$row['nom']."</th>  <th style='color:rgb(255, 104, 104)'>".$row['prenom']."</th>
                 <th style='color:rgb(255, 104, 104)'>".$row['email']."</th> 
                 </tr>";
-                elseif($row['gender']=='M'){
-                    $output = "<button name='delete' value='".$row['email']."' >supprimer</button>";
-                    echo "<tr>
-                    <th>".$row['nom']."</th>  <th>".$row['prenom']."</th>
-                    <th>".$row['email']."</th> <th> ".$output." </th>
-                    </tr>";
+            if($row['block']=='no'){
+                    if($row['gender']=='M'){
+                        $output = "<button name='delete' value='".$row['email']."' >supprimer</button>";
+                        echo "<tr>
+                        <th>".$row['nom']."</th>  <th>".$row['prenom']."</th>
+                        <th>".$row['email']."</th> <th> ".$output." </th><th> activé</th>
+                        </tr>";
+                    }
+                    elseif($row['gender']=='F'){
+                        $output = "<button name='delete' value='".$row['email']."' >supprimer</button>";
+                        echo "<tr>
+                        <th style='color:rgb(255, 251, 138)'>".$row['nom']."</th>  <th style='color:rgb(255, 251, 138)'>".$row['prenom']."</th>
+                        <th style='color:rgb(255, 251, 138)'>".$row['email']."</th> <th> ".$output." </th><th> activé</th>
+                        </tr>";
+                    }
                 }
-                elseif($row['gender']=='F'){
-                    $output = "<button name='delete' value='".$row['email']."' >supprimer</button>";
-                    echo "<tr>
-                    <th style='color:rgb(255, 251, 138)'>".$row['nom']."</th>  <th style='color:rgb(255, 251, 138)'>".$row['prenom']."</th>
-                    <th style='color:rgb(255, 251, 138)'>".$row['email']."</th> <th> ".$output." </th>
-                    </tr>";
+                else{
+                    if($row['gender']=='M'){
+                        $output = "<button name='delete' value='".$row['email']."' >supprimer</button>";
+                        $activate = "<div class='activate'><button name='activate' value='".$row['email']."' >activer</button></div>";
+                        echo "<tr>
+                        <th>".$row['nom']."</th>  <th>".$row['prenom']."</th>
+                        <th>".$row['email']."</th> <th> ".$output." </th> <th> ".$activate." </th> 
+                        </tr>";
+                    }
+                    elseif($row['gender']=='F'){
+                        $output = "<button name='delete' value='".$row['email']."' >supprimer</button>";
+                        $activate = "<div class='activate'><button name='activate' value='".$row['email']."' >activer</button></div>";
+                        echo "<tr>
+                        <th style='color:rgb(255, 251, 138)'>".$row['nom']."</th>  <th style='color:rgb(255, 251, 138)'>".$row['prenom']."</th>
+                        <th style='color:rgb(255, 251, 138)'>".$row['email']."</th> <th> ".$output." </th>  <th> ".$activate." </th> 
+                        </tr>";
+                    }
                 }
         }
     }
@@ -139,6 +180,25 @@ button{
     </div>
 </body>
 </html>
+
+
+        <?php
+    
+    if(isset($_SESSION['active'])){
+        ?>
+                <script language="javascript"> 
+                    if(confirm("Voulez-vous vraiment activer cet utilisateur?")){
+                        window.location.href='activate.php';
+                    } 
+                </script>
+        <?php
+    }
+    ?>
+
+
+
+
+
 <?php
     
     if(isset($_SESSION['add'])){
@@ -162,6 +222,17 @@ button{
     <?php 
     } 
     ?>
+
+<?php
+    if(isset($_SESSION['acivatt'])){
+        ?>
+            <script language="javascript">
+            alert("<?php  echo $_SESSION['acivatt']  ?>");
+            </script>
+        <?php
+    }
+    ?>
+
 
     <?php
     if(isset($_SESSION['added'])){
@@ -200,6 +271,8 @@ button{
     unset($_SESSION['added']);
     unset($_SESSION['removed']);
     unset($_SESSION['errorModify']);
+    unset($_SESSION['active']);
+    unset($_SESSION['acivatt']);
 ?>
 
 <?php

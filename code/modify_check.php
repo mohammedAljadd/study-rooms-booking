@@ -53,3 +53,25 @@ if(isset($_POST['delete'])){
     
 
 }
+?>
+<?php
+if(isset($_POST['activate'])){
+    session_start();
+    include 'includes/dbconn.php';
+    $email = $_POST['activate'];
+    $sql = "SELECT * FROM `prof` WHERE email='".$email."';";
+    $result = mysqli_query($conn,$sql);
+    while( $out = mysqli_fetch_array($result)){
+        $_SESSION['nameAC'] = $out['nom']; 
+        $_SESSION['prenomAC'] = $out['prenom'];
+    }
+        $_SESSION['emailToactive'] = $_POST['activate'];
+        $_SESSION['active'] = 'gonna be activated';
+        header("location:updateUser.php");
+    
+
+}
+
+
+
+?>

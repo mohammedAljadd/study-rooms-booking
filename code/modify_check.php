@@ -5,29 +5,25 @@
         $_SESSION['name']=$name = $_POST['nom']; 
         $_SESSION['prenom']=$prenom = $_POST['prenom'];
         $_SESSION['password']=$password = $_POST['password'];
-        $_SESSION['emailToremove']=$email = $_POST['email'];
+        $_SESSION['emailToadd']=$email = $_POST['email'];
         $_SESSION['gender']=$gender = $_POST['gender'];
-        $_SESSION['modify']=$modify = $_POST['modify'];
-        $sql = "SELECT * FROM `prof` WHERE email='".$email."' and nom='".$name ."' and password='".$password."' and prenom='".$prenom."';";
+        $sql = "SELECT * FROM `prof` WHERE email='".$email."';";
         $result = mysqli_query($conn,$sql);
         $out = mysqli_num_rows($result);
         
-        if( empty($modify) ||  empty($prenom) ||  empty($modify) ||  empty($password) || empty($email) || empty($modify) ){
+        if( empty($prenom) ||  empty($password) || empty($email) || empty($gender) ){
             $_SESSION['errorModify'] = 'Champs vides';
             header("location:updateUser.php");
         }
 
         elseif($email != "aljadd.mohammed@ine.inpt.ma"){
 
-        if($_POST['modify']=="add" && !empty($_POST['gender'])){
+        if($out==0){
             $_SESSION['add']='add';
             header("location:updateUser.php");
         }
-        elseif($out>0 && $_POST['modify']=="remove"){
-            $_SESSION['remove']='remove';
-            header("location:updateUser.php");
-        }
         else{
+            $_SESSION['errorModify'] = 'L\'email existait déjà';
             header("location:updateUser.php?Error");
         }
     }
@@ -40,3 +36,20 @@
 
 
 ?>
+<?php
+if(isset($_POST['delete'])){
+    session_start();
+    include 'includes/dbconn.php';
+    $email = $_POST['delete'];
+    $sql = "SELECT * FROM `prof` WHERE email='".$email."';";
+    $result = mysqli_query($conn,$sql);
+    while( $out = mysqli_fetch_array($result)){
+        $_SESSION['nameRM'] = $out['nom']; 
+        $_SESSION['prenomRM'] = $out['prenom'];
+    }
+        $_SESSION['emailToremove'] = $_POST['delete'];
+        $_SESSION['remove'] = 'gonna be removed';
+        header("location:updateUser.php");
+    
+
+}

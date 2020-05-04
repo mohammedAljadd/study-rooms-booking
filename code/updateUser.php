@@ -55,19 +55,21 @@ if(isset($_SESSION['last_action'])){
 <style>
 table{
     position:relative;
-    left:60px;
+    left:30px;
     top:30px;
 }
 
 </style>
 <div class="boxw">
 <h1>Users</h1>
+<form method="POST" action="modify_check.php">
 <table border="1">
 <tr>
     <th  style='color:rgb(174, 197, 251)'>Nom</th>
     <th  style='color:rgb(174, 197, 251)'>Prenom</th>
     <th  style='color:rgb(174, 197, 251)'>Email</th>
-</tr>
+    <th  style='color:rgb(174, 197, 251)'>Supprimer</th>
+</tr> 
 <?php
     $sql = " SELECT * FROM `prof`;";
     $result = mysqli_query($conn,$sql);
@@ -80,9 +82,10 @@ table{
                 <th style='color:rgb(255, 104, 104)'>".$row['email']."</th> 
                 </tr>";
                 else{
+                    $output = "<button name='delete' value='".$row['email']."' >supprimer</button>";
                     echo "<tr>
                     <th>".$row['nom']."</th>  <th>".$row['prenom']."</th>
-                    <th>".$row['email']."</th> 
+                    <th>".$row['email']."</th> <th> ".$output." </th>
                     </tr>";
                 }
         }
@@ -90,13 +93,14 @@ table{
 
 ?>
 </table>
+</form>
 
 </div>
     
 
 
     <div class="boxMe">
-        <h1>Modify</h1>
+        <h1>Ajouter un utilisateur</h1>
     
     <form action="modify_check.php" method="POST" >
         <input type="text" placeholder="nom"  name="nom" > 
@@ -106,12 +110,6 @@ table{
         <input type="radio" name="gender" value="M"> Male
         <input type="radio" name="gender" value="F"> Female<br>
         
-        <input type="radio"  name="modify" value="add">
-        <label for="add"> Add </label>
-            
-        <input type="radio" name="modify"  value="remove">
-        <label for="remove"> Remove </label>
-        <br>
         <span class="subset" > <input type="submit" name="submit" >   </span>      <span class="subset" > <input type="reset" value="reset"></span> 
     </form>
     
@@ -130,16 +128,19 @@ table{
                 </script>
         <?php
     }
-    elseif(isset($_SESSION['remove'])){
+    ?>
+    <?php 
+    if(isset($_SESSION['remove'])){
         ?>
         <script>
-        if(confirm("Voulez-vous vraiment supprimer l'utilisateur <?php  echo "' ".$_SESSION['name'].' '.$_SESSION['prenom']." '"  ?>?")){
+        if(confirm("Voulez-vous vraiment supprimer l'utilisateur <?php  echo "' ".$_SESSION['nameRM'].' '.$_SESSION['prenomRM']." '"  ?>?")){
             window.location.href='removeCode.php';
         }
-     </script>
-     <?php 
+    </script>
+    <?php 
     } 
     ?>
+
     <?php
     if(isset($_SESSION['added'])){
         ?>
@@ -148,10 +149,13 @@ table{
             </script>
         <?php
     }
+    ?>
+
+    <?php
     if(isset($_SESSION['removed'])){
         ?>
             <script language="javascript">
-            alert("l'utilisateur  <?php  echo "' ".$_SESSION['name'].' '.$_SESSION['prenom']." '"  ?> a été supprimé avec succès!");
+            alert("l'utilisateur  <?php  echo "' ".$_SESSION['nameRM'].' '.$_SESSION['prenomRM']." '"  ?> a été supprimé avec succès!");
             </script>
         <?php
     }

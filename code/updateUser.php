@@ -58,7 +58,22 @@ table{
     left:30px;
     top:30px;
 }
-
+button{
+    border:1px solid white;
+    padding:2px 5px;
+    margin:3.5px 3.5px;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    background:none;
+    color:white;
+    font-family: Montserrat,sans-serif;
+    transition: 750ms;
+    }
+    button:hover{
+        cursor:pointer;
+        background-color: rgb(255, 64, 64,0.6);
+    }
 </style>
 <div class="boxw">
 <h1>Users</h1>
@@ -81,11 +96,18 @@ table{
                 <th style='color:rgb(255, 104, 104)'>".$row['nom']."</th>  <th style='color:rgb(255, 104, 104)'>".$row['prenom']."</th>
                 <th style='color:rgb(255, 104, 104)'>".$row['email']."</th> 
                 </tr>";
-                else{
+                elseif($row['gender']=='M'){
                     $output = "<button name='delete' value='".$row['email']."' >supprimer</button>";
                     echo "<tr>
                     <th>".$row['nom']."</th>  <th>".$row['prenom']."</th>
                     <th>".$row['email']."</th> <th> ".$output." </th>
+                    </tr>";
+                }
+                elseif($row['gender']=='F'){
+                    $output = "<button name='delete' value='".$row['email']."' >supprimer</button>";
+                    echo "<tr>
+                    <th style='color:rgb(255, 251, 138)'>".$row['nom']."</th>  <th style='color:rgb(255, 251, 138)'>".$row['prenom']."</th>
+                    <th style='color:rgb(255, 251, 138)'>".$row['email']."</th> <th> ".$output." </th>
                     </tr>";
                 }
         }

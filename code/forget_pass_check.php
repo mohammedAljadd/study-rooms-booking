@@ -2,7 +2,7 @@
 session_start();
 include 'includes/dbconn.php';
     if(isset($_POST['email_forget'])){
-        $email = $_SESSION['email_forget']=$_POST['email_forget'] ;
+        $email = $_SESSION['email_forget']=mysqli_real_escape_string($conn,$_POST['email_forget']) ;
         $sql = "delete from forget_password where email='".$email."'";
         $result= mysqli_query($conn,$sql);
         $random =  rand(1000000,9999999);
@@ -51,6 +51,9 @@ include 'includes/dbconn.php';
                         if(mail($recipient, $subject, $message, $headers)){
                             $_SESSION['randomSent'] = "Un code a été envoyé à votre email, veuillez le copier ci-dessous";
                             header("Location:enterRandom.php");
+                        }
+                        else{
+                          echo 'no sent mail';
                         }
                     }
                     
@@ -162,6 +165,8 @@ include 'includes/dbconn.php';
         
 
     }
+
+
     if(isset($_POST['Recode'])){
         $email = $_SESSION['email_forget'];
         $sql = "delete from forget_password where email='".$email."'";
@@ -213,8 +218,10 @@ include 'includes/dbconn.php';
                             header("Location:enterRandom.php");
                         }
                     }
+                  }
+                  
                     
                                     
-        }
+        
         
   

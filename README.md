@@ -30,6 +30,11 @@ Description du projet:
     un compte gmail(mon compte : aljadd700@gmail.com) va prendre le message et va me l'envoyer 
     (mon autre compte :webaljadd@gmail.com), car php va pas envoyer le message si j'ai pas utiliser cette méthode. 
     La configuration de xampp pour lui permettre d'envoyer des mails est faite pour ce compte aljadd700@gmail.com.
+    Pour tester l'application web voici deux comptes pour se connecter. L'un en tant qu'administrateur et l'autre en tant qu'utilisateur normal:
+        Admin : email : aljadd.mohammed@ine.inpt.ma
+                password : 12345abc
+        User  : email : hassan_omar@inpt.ac.ma
+                password : 654321abc
     
  La page HOME de mon projet :
    

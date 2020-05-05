@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2020 at 04:47 PM
+-- Generation Time: May 05, 2020 at 10:07 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -35,6 +35,18 @@ CREATE TABLE `affectation` (
   `date_fin` datetime NOT NULL,
   `Marge` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `affectation`
+--
+
+INSERT INTO `affectation` (`idProf`, `idSalle`, `date`, `date_fin`, `Marge`) VALUES
+(2, 1, '2020-05-06 09:00:00', '2020-05-06 12:00:00', 14400),
+(3, 11, '2020-05-06 09:00:00', '2020-05-06 12:00:00', 14400),
+(4, 12, '2020-05-07 09:00:00', '2020-05-07 12:00:00', 14400),
+(5, 21, '2020-05-07 09:00:00', '2020-05-07 12:00:00', 14400),
+(6, 31, '2020-05-07 09:00:00', '2020-05-07 12:00:00', 14400),
+(7, 41, '2020-05-07 09:00:00', '2020-05-07 12:00:00', 14400);
 
 -- --------------------------------------------------------
 
@@ -77,7 +89,8 @@ CREATE TABLE `blocked_user` (
 --
 
 INSERT INTO `blocked_user` (`email`, `attempts`, `block_time`, `block`, `lastAttemp`) VALUES
-('aljadd.mohammed@ine.inpt.ma', 11, 7179, 'yes', '2020-04-29 15:46:56.000000');
+('maha_alami@inpt.ma', 11, 6736, 'yes', '2020-05-05 20:01:04.000000'),
+('saidaMe@ine.inpt.ma', 11, 6805, 'yes', '2020-05-05 20:00:00.000000');
 
 -- --------------------------------------------------------
 
@@ -91,13 +104,6 @@ CREATE TABLE `forget_password` (
   `validity` int(50) NOT NULL,
   `fin` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `forget_password`
---
-
-INSERT INTO `forget_password` (`email`, `random`, `validity`, `fin`) VALUES
-('hajar_berrada@inpt.ac.ma', 1933262, 167, '2020-04-29 15:50:04');
 
 -- --------------------------------------------------------
 
@@ -119,17 +125,16 @@ CREATE TABLE `prof` (
 --
 
 INSERT INTO `prof` (`idProf`, `nom`, `prenom`, `email`, `password`, `gender`) VALUES
-(1, 'Mohammed', 'AL JADD', 'aljadd.mohammed@ine.inpt.ma', '1160HHjk359', 'M'),
-(2, 'Hassan', 'OMAR', 'hassan_omar@inpt.ac.ma', 'galaxy66', 'M'),
-(3, 'Hajar', 'BERADDA', 'hajar_berrada@inpt.ac.ma', '99gsGt54', 'F'),
-(4, 'Maryem', 'SOUAD', 'maryem_souad@inpt.ac.ma', '4683509OO', 'F'),
-(5, 'Khadija', 'ALAMI', 'khadija_alami@inpt.ma', 'alamiinpt54', 'F'),
-(6, 'Ahmed', 'FAHIM', 'ahmed_fahim@inpt.ac.ma', 'oppotest65', 'M'),
-(7, 'Mohamed', 'ABDELLAH', 'mohamed_abdellah@inpt.ac.ma', 'abdellahinpt911', 'M'),
-(8, 'Abdellah', 'LOTIF', 'abdellah78@inpt.ac.ma', 'lotifi99inpt', 'M'),
-(9, 'Fatima', 'AMINI', 'fati_amini@ine.inpt.ma', 'oGtf643WW', 'F'),
-(10, 'Maryem', 'MOUNA', 'mouna_2020@ine.inpt.ma', 'mouna765aa', 'F'),
-(11, 'Hajar', 'HOUDA', 'nancy_hajarita@ine.inpt.ma', 'nancy991', 'F');
+(1, 'Mohammed', 'AL JADD', 'aljadd.mohammed@ine.inpt.ma', '185aef3b1c810799a6be8314abf6512c', 'M'),
+(2, 'Hassan', 'OMAR', 'hassan_omar@inpt.ac.ma', 'b3ddd238d6184cfd458205957c535457', 'M'),
+(3, 'Hajar', 'BERADDA', 'hajar_berrada@inpt.ac.ma', '3f595562018cf3e30f8c8abe3d85edfc', 'F'),
+(4, 'Maryem', 'SOUAD', 'maryem_souad@inpt.ac.ma', '2ea0689028b34656a4876fcd8824dab1', 'F'),
+(5, 'Maha', 'ALAMI', 'maha_alami@inpt.ma', '8886c6191be8f53ebabcd957f6161712', 'F'),
+(6, 'Fatima', 'AMINI', 'fati_amini@ine.inpt.ma', 'a41185c4140b74a0e2d5f2a82103c5bf', 'F'),
+(7, 'Kawtar', 'HABIBA', 'kawtar@inpt.ac.ma', '4bcb345bad91feeebeaa34b8610c2120', 'F'),
+(8, 'Saida', 'Maryem', 'saidaMe@ine.inpt.ma', 'e177640af5108663441301834bbfb69e', 'F'),
+(9, 'Ahmed', 'Fahim', 'fahimahmed@ine.inpt.ma', '24fab433db521ef5eadbea5efb4edf3d', 'M'),
+(10, 'Rachid', 'Alaoui', 'alaouirachid@ine.inpt.ma', 'bbb61fa7a1697e4cc572db4280dfc059', 'M');
 
 -- --------------------------------------------------------
 
@@ -240,7 +245,7 @@ ALTER TABLE `salle`
 -- AUTO_INCREMENT for table `affectation`
 --
 ALTER TABLE `affectation`
-  MODIFY `idProf` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `idProf` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT for table `batiment`
@@ -252,7 +257,7 @@ ALTER TABLE `batiment`
 -- AUTO_INCREMENT for table `prof`
 --
 ALTER TABLE `prof`
-  MODIFY `idProf` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=165;
+  MODIFY `idProf` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=172;
 
 --
 -- AUTO_INCREMENT for table `salle`

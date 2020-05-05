@@ -47,7 +47,18 @@ if(isset($_SESSION['last_action'])){
             <a href="affectation.php">Affectation</a>
         </ul>
 </div>
-
+<style>
+table{
+    position:relative;
+    top:10px;
+    left:3px
+}
+.box{
+    position:relative;
+    top:270px;
+    height:70%;
+}
+</style>
 
 
 <div class="box">

@@ -30,11 +30,17 @@ Description du projet:
     un compte gmail(mon compte : aljadd700@gmail.com) va prendre le message et va me l'envoyer 
     (mon autre compte :webaljadd@gmail.com), car php va pas envoyer le message si j'ai pas utiliser cette méthode. 
     La configuration de xampp pour lui permettre d'envoyer des mails est faite pour ce compte aljadd700@gmail.com.
-    Pour tester l'application web voici deux comptes pour se connecter. L'un en tant qu'administrateur et l'autre en tant qu'utilisateur normal:
+    La configuration : https://meetanshi.com/blog/send-mail-from-localhost-xampp-using-gmail/.
+    Mon compte : email : webaljadd@gmail.com
+                 password : web987ljad
+    
+    Pour tester l'application web voici deux comptes pour se connecter. L'un en tant qu'administrateur 
+    et l'autre en tant qu'utilisateur normal:
         Admin : email : aljadd.mohammed@ine.inpt.ma
                 password : 12345abc
         User  : email : hassan_omar@inpt.ac.ma
                 password : 654321abc
+    Vous devez activer les événements dans la base de données pour les utiliser. 
     
  La page HOME de mon projet :
    

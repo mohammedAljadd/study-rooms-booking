@@ -34,6 +34,7 @@ if(isset($_SESSION['last_action'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/affectation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Raleway&display=swap" rel="stylesheet">
     <title>affectation</title>
 </head>
 <img src="img/Go.png" alt="" height="70" width="260" id="go">
@@ -50,13 +51,21 @@ if(isset($_SESSION['last_action'])){
 <style>
 table{
     position:relative;
-    top:10px;
-    left:3px
+    top:13px;
+    left:1.6cm;
+    width:24cm;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+td,th{
+    padding:8px 12px 8px 12px;
 }
 .box{
     position:relative;
     top:270px;
     height:70%;
+    width:28cm;
+    background-color:rgb(0,0,0,0.7);
 }
 </style>
 

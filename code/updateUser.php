@@ -107,7 +107,7 @@ button{
     UNION
     SELECT prof.nom,prof.prenom,prof.gender,prof.email,blocked_user.block FROM `prof`,blocked_user WHERE blocked_user.email=prof.email and idProf!=1
         UNION 
-        SELECT  prof.nom,prof.prenom,prof.gender,prof.email,'no' FROM `prof` WHERE prof.email not in (SELECT email FROM blocked_user) and idProf!=1;";
+        SELECT  prof.nom,prof.prenom,prof.gender,prof.email,'no' FROM `prof` WHERE prof.email not in (SELECT email FROM blocked_user) and idProf!=1 ORDER BY prenom;";
     $result = mysqli_query($conn,$sql);
     $out = mysqli_num_rows($result);
     if($out>0){

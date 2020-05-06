@@ -44,7 +44,7 @@
             $_SESSION['error']="Sunday";
             header("location:date_booking.php?sunday");
         }
-        if($day == 'Saturday' &&$toleD<'08:00' || $toleD>'11:00' || $toleF<'08:00' || $toleF>'12:00'){
+        if($day == 'Saturday' && ($toleD<'08:00' || $toleD>'11:00' || $toleF<'08:00' || $toleF>'12:00')){
             $_SESSION['error']="Saturday";
             header("location:date_booking.php?sabt");
         }

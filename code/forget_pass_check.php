@@ -60,7 +60,7 @@ include 'includes/dbconn.php';
                                     
         }
         elseif($out2>0){
-          $_SESSION['emailError']="Vous ne pouvez pas réinitialiser le mot de passe pendant les 2 heures suivantes, car vous n'avez pas entré le bon code de réinitialisation du mot de passe pendant 10 tentatives !";
+          $_SESSION['emailError']="Vous êtes actuellement bloqué de la réinitialisation du mot de passe, veuillez contacter l'administrateur!";
           header("Location:login.php");
         }
         else{
@@ -79,7 +79,11 @@ include 'includes/dbconn.php';
         $result= mysqli_query($conn,$sql);
         $out = mysqli_num_rows($result);
         
-        if($out>0){
+        if(empty($randomUser)){
+          $_SESSION['wrongRandom'] = "Champ vide, veuillez saisir le code envoyé!";
+          header("Location:enterRandom.php");
+        }
+        elseif($out>0){
           $_SESSION['changePass'] = "Vous pouvez maintenant changer votre mot de passe";
           header("Location:resetPass.php");
         }

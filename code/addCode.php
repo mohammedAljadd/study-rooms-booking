@@ -7,7 +7,12 @@ $password =$_SESSION['password'];
 $password = md5($password);
 $email = $_SESSION['emailToadd'];
 $gender =$_SESSION['gender'];
-$sql = "INSERT INTO `prof` (`nom`, `prenom`, `email`, `password`,`gender`) VALUES ('$name', '$prenom', '$email', '$password','$gender') ;";
+$sql = "SELECT (idProf+1) newID FROM prof ORDER BY idProf DESC LIMIT 1;";
+$result = mysqli_query($conn,$sql);
+while($row = mysqli_fetch_assoc($result)){
+    $newId = $row['newID'];
+}
+$sql = "INSERT INTO `prof` (`idProf`,`nom`, `prenom`, `email`, `password`,`gender`) VALUES ('$newId','$name', '$prenom', '$email', '$password','$gender') ;";
 $result = mysqli_query($conn,$sql);
 if($result){
     $_SESSION['added']='added';

@@ -30,16 +30,8 @@ Description du projet:
         Le dossier de rapport contient le fichier Latex, les images et le fichier pdf.
         
         Pour la page contact lorsqu'un utilisateur envoie un message 
-    un compte gmail(mon compte : aljadd700@gmail.com) va prendre le message et va me l'envoyer 
-    (mon autre compte :webaljadd@gmail.com), car php va pas envoyer le message si j'ai pas utiliser cette méthode. 
-    La configuration de xampp pour lui permettre d'envoyer des mails est faite pour ce compte aljadd700@gmail.com.
-    La configuration : https://meetanshi.com/blog/send-mail-from-localhost-xampp-using-gmail/.
+    un compte gmail  va prendre le message et va me l'envoyer, car php va pas envoyer le message si j'ai pas utiliser cette méthode. 
     
-    
-    Le compte qui reçoit tous les messages : email : webaljadd@gmail.com
-                                             password : web987ljad
-    Le compte qui envoie tous les messages : email : aljadd700@gmail.com
-                                             password : ictF99GM@32
     
         Pour tester l'application web voici deux comptes pour se connecter. L'un en tant qu'administrateur 
     et l'autre en tant qu'utilisateur normal:

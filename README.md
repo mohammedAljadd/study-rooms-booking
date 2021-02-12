@@ -15,7 +15,7 @@ Le répertoire des maquettes:
 
     Visit https://github.com/ENSIAS-MEH/Dev_Web_INPT_2020_G0/blob/master/maquettes/
 
-Les langages de programmation utilisés : 
+Les langages utilisés : 
     
     HTML,CSS,JavaScript,Mysql et PHP.
 
@@ -32,15 +32,6 @@ Description du projet:
         Pour la page contact lorsqu'un utilisateur envoie un message 
     un compte gmail  va prendre le message et va me l'envoyer, car php va pas envoyer le message si j'ai pas utiliser cette méthode. 
     
-    
-        Pour tester l'application web voici deux comptes pour se connecter. L'un en tant qu'administrateur 
-    et l'autre en tant qu'utilisateur normal:
-        Admin : email : aljadd.mohammed@ine.inpt.ma
-                password : 12345abc
-        User  : email : hassan_omar@inpt.ac.ma
-                password : 654321abc
-                
-    Vous devez activer les événements dans la base de données pour les utiliser. 
     
  La page HOME de mon projet :
    
